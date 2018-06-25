@@ -1,0 +1,22 @@
+{
+  "name": "r6-tactics",
+  "version": "1.0.0",
+  "description": "R6 Siege Api Db for R6 Tactics Site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DaltonHart/R6-Tactics.git"
+  },
+  "author": "Dalton Hart Daltonvaren@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DaltonHart/R6-Tactics/issues"
+  },
+  "homepage": "https://github.com/DaltonHart/R6-Tactics#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
