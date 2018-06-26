@@ -26,28 +26,28 @@ var atkopsList = [{
   }]
 
   var defopsList = [{
-    name : 'Ash',
-    badge: '/images/ashbadge.png',
-    img: '/images/ash.png',
+    name : 'Maestro',
+    badge: '/images/maestrobadge.png',
+    img: '/images/maestro.png',
     gadget : {
-        name: 'Breaching Rounds',
-        uses: 3},
+        name: 'Evil Eye',
+        uses: 2},
     primaries : {
-      pri1 : 'R4-C',
-      pri2 : 'G36C',
+      pri1 : 'Alda 5.56',
+      pri2 : 'ACS12',
       pri3 : 'NA',
       },
     secondaries : {
-      sec1 : 'M45 MEUSOC',
-      sec2 : '5.7 USG',
+      sec1 : 'Keratos .357 Pistol',
+      sec2 : 'Bailiff 410 Pistol',
       },
     gadgets : {
-      gad1: 'Breach Charge',
-      gad2: 'Stun Grenade',
+      gad1: 'Barbed Wire',
+      gad2: 'Deployable Shield',
     },
-    ArmorRating : 1,
-    SpeedRating : 3,
-    Organization : 'FBI',
+    ArmorRating : 3,
+    SpeedRating : 1,
+    Organization : 'GIS',
   }]
 
 db.Atkop.remove({}, function(err, atkops){
@@ -57,7 +57,6 @@ db.Atkop.remove({}, function(err, atkops){
       if (err) { return console.log('ERROR', err); }
       console.log("all atkops:", atkops);
       console.log("created", atkops.length, "atkops");
-      process.exit();
     });
     
   });
