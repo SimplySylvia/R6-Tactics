@@ -3,9 +3,11 @@ const express = require("express");
 const app = express();
 const bodyParser = require('body-parser');
 const controllers = require('./controllers');
+const cors = require('cors');
 
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(express.static('public'));
+app.use(cors());
 
 
 const db = require(`./models`);
@@ -28,5 +30,5 @@ app.get('/api/smaps', controllers.smap.index);
 
 // listen
 app.listen(process.env.PORT || 8000, ()=>{
-  console.log("Listening to port 3000");
+  console.log("Listening to port 8000");
 })
