@@ -2,7 +2,11 @@ var db = require("./models");
 
 var atkopsList = [{
     name : 'Ash',
-    gadget : 'Breaching Rounds',
+    badge: '/images/ashbadge.png',
+    img: '/images/ash.png',
+    gadget : {
+        name: 'Breaching Rounds',
+        uses: 3},
     primaries : {
       pri1 : 'R4-C',
       pri2 : 'G36C',

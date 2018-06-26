@@ -4,7 +4,12 @@ const Schema = mongoose.Schema;
 //models/album.js
 var AtkopSchema = new Schema({
   name : String,
-  gadget : String,
+  badge: String,
+  img: String,
+  gadget : {
+    name : String,
+    uses: Number,
+  },
   primaries : {
     pri1 : String,
     pri2 : String,
