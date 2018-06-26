@@ -22,6 +22,7 @@ app.get('/api', controllers.api.index);
 
 // get routes
 app.get('/api/atkops', controllers.atkop.index);
+app.get('/api/defops', controllers.defop.index);
 
 
 // listen
