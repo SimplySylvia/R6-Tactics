@@ -23,6 +23,54 @@ var atkopsList = [{
     ArmorRating : 1,
     SpeedRating : 3,
     Organization : 'FBI',
+  },
+  {
+    name : 'Ash',
+    badge: '/images/ashbadge.png',
+    img: '/images/ash.png',
+    gadget : {
+        name: 'Breaching Rounds',
+        uses: 3},
+    primaries : {
+      pri1 : 'R4-C',
+      pri2 : 'G36C',
+      pri3 : 'NA',
+      },
+    secondaries : {
+      sec1 : 'M45 MEUSOC',
+      sec2 : '5.7 USG',
+      },
+    gadgets : {
+      gad1: 'Breach Charge',
+      gad2: 'Stun Grenade',
+    },
+    ArmorRating : 1,
+    SpeedRating : 3,
+    Organization : 'FBI',
+  },
+  {
+    name : 'Ash',
+    badge: '/images/ashbadge.png',
+    img: '/images/ash.png',
+    gadget : {
+        name: 'Breaching Rounds',
+        uses: 3},
+    primaries : {
+      pri1 : 'R4-C',
+      pri2 : 'G36C',
+      pri3 : 'NA',
+      },
+    secondaries : {
+      sec1 : 'M45 MEUSOC',
+      sec2 : '5.7 USG',
+      },
+    gadgets : {
+      gad1: 'Breach Charge',
+      gad2: 'Stun Grenade',
+    },
+    ArmorRating : 1,
+    SpeedRating : 3,
+    Organization : 'FBI',
   }]
 
   var defopsList = [{
