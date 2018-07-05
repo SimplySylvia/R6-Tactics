@@ -21,9 +21,19 @@ function create(req, res) {
     res.json(newAtkop);
   });
 }
+//Show 
+function show(req, res){
+  let atkopId = req.params.id;
+  db.Atkop.findById(atkopId, (err, atkop) => {
+    if(err){res.status(500).json({"ERROR":"Database Error"});}
+    res.json(atkop);
+  });
+}
+
 
 // controllers/atkopController.js
 module.exports = {
   index: index,
   create: create,
+  show: show,
 };

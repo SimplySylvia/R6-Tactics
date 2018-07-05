@@ -26,6 +26,8 @@ app.get('/api', controllers.api.index);
 app.get('/api/atkops', controllers.atkop.index);
 app.get('/api/defops', controllers.defop.index);
 app.get('/api/smaps', controllers.smap.index);
+app.get('/api/atkops/:id', controllers.atkop.show);
+app.get('/api/defops/:id', controllers.defop.show);
 
 
 // listen

@@ -21,9 +21,17 @@ function create(req, res) {
     res.json(newDefop);
   });
 }
-
+//Show 
+function show(req, res){
+  let defopId = req.params.id;
+  db.Defop.findById(defopId, (err, defop) => {
+    if(err){res.status(500).json({"ERROR":"Database Error"});}
+    res.json(defop);
+  });
+}
 // controllers/atkopController.js
 module.exports = {
   index: index,
   create: create,
+  show: show,
 };
