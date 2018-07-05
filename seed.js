@@ -22,18 +22,42 @@ var atkopsList = [{
     },
     ArmorRating : 1,
     SpeedRating : 3,
-    Organization : 'FBI',
+    Organization : 'FBI SWAT',
   },
   {
-    name : 'Ash',
-    badge: '/images/ashbadge.png',
-    img: '/images/ash.png',
+    name : 'Thatcher',
+    badge: '/images/thatcherbadge.png',
+    img: '/images/thatcher.png',
     gadget : {
-        name: 'Breaching Rounds',
+        name: 'EMP Grenade',
         uses: 3},
     primaries : {
-      pri1 : 'R4-C',
-      pri2 : 'G36C',
+      pri1 : 'M590A1',
+      pri2 : 'L85A2',
+      pri3 : 'AR33',
+      },
+    secondaries : {
+      sec1 : 'P226 Mk 25',
+      sec2 : 'NA',
+      },
+    gadgets : {
+      gad1: 'Claymore',
+      gad2: 'Breach Charge',
+    },
+    ArmorRating : 2,
+    SpeedRating : 2,
+    Organization : 'SAS',
+  },
+  {
+    name : 'Thermite',
+    badge: '/images/thermitebadge.png',
+    img: '/images/thermite.png',
+    gadget : {
+        name: 'Exothermic Charge',
+        uses: 2},
+    primaries : {
+      pri1 : '556xi',
+      pri2 : 'M1014',
       pri3 : 'NA',
       },
     secondaries : {
@@ -41,36 +65,12 @@ var atkopsList = [{
       sec2 : '5.7 USG',
       },
     gadgets : {
-      gad1: 'Breach Charge',
+      gad1: 'Claymore',
       gad2: 'Stun Grenade',
     },
-    ArmorRating : 1,
-    SpeedRating : 3,
-    Organization : 'FBI',
-  },
-  {
-    name : 'Ash',
-    badge: '/images/ashbadge.png',
-    img: '/images/ash.png',
-    gadget : {
-        name: 'Breaching Rounds',
-        uses: 3},
-    primaries : {
-      pri1 : 'R4-C',
-      pri2 : 'G36C',
-      pri3 : 'NA',
-      },
-    secondaries : {
-      sec1 : 'M45 MEUSOC',
-      sec2 : '5.7 USG',
-      },
-    gadgets : {
-      gad1: 'Breach Charge',
-      gad2: 'Stun Grenade',
-    },
-    ArmorRating : 1,
-    SpeedRating : 3,
-    Organization : 'FBI',
+    ArmorRating : 2,
+    SpeedRating : 2,
+    Organization : 'FBI SWAT',
   }]
 
   var defopsList = [{
