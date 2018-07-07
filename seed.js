@@ -77,37 +77,62 @@ var atkopsList = [{
     name : 'Maestro',
     badge: '/images/maestrobadge.png',
     img: '/images/maestro.png',
+    bio: 'Maestro is oldest in a family of eight children. He grew up in Rome, but attended the Military Academy of Modena at 18. He then joined the Carabinieri and earned a spot as an Explorer Paratrooper in the 1st Paratrooper Regiment known as Tuscania.',
     gadget : {
         name: 'Evil Eye',
-        uses: 2},
+        uses: 2,
+        img: '/images/evileye.png',
+        desc: 'Maestro uses a remote-controlled turret firing high-energy laser beams. Once affixed to the floor or wall, Maestro can remote-surveil and provide overwatch in a location through the swivel-mounted camera. When the camera device breaks open to fire a laser beam the core is exposed to damage. Otherwise, the turret is unaffected by bullets and melee. Lastly, Evil Eye can see through smoke.',
+    },
     primaries : {
-      pri1 : 'Alda 5.56',
-      pri2 : 'ACS12',
-      pri3 : 'NA',
+      pri1 : {
+        name : 'Alda 5.56',
+        img : '/images/ALDA556.png',
       },
+      pri2 : {
+        name : 'Alda 5.56',
+        img : '/images/acs12.png',
+      },
+      pri3 : {
+        name : 'na',
+        img : 'na',
+      },
+    },
     secondaries : {
-      sec1 : 'Keratos .357 Pistol',
-      sec2 : 'Bailiff 410 Pistol',
+      sec1 : {
+        name : 'Keratos 357 Pistol',
+        img : '/images/KERATOS357PISTOL.png',
+    },
+      sec2 : {
+        name : 'Bailiff 410 Pistol',
+        img : '/images/BAILIFF410PISTOL.png',
+    },
       },
     gadgets : {
-      gad1: 'Barbed Wire',
-      gad2: 'Deployable Shield',
+      gad1: {
+        name : 'Barbed Wire',
+        img : '/images/BARBEDWIRE.png',
+    },
+      gad2: {
+        name : 'Deployable Shield',
+        img : '/images/DEPLOYABLESHIELD.png',
+    },
     },
     ArmorRating : 3,
     SpeedRating : 1,
-    Organization : 'GIS',
+    Organization : 'G.I.S',
   }]
 
-db.Atkop.remove({}, function(err, atkops){
-    // code in here runs after all posts are removed
-    db.Atkop.create(atkopsList, function(err, atkops){
-      // code in here runs after all posts are created
-      if (err) { return console.log('ERROR', err); }
-      console.log("all atkops:", atkops);
-      console.log("created", atkops.length, "atkops");
-    });
+// db.Atkop.remove({}, function(err, atkops){
+//     // code in here runs after all posts are removed
+//     db.Atkop.create(atkopsList, function(err, atkops){
+//       // code in here runs after all posts are created
+//       if (err) { return console.log('ERROR', err); }
+//       console.log("all atkops:", atkops);
+//       console.log("created", atkops.length, "atkops");
+//     });
     
-  });
+//   });
 
   db.Defop.remove({}, function(err, defops){
     // code in here runs after all posts are removed
@@ -116,6 +141,7 @@ db.Atkop.remove({}, function(err, atkops){
       if (err) { return console.log('ERROR', err); }
       console.log("all defops:", defops);
       console.log("created", defops.length, "defops");
+      process.exit();evil
     });
     
   });
@@ -184,14 +210,14 @@ db.Atkop.remove({}, function(err, atkops){
   }
 ];
 
-db.Smap.remove({}, function(err, smaps){
-  // code in here runs after all posts are removed
-  db.Smap.create(SmapList, function(err, smaps){
-    // code in here runs after all posts are created
-    if (err) { return console.log('ERROR', err); }
-    console.log("all Smaps:", smaps);
-    console.log("created", smaps.length, "smaps");
-    process.exit();
-  });
+// db.Smap.remove({}, function(err, smaps){
+//   // code in here runs after all posts are removed
+//   db.Smap.create(SmapList, function(err, smaps){
+//     // code in here runs after all posts are created
+//     if (err) { return console.log('ERROR', err); }
+//     console.log("all Smaps:", smaps);
+//     console.log("created", smaps.length, "smaps");
+//     process.exit();
+//   });
   
-});
+// });
