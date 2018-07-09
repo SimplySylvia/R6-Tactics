@@ -3,7 +3,7 @@ var db = require("./models");
   var SmapList = [
     {
     name : 'House',
-    coverimg: 'placeholder',
+    coverimg: '/images/house.jpg',
     floors : [
       {
         name: 'Basement',

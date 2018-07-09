@@ -42,7 +42,7 @@ var db = require("./models");
     },
       gad2: {
         name : 'Deployable Shield',
-        img : '/images/DEPLOYABLESHIELD.png',
+        img : '/images/deployableshield.png',
     },
     },
     ArmorRating : 3,
@@ -140,7 +140,7 @@ var db = require("./models");
     },
       gad2: {
         name : 'Bulletproof Camera',
-        img : '/images/DEPLOYABLESHIELD.png',
+        img : '/images/bulletproofcam.png',
     },
     },
     ArmorRating : 1,
@@ -283,7 +283,7 @@ var db = require("./models");
     gadgets : {
       gad1: {
         name : 'Nitro Cell',
-        img : '/images/impactgren.png',
+        img : '/images/nitrocell.png',
     },
       gad2: {
         name : 'Deployable Shield',
@@ -385,7 +385,7 @@ var db = require("./models");
     },
       gad2: {
         name : 'Bulletproof Camera',
-        img : '/images/DEPLOYABLESHIELD.png',
+        img : '/images/bulletproofcam.png',
     },
     },
     ArmorRating : 1,
@@ -430,7 +430,7 @@ var db = require("./models");
     gadgets : {
       gad1: {
         name : 'Nitro Cell',
-        img : '/images/impactgren.png',
+        img : '/images/nitrocell.png',
     },
       gad2: {
         name : 'Deployable Shield',
@@ -483,7 +483,7 @@ var db = require("./models");
     },
       gad2: {
         name : 'Bulletproof Camera',
-        img : '/images/DEPLOYABLESHIELD.png',
+        img : '/images/bulletproofcam.png',
     },
     },
     ArmorRating : 2,
@@ -528,11 +528,11 @@ var db = require("./models");
     gadgets : {
       gad1: {
         name : 'Nitro Cell',
-        img : '/images/BARBEDWIRE.png',
+        img : '/images/nitrocell.png',
     },
       gad2: {
         name : 'Bulletproof Camera',
-        img : '/images/DEPLOYABLESHIELD.png',
+        img : '/images/bulletproofcam.png',
     },
     },
     ArmorRating : 2,
@@ -626,7 +626,7 @@ var db = require("./models");
     gadgets : {
       gad1: {
         name : 'Bulletproof Camera',
-        img : '/images/BARBEDWIRE.png',
+        img : '/images/bulletproofcam.png',
     },
       gad2: {
         name : 'Impact Grenades',
@@ -679,7 +679,7 @@ var db = require("./models");
     },
       gad2: {
         name : 'Nitro Cell',
-        img : '/images/DEPLOYABLESHIELD.png',
+        img : '/images/nitrocell.png',
     },
     },
     ArmorRating : 1,
@@ -728,7 +728,7 @@ var db = require("./models");
     },
       gad2: {
         name : 'Bulletproof Camera',
-        img : '/images/DEPLOYABLESHIELD.png',
+        img : '/images/Dbulletproofcam.png',
     },
     },
     ArmorRating : 3,
@@ -871,7 +871,7 @@ var db = require("./models");
     gadgets : {
       gad1: {
         name : 'Nitro Cell',
-        img : '/images/BARBEDWIRE.png',
+        img : '/images/nitrocell.png',
     },
       gad2: {
         name : 'Barbed Wire',
@@ -973,7 +973,7 @@ var db = require("./models");
     },
       gad2: {
         name : 'Nitro Cell',
-        img : '/images/DEPLOYABLESHIELD.png',
+        img : '/images/nitrocell.png',
     },
     },
     ArmorRating : 2,
@@ -993,4 +993,3 @@ var db = require("./models");
     });
     
   });
-// });

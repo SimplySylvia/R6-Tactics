@@ -21,9 +21,18 @@ function create(req, res) {
     res.json(newSmap);
   });
 }
+//show /api/smaps/:id
+function show(req, res){
+  let smapId = req.params.id;
+  db.Smap.findById(smapId, (err, smap) => {
+    if(err){res.status(500).json({"ERROR":"Database Error"});}
+    res.json(smap);
+  });
+}
 
 // controllers/atkopController.js
 module.exports = {
   index: index,
   create: create,
+  show: show,
 };
