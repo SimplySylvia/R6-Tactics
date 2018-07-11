@@ -7,19 +7,19 @@ var db = require("./models");
     floors : [
       {
         name: 'Basement',
-        img: '/images/housebasement.jpg',
+        img: '/images/basement/',
       },
       {
         name: '1st',
-        img: '/images/housefirstfloor.jpg',
+        img: '/images/housefirstfloor',
       },
       {
         name: '2nd',
-        img: '/images/housesecondfloor.jpg',
+        img: '/images/housesecondfloor',
       },
       {
         name: 'Roof',
-        img: '/images/houseroof.jpg',
+        img: '/images/houseroof',
       },
       {
         name: 'NA',
