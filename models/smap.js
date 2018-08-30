@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-module.exports = mongoose.model('Smap', new Schema({
+module.exports = mongoose.model('Smap', new mongoose.Schema({
   name : String,
   coverimg: String,
   floors : [
