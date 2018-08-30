@@ -64,9 +64,9 @@ var db = require("./models");
   }
 ];
 
-db.Smap.remove({}, function(err, smaps){
+db.Smap.remove({}, (err, smaps) =>{
   // code in here runs after all posts are removed
-  db.Smap.create(SmapList, function(err, smaps){
+  db.Smap.create(SmapList, (err, smaps) =>{
     // code in here runs after all posts are created
     if (err) { return console.log('ERROR', err); }
     console.log("all Smaps:", smaps);

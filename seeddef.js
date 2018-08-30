@@ -982,9 +982,9 @@ var db = require("./models");
   },
 ]
 
-  db.Defop.remove({}, function(err, defops){
+  db.Defop.remove({}, (err, defops) =>{
     // code in here runs after all posts are removed
-    db.Defop.create(defopsList, function(err, defops){
+    db.Defop.create(defopsList, (err, defops) =>{
       // code in here runs after all posts are created
       if (err) { return console.log('ERROR', err); }
       console.log("all defops:", defops);

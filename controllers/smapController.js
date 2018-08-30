@@ -1,38 +1,27 @@
 const db = require(`../models`);
 
-// GET /api/smaps
-function index(req, res) {
-  db.Smap.find()
-  .exec(function(err, smap) {
-    if (err) {
-      return console.log("index error: " + err); }
-      //show ops as json
-      res.json(smap);
-    });
-  };
-
-// POST /api/smaps
-function create(req, res) {
-  // create a map based on request body and send it back as JSON
-  var newSmap = req.body
-  console.log(req.body);
-  db.Smap.create(newDefop, function(err, newDefop){
-    if(err){res.status(500).json({"ERROR":"Database Error"});}
-    res.json(newSmap);
-  });
-}
-//show /api/smaps/:id
-function show(req, res){
-  let smapId = req.params.id;
-  db.Smap.findById(smapId, (err, smap) => {
-    if(err){res.status(500).json({"ERROR":"Database Error"});}
-    res.json(smap);
-  });
-}
-
-// controllers/atkopController.js
 module.exports = {
-  index: index,
-  create: create,
-  show: show,
+  index(req, res) {
+    db.Smap.find()
+    .exec((err, smap) => {
+      if (err) {
+        return console.log("index error: " + err); }
+        res.json(smap);
+      });
+    },
+    create(req, res) {
+      var newSmap = req.body
+      console.log(req.body);
+      db.Smap.create(newDefop, (err, newSmap) => {
+        if(err){res.status(500).json({"ERROR":"Database Error"});}
+        res.json(newSmap);
+      });
+    },
+    show(req, res){
+      let smapId = req.params.id;
+      db.Smap.findById(smapId, (err, smap) => {
+        if(err){res.status(500).json({"ERROR":"Database Error"});}
+        res.json(smap);
+      });
+    },
 };

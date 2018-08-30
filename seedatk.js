@@ -123,9 +123,9 @@ var atkopsList = [{
     Organization : 'G.I.S',
   }]
 
-db.Atkop.remove({}, function(err, atkops){
+db.Atkop.remove({},(err, atkops) =>{
     // code in here runs after all posts are removed
-    db.Atkop.create(atkopsList, function(err, atkops){
+    db.Atkop.create(atkopsList, (err, atkops) =>{
       // code in here runs after all posts are created
       if (err) { return console.log('ERROR', err); }
       console.log("all atkops:", atkops);

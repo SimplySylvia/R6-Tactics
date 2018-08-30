@@ -1,5 +1,5 @@
   module.exports = { 
-    index: function index(req, res) {
+     index(req, res) {
       res.json({
         message: 'Welcome to R6 tactics Api!',
         documentation_url: 'https://github.com/DaltonHart/R6-Tactics',
