@@ -1,33 +1,51 @@
 const mongoose = require('mongoose');
-const Schema = mongoose.Schema;
 
-//models/album.js
-var AtkopSchema = new Schema({
+module.exports =  mongoose.model('Atkop', new mongoose.Schema({
   name : String,
   badge: String,
   img: String,
+  bio: String,
   gadget : {
     name : String,
     uses: Number,
+    img: String,
+    desc: String,
   },
   primaries : {
-    pri1 : String,
-    pri2 : String,
-    pri3 : String,
+    pri1 : {
+      name: String,
+      img: String,
+    },
+    pri2 : {
+      name: String,
+      img: String,
+    },
+    pri3 : {
+      name: String,
+      img: String,
+    },
     },
   secondaries : {
-    sec1 : String,
-    sec2 : String,
+    sec1 : {
+      name: String,
+      img: String,
+    },
+    sec2 : {
+      name: String,
+      img: String,
+    },
     },
   gadgets : {
-    gad1: String,
-    gad2: String,
+    gad1: {
+      name: String,
+      img: String,
+    },
+    gad2: {
+      name: String,
+      img: String,
+    },
   },
   ArmorRating : Number,
   SpeedRating : Number,
   Organization : String,
-});
-
-var Atkop = mongoose.model('Atkop', AtkopSchema);
-
-module.exports = Atkop;
+}));

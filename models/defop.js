@@ -1,8 +1,6 @@
 const mongoose = require('mongoose');
-const Schema = mongoose.Schema;
 
-//models/album.js
-var DefopSchema = new Schema({
+module.exports = mongoose.model('Defop', new mongoose.Schema({
   name : String,
   badge: String,
   img: String,
@@ -50,8 +48,4 @@ var DefopSchema = new Schema({
   ArmorRating : Number,
   SpeedRating : Number,
   Organization : String,
-});
-
-var Defop = mongoose.model('Defop', DefopSchema);
-
-module.exports = Defop;
+}));

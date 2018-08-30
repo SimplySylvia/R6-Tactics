@@ -1,8 +1,6 @@
 const mongoose = require('mongoose');
-const Schema = mongoose.Schema;
 
-//models/album.js
-var SmapSchema = new Schema({
+module.exports = mongoose.model('Smap', new Schema({
   name : String,
   coverimg: String,
   floors : [
@@ -71,8 +69,8 @@ var SmapSchema = new Schema({
     area4 : String,
   },
 
-});
+}));
 
-var Smap = mongoose.model('Smap', SmapSchema);
 
-module.exports = Smap;
+
+
