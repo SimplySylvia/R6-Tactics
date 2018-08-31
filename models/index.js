@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/R6-Tactics');
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/R6-Tactics');
 
 module.exports.Atkop = require('./atkop');
 module.exports.Defop = require('./defop');

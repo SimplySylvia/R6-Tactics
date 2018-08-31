@@ -6,7 +6,7 @@ module.exports = {
     .exec((err, smap) => {
       if (err) {
         return console.log("index error: " + err); }
-        res.json(smap);
+        res.json({data:smap});
       });
     },
     create(req, res) {
@@ -21,7 +21,7 @@ module.exports = {
       let smapId = req.params.id;
       db.Smap.findById(smapId, (err, smap) => {
         if(err){res.status(500).json({"ERROR":"Database Error"});}
-        res.json(smap);
+        res.json({data:smap});
       });
     },
 };

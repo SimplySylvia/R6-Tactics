@@ -1,4 +1,5 @@
-$(document).ready(function(){
+$(document).ready(() =>{
+
     console.log('sanity');
 
     $.ajax({
@@ -7,21 +8,34 @@ $(document).ready(function(){
         success: handleSuccess,
         error: handleError,
     });
-
     function handleSuccess (json) {
         console.log(json);
         var obj = json
         var str = JSON.stringify(obj, undefined, 4);
         output(syntaxHighlight(str));
     };
-
     function handleError(e) {
         console.log('error', e);
     }
+
+    $('.requestBar').on('submit', (e)=>{
+        e.preventDefault();
+        console.log('search!');
+        let term = $('.searchinput').val()
+        console.log(term);
+
+        $.ajax({
+            method: 'GET',
+            url: `/api/${term}`,
+            success: handleSuccess,
+            error: handleError,
+        })
+    });
 });
 
 
 function output(inp) {
+    $( '#apiOutput' ).empty();
     document.getElementById('apiOutput').appendChild(document.createElement('pre')).innerHTML = inp;
 }
 
