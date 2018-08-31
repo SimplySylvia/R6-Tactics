@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Encode+Sans+Condensed');
+
+*{
+    box-sizing: border-box;
+}
+html{
+    height: 100vh;
+}
+
+body{
+    background: linear-gradient(rgb(14, 14, 16),rgb(28, 34, 43));
+    background-repeat: no-repeat;
+    width: 100%;
+    margin: 0;
+    font-family: 'Encode Sans Condensed', sans-serif;
+}
+
+h1{
+    color: white;
+    text-align: center;
+}
+
+#apiOutput{
+    background-color: rgb(28, 34, 43);
+    height: 75vh;
+    width: 85vw;
+    margin: 0 auto;
+    overflow: scroll;
+    color: white;
+    outline: 1px solid #ccc;
+}
+
+pre {
+    padding: 5px;
+    margin: 0;
+    word-wrap: break-word;
+    width: 100%;
+}
+pre span{
+    max-width: 80vw;
+    
+}
+.string { 
+    color: white; 
+    word-wrap: break-word;
+}
+.number { 
+    color: rgb(250, 250, 44); 
+}
+.boolean {
+     color: rgb(54, 54, 243); 
+    }
+.null {
+     color: red; 
+    }
+.key { color: rgb(3, 155, 3); }
