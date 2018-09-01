@@ -1,6 +1,5 @@
 $(document).ready(() =>{
 
-    console.log('sanity');
 
     $.ajax({
         method: 'GET',
@@ -9,7 +8,6 @@ $(document).ready(() =>{
         error: handleError,
     });
     function handleSuccess (json) {
-        console.log(json);
         var obj = json
         var str = JSON.stringify(obj, undefined, 4);
         output(syntaxHighlight(str));
@@ -20,7 +18,6 @@ $(document).ready(() =>{
 
     $('.requestBar').on('submit', (e)=>{
         e.preventDefault();
-        console.log('search!');
         let term = $('.searchinput').val()
         console.log(term);
 
