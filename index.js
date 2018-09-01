@@ -7,10 +7,7 @@ const routes = require('./config');
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(cors());
 
-var path = require('path')
-
-process.env.PWD = process.cwd();
-app.use(express.static(path.join(process.env.PWD, 'public')));
+app.use(express.static(__dirname + '/public'));
 
 app.get('/', (req, res) => {
   res.sendFile('Views/index.html' , { root : __dirname});
