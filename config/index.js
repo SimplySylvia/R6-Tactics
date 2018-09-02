@@ -3,4 +3,5 @@ module.exports = {
     atkop: require('./atkopRoutes'),
     defop: require('./defopRoutes'),
     smap: require('./smapsRoutes'),
+    gadget: require('./gadgetRoutes'),
   }

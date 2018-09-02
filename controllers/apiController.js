@@ -40,6 +40,16 @@
             path: '/api/smaps/:id', 
             description: 'Will respond with a Json of a specific game map with the given id.'
           },
+          {
+            method: 'GET', 
+            path: '/api/gadgets', 
+            description: 'Will respond with a Json of all game basic gadgets.'
+          },
+          {
+            method: 'GET', 
+            path: '/api/gadgets/:id', 
+            description: 'Will respond with a Json of a specific gadget with the given id.'
+          },
         ]
       });
     }
