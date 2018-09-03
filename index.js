@@ -18,6 +18,8 @@ app.use('/api/atkops',routes.atkop);
 app.use('/api/defops', routes.defop);
 app.use('/api/smaps', routes.smap);
 app.use('/api/gadgets', routes.gadget);
+app.use('/api/abilities', routes.ability);
+app.use('/api/weapons', routes.weapon);
 
 
 app.listen(process.env.PORT || 8000, ()=>{

@@ -3,6 +3,7 @@ const db = require(`../models`);
 module.exports = {
   index(req, res) {
     db.Atkop.find()
+    .populate('gadgets')
     .exec((err, atkop) => {
       if (err) {
         return console.log("index error: " + err); }

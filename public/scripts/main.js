@@ -1,6 +1,4 @@
 $(document).ready(() =>{
-
-
     $.ajax({
         method: 'GET',
         url: '/api',
@@ -19,7 +17,6 @@ $(document).ready(() =>{
     $('.requestBar').on('submit', (e)=>{
         e.preventDefault();
         let term = $('.searchinput').val()
-        console.log(term);
 
         $.ajax({
             method: 'GET',
@@ -28,6 +25,7 @@ $(document).ready(() =>{
             error: handleError,
         })
     });
+
 });
 
 

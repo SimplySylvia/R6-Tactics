@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 
+
 module.exports =  mongoose.model('Atkop', new mongoose.Schema({
   name : String,
   badge: String,
@@ -35,16 +36,12 @@ module.exports =  mongoose.model('Atkop', new mongoose.Schema({
       img: String,
     },
     },
-  gadgets : {
-    gad1: {
-      name: String,
-      img: String,
-    },
-    gad2: {
-      name: String,
-      img: String,
-    },
-  },
+  gadgets : [
+    { 
+      type: mongoose.Schema.Types.ObjectId,
+      ref: 'Gadget',
+    }
+  ],
   ArmorRating : Number,
   SpeedRating : Number,
   Organization : String,

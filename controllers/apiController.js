@@ -50,6 +50,26 @@
             path: '/api/gadgets/:id', 
             description: 'Will respond with a Json of a specific gadget with the given id.'
           },
+          {
+            method: 'GET', 
+            path: '/api/abilities', 
+            description: 'Will respond with a Json of all game operator abilities.'
+          },
+          {
+            method: 'GET', 
+            path: '/api/abilities/:id',
+            description: 'Will respond with a Json of a specific operator ability with the given id.'
+          },
+          {
+            method: 'GET', 
+            path: '/api/weapons', 
+            description: 'Will respond with a Json of all game operator weapons.'
+          },
+          {
+            method: 'GET', 
+            path: '/api/weapons/:id',
+            description: 'Will respond with a Json of a specific operator weapon with the given id.'
+          },
         ]
       });
     }

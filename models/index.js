@@ -5,3 +5,5 @@ module.exports.Atkop = require('./atkop');
 module.exports.Defop = require('./defop');
 module.exports.Smap = require('./smap');
 module.exports.Gadget = require('./gadget');
+module.exports.Ability = require('./ability');
+module.exports.Weapon = require('./weapon');
