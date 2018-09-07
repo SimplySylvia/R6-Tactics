@@ -12,6 +12,12 @@ app.use(express.static(__dirname + '/public'));
 app.get('/', (req, res) => {
   res.sendFile('Views/index.html' , { root : __dirname});
 })
+app.get('/documentation', (req, res) => {
+  res.sendFile('Views/documentation.html' , { root : __dirname});
+})
+app.get('/about', (req, res) => {
+  res.sendFile('Views/about.html' , { root : __dirname});
+})
 
 app.use('/api',routes.api);
 app.use('/api/atkops',routes.atkop);

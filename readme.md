@@ -27,4 +27,4 @@ This api is currently under maintence for extended endpoints that will be more r
 | GET  | /api/weapons/api | Will respond with a Json of a specific operator weapon with the given id.|
 
 
-If you would like to recommend improvments to this rest api please reach out to me at my **[Email](daltonhart.j@gmail.com)** or leave a issue. 
+If you would like to recommend improvments to this rest api please leave an issue. Thank you and have fun building!
