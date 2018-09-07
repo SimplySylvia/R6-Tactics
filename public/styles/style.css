@@ -34,9 +34,9 @@ a img {
 
 #apiOutput{
     
-    background-color: #1B1C1D;
+    background-color: #f6f7f8;
     padding: 5px;
-    height: 65vh;
+    height: 55vh;
     width: 85vw;
     margin: 1em auto;
     overflow: scroll;
@@ -54,7 +54,7 @@ pre {
     font-family: 'Encode Sans Condensed', sans-serif;
 }
 pre span{
-    max-width: 80vw;
+    max-width: 100%;
     
 }
 .string { 
