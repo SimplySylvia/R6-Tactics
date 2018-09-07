@@ -1,9 +1,12 @@
 const mongoose = require('mongoose');
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/R6-Tactics');
 
-module.exports.Atkop = require('./atkop');
-module.exports.Defop = require('./defop');
-module.exports.Smap = require('./smap');
-module.exports.Gadget = require('./gadget');
-module.exports.Ability = require('./ability');
-module.exports.Weapon = require('./weapon');
+
+module.exports = {
+    Atkop : require('./atkop'),
+    Defop : require('./defop'),
+    Smap : require('./smap'),
+    Gadget : require('./gadget'),
+    Ability : require('./ability'),
+    Weapon : require('./weapon'),
+}
