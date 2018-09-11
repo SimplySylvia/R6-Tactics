@@ -22,10 +22,14 @@ header {
     height: 7vh;
 }
 
-header a, h2{
+header a, h2, h1{
     color: white;
     text-align: center;
     font-family: 'Encode Sans Condensed', sans-serif;
+}
+h1{
+    text-align: left;
+    margin-top: 1em;
 }
 
 a img {
@@ -116,11 +120,14 @@ footer {
 
 .docContent{
     display: grid;
+    height: 88vh;
+    width: 100vw;
 }
 
 .sidebarNav{
     grid-column: 1/2;
     padding: 1em;
+    width: 30vw;
 }
 .sidebarNav .segment{
     color: white;
@@ -136,6 +143,9 @@ footer {
 .content{
     grid-column: 2/5;
     color: white;
+    overflow: scroll;
+    width: 70vw;
+    padding: 1em;
 }
 .navTitle{
     text-align: left;
