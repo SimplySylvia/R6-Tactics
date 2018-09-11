@@ -10,9 +10,12 @@
         crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="styles/semantic.min.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="styles/style.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="images/logo.png" />
+    
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
+        <script src="scripts/doc.js"></script>
 </head>
 
 <body>
@@ -34,61 +37,91 @@
                 <h2 class="navTitle">Getting Started</h2>
                 <div class="ui segments sidebarNav">
                     <div class="ui segment">
-                        <a href="#">Introduction</a>
+                        <a href="#intro">Introduction</a>
                     </div>
                     <div class="ui segment">
-                        <a href="#">Base URL</a>
+                        <a href="#base">Base URL</a>
                     </div>
                     <div class="ui segment">
-                        <a href="#">Authentication</a>
+                        <a href="#auth">Authentication</a>
                     </div>
                     <div class="ui segment">
-                        <a href="#">Rate Limiting</a>
+                        <a href="#rate">Rate Limiting</a>
                     </div>
                 </div>
 
-                <h2 class="navTitle">Resources</h2>
+                <h2 id="resource" class="navTitle">Resources</h2>
                 <div class="ui segments sidebarNav">
                     <div class="ui segment">
-                        <a href="#">Root</a>
+                        <a href="#root">Root</a>
                     </div>
                     <div class="ui segment">
-                        <a href="#">Operators</a>
+                        <a href="#ops">Operators</a>
                     </div>
                     <div class="ui segment">
-                        <a href="#">Abilities</a>
+                        <a href="#abil">Abilities</a>
                     </div>
                     <div class="ui segment">
-                        <a href="#">Gadgets</a>
+                        <a href="#gadget">Gadgets</a>
                     </div>
                     <div class="ui segment">
-                        <a href="#">Weapons</a>
+                        <a href="#weapons">Weapons</a>
                     </div>
                 </div>
             </div>
 
             <section class="content">
-                <h1>Documentation</h1>
+                <h1>Getting Started</h1>
                 <hr>
-                <h3>Introduction</h3>
+                <h3 id="intro">Introduction</h3>
                 <p>Welcome to the Rainbow Six Siege API! This documentation should help you familiarise yourself with the resources available and how to consume them with HTTP requests. Read through the getting started section before you dive in. Most of your problems should be solved just by reading through it.</p>
-                <h3>Base Url</h3>
+                <h3 id="base">Base Url</h3>
                 <p>The Base URL is the root URL for all of the API, if you ever make a request and you get back a <b>404 NOT FOUND</b> response then check the Base URL first.</p>
                 <p>The base url for this api is:</p>
                 <section class="doccode">
                     <code>localhost:3000/api</code>
                 </section>
-                <h3>Authentication</h3>
-                <h3>Rate Limiting</h3>
-                <h1>Resources</h1>
+                <h3 id="auth">Authentication</h3>
+                <p>This is a completely open API. No authentication is required to query and get data. This also means that we've limited what you can do to just GET requests. If you find a mistake in the code base feel free to email the developer. <a href="mailto:daltonvaren@gmail.com">Contact Here</a></p>
+                <h3 id="rate">Rate Limiting</h3>
+                <p>Rate limiting has been set to prevent malicious abuse and to make sure our service can handle a potentially large amount of traffic. Rate limiting is done via IP address and is currently limited to 10,000 API request per day.</p>
+                <h1 id="resource">Resources</h1>
                 <hr>
-                <h3>Root</h3>
-                <h3>Operators</h3>
+                <h3 id="root">Root</h3>
+                <p>The Root resource will provide all available endpoints within the API.</p>
+                <p>Example Request:</p>
+                <section class="doccode">
+                    <code> GET localhost:3000/api</code>
+                </section>
+                <p>Example Response:</p>
+                <section class="doccode">
+                    <code> 
+                        {
+                            "message": "Welcome to R6 tactics Api!",
+                            "documentation_url": "https://github.com/DaltonHart/R6-Tactics",
+                            "base_url": "localhost:3000",
+                            "endpoints": [
+                                {
+                                    "method": "GET",
+                                    "path": "/api",
+                                    "description": "Describes available endpoints"
+                                },
+                                {
+                                    "method": "GET",
+                                    "path": "/api/atkops",
+                                    "description": "Will respond with a Json of all attack operators."
+                                },
+                            }
+                    </code>
+                </section>
+                <p><em>If your response looks different that is ok. We have just updated the API with more information since the time this docmentation was created.</em></p>
+
+                <h3 id="ops">Operators</h3>
                 <h4>Attack Operators</h4>
                 <h4>Defense Operators</h4>
-                <h3>Abilities</h3>
-                <h3>Gadgets</h3>
-                <h3>Weapons</h3>
+                <h3 id="abil">Abilities</h3>
+                <h3 id="gadget">Gadgets</h3>
+                <h3 id="weapons">Weapons</h3>
                 
             </section>
 

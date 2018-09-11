@@ -160,8 +160,13 @@ footer {
     color: #1B1C1D;
     border: 1px solid #cccccc;
     border-radius: 4px;
+    word-break: break-all;
+    word-wrap: break-word;
+    margin-bottom: .5em;
 }
 .doccode code{
     font-family: 'Encode Sans Condensed', sans-serif;
     font-size: 1.2em;
+    white-space: pre-wrap;
+    text-align: left;
 }
