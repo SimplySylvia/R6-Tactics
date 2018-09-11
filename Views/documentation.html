@@ -13,7 +13,6 @@
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
-    <script src="scripts/main.js"></script>
 </head>
 
 <body>
@@ -38,13 +37,13 @@
                         <a href="#">Introduction</a>
                     </div>
                     <div class="ui segment">
-                        <a href="#">Getting Started</a>
-                    </div>
-                    <div class="ui segment">
                         <a href="#">Base URL</a>
                     </div>
                     <div class="ui segment">
                         <a href="#">Authentication</a>
+                    </div>
+                    <div class="ui segment">
+                        <a href="#">Rate Limiting</a>
                     </div>
                 </div>
 
@@ -68,18 +67,19 @@
                 </div>
             </div>
 
-
-
-
-
             <section class="content">
                 <h1>Documentation</h1>
                 <hr>
                 <h3>Introduction</h3>
                 <p>Welcome to the Rainbow Six Siege API! This documentation should help you familiarise yourself with the resources available and how to consume them with HTTP requests. Read through the getting started section before you dive in. Most of your problems should be solved just by reading through it.</p>
-                <h3>Getting Started</h3>
                 <h3>Base Url</h3>
+                <p>The Base URL is the root URL for all of the API, if you ever make a request and you get back a <b>404 NOT FOUND</b> response then check the Base URL first.</p>
+                <p>The base url for this api is:</p>
+                <section class="doccode">
+                    <code>localhost:3000/api</code>
+                </section>
                 <h3>Authentication</h3>
+                <h3>Rate Limiting</h3>
                 <h1>Resources</h1>
                 <hr>
                 <h3>Root</h3>

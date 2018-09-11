@@ -57,6 +57,7 @@ pre {
     width: 100%;
     font-family: 'Encode Sans Condensed', sans-serif;
 }
+
 pre span{
     max-width: 100%;
     
@@ -151,4 +152,16 @@ footer {
     text-align: left;
     margin: 0 0  0 1em;
     font-size: 1.5em;
+}
+
+.doccode{
+    background-color: #f6f7f8;
+    padding: 1em;
+    color: #1B1C1D;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+}
+.doccode code{
+    font-family: 'Encode Sans Condensed', sans-serif;
+    font-size: 1.2em;
 }
