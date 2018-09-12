@@ -55,7 +55,6 @@ pre {
     margin: 0;
     word-wrap: break-word;
     width: 100%;
-    font-family: 'Encode Sans Condensed', sans-serif;
 }
 
 pre span{
@@ -130,12 +129,15 @@ footer {
     padding: 1em;
     width: 30vw;
 }
-.sidebarNav .segment{
+.sidebarNav  .segment{
+    display: block;
     color: white;
     background-color: rgb(74, 77, 82);
-    border: rgb(215, 216, 218) 2px solid;
     font-family: 'Encode Sans Condensed', sans-serif;
-
+}
+.sidebarNav .segment:hover{
+    background-color: rgb(111, 115, 122);
+    
 }
 .sidebarNav a {
     text-decoration: none;
@@ -160,13 +162,41 @@ footer {
     color: #1B1C1D;
     border: 1px solid #cccccc;
     border-radius: 4px;
-    word-break: break-all;
-    word-wrap: break-word;
     margin-bottom: .5em;
 }
-.doccode code{
-    font-family: 'Encode Sans Condensed', sans-serif;
-    font-size: 1.2em;
+.doccode pre {
+    display: block;
+    margin: 0 0 10px;
+    font-size: 13px;
+    line-height: 1.42857143;
+    word-break: break-all;
+    word-wrap: break-word;
+    color: #3a3f44;
+    background-color: #f5f5f5;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+}
+.doccode pre code{
+    padding: 0;
+    font-size: inherit;
+    color: inherit;
     white-space: pre-wrap;
-    text-align: left;
+    background-color: transparent;
+    border-radius: 0;
+    width: 100%;
+}
+
+li .doccode{
+    color: rgb(173, 127, 26);
+    width: 20vw;
+}
+li {
+    margin-bottom: .5em;
+}
+
+.attr b{
+    color: #3a3f44;
+    background-color: white;
+    padding: .3em;
+    border-radius: 2px;
 }

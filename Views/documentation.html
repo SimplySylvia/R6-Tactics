@@ -11,11 +11,11 @@
     <link rel="stylesheet" type="text/css" media="screen" href="styles/semantic.min.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="styles/style.css" />
     <link rel="shortcut icon" type="image/x-icon" href="images/logo.png" />
-    
+
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
-        <script src="scripts/doc.js"></script>
+    <script src="scripts/doc.js"></script>
 </head>
 
 <body>
@@ -36,37 +36,19 @@
             <div class="sidebarNav">
                 <h2 class="navTitle">Getting Started</h2>
                 <div class="ui segments sidebarNav">
-                    <div class="ui segment">
-                        <a href="#intro">Introduction</a>
-                    </div>
-                    <div class="ui segment">
-                        <a href="#base">Base URL</a>
-                    </div>
-                    <div class="ui segment">
-                        <a href="#auth">Authentication</a>
-                    </div>
-                    <div class="ui segment">
-                        <a href="#rate">Rate Limiting</a>
-                    </div>
+                    <a class="ui segment" href="#intro">Introduction</a>
+                    <a class="ui segment" href="#base">Base URL</a>
+                    <a class="ui segment" href="#auth">Authentication</a>
+                    <a class="ui segment" href="#rate">Rate Limiting</a>
                 </div>
 
                 <h2 id="resource" class="navTitle">Resources</h2>
                 <div class="ui segments sidebarNav">
-                    <div class="ui segment">
-                        <a href="#root">Root</a>
-                    </div>
-                    <div class="ui segment">
-                        <a href="#ops">Operators</a>
-                    </div>
-                    <div class="ui segment">
-                        <a href="#abil">Abilities</a>
-                    </div>
-                    <div class="ui segment">
-                        <a href="#gadget">Gadgets</a>
-                    </div>
-                    <div class="ui segment">
-                        <a href="#weapons">Weapons</a>
-                    </div>
+                    <a class="ui segment" href="#root">Root</a>
+                    <a class="ui segment" href="#ops">Operators</a>
+                    <a class="ui segment" href="#abil">Abilities</a>
+                    <a class="ui segment" href="#gadget">Gadgets</a>
+                    <a class="ui segment" href="#weapons">Weapons</a>
                 </div>
             </div>
 
@@ -74,17 +56,25 @@
                 <h1>Getting Started</h1>
                 <hr>
                 <h3 id="intro">Introduction</h3>
-                <p>Welcome to the Rainbow Six Siege API! This documentation should help you familiarise yourself with the resources available and how to consume them with HTTP requests. Read through the getting started section before you dive in. Most of your problems should be solved just by reading through it.</p>
+                <p>Welcome to the Rainbow Six Siege API! This documentation should help you familiarise yourself with
+                    the resources available and how to consume them with HTTP requests. Read through the getting
+                    started section before you dive in. Most of your problems should be solved just by reading through
+                    it.</p>
                 <h3 id="base">Base Url</h3>
-                <p>The Base URL is the root URL for all of the API, if you ever make a request and you get back a <b>404 NOT FOUND</b> response then check the Base URL first.</p>
+                <p>The Base URL is the root URL for all of the API, if you ever make a request and you get back a <b>404
+                        NOT FOUND</b> response then check the Base URL first.</p>
                 <p>The base url for this api is:</p>
                 <section class="doccode">
                     <code>localhost:3000/api</code>
                 </section>
                 <h3 id="auth">Authentication</h3>
-                <p>This is a completely open API. No authentication is required to query and get data. This also means that we've limited what you can do to just GET requests. If you find a mistake in the code base feel free to email the developer. <a href="mailto:daltonvaren@gmail.com">Contact Here</a></p>
+                <p>This is a completely open API. No authentication is required to query and get data. This also means
+                    that we've limited what you can do to just GET requests. If you find a mistake in the code base
+                    feel free to email the developer. <a href="mailto:daltonvaren@gmail.com">Contact Here</a></p>
                 <h3 id="rate">Rate Limiting</h3>
-                <p>Rate limiting has been set to prevent malicious abuse and to make sure our service can handle a potentially large amount of traffic. Rate limiting is done via IP address and is currently limited to 10,000 API request per day.</p>
+                <p>Rate limiting has been set to prevent malicious abuse and to make sure our service can handle a
+                    potentially large amount of traffic. Rate limiting is done via IP address and is currently limited
+                    to 10,000 API request per day.</p>
                 <h1 id="resource">Resources</h1>
                 <hr>
                 <h3 id="root">Root</h3>
@@ -94,35 +84,94 @@
                     <code> GET localhost:3000/api</code>
                 </section>
                 <p>Example Response:</p>
-                <section class="doccode">
-                    <code> 
-                        {
-                            "message": "Welcome to R6 tactics Api!",
-                            "documentation_url": "https://github.com/DaltonHart/R6-Tactics",
-                            "base_url": "localhost:3000",
-                            "endpoints": [
-                                {
-                                    "method": "GET",
-                                    "path": "/api",
-                                    "description": "Describes available endpoints"
-                                },
-                                {
-                                    "method": "GET",
-                                    "path": "/api/atkops",
-                                    "description": "Will respond with a Json of all attack operators."
-                                },
-                            }
-                    </code>
-                </section>
-                <p><em>If your response looks different that is ok. We have just updated the API with more information since the time this docmentation was created.</em></p>
+                <script src="https://gist.github.com/DaltonHart/0f62823d81900d6243cb5c441974de42.js"></script>
+                
+                <p><em>If your response looks different that is ok. We have just updated the API with more information
+                        since the time this docmentation was created.</em></p>
 
                 <h3 id="ops">Operators</h3>
+                <p>There are two operator endpoints for organization.</p>
                 <h4>Attack Operators</h4>
+                <p>The Attack Operator Endpoints are defined as:</p>
+                <ul>
+                    <li>
+                        <section class="doccode">
+                            <code>/atkop</code>
+                        </section>
+                        <p>Will return all Attack Operators.</p>
+                    </li>
+                    <li>
+                        <section class="doccode">
+                            <code>/atkop/:id</code>
+                        </section>
+                        <p>Will return a specific Attack Operator with the given Id.</p>
+                    </li>
+                </ul>
+                <p>Example Request:</p>
+                <section class="doccode">
+                    <code> GET localhost:3000/api/atkop</code>
+                </section>
+                <p>Example Response:</p>
+                <script src="https://gist.github.com/DaltonHart/050239450b5db205649d0d991808fa0f.js"></script>
+                <h5>Attributes</h5>
+                <ul class="attr">
+                    <li><b>name</b> - <em>String</em> - The name of the operator.</li>
+                    <li><b>_id</b> - <em>String</em> - Database ID of the specific operator.</li>
+                    <li><b>ability</b> - <em>Object</em> - Ability is an object refrenced from the Ability endpoint.</li>
+                    <li><b>desc</b> - <em>String</em> - A description of the operator.</li>
+                    <li><b>badge</b> - <em>String</em> - Url endpoint for the operator badge.</li>
+                    <li><b>org</b> - <em>String</em> - Organization the operator belongs to.</li>
+                    <li><b>img</b> - <em>String</em> - Url endpoint for hte operator image.</li>
+                    <li><b>bio</b> - <em>String</em> - Background story of the operator.</li>
+                    <li><b>armor_rating</b> - <em>Number</em> - Numerical rating of armor.</li>
+                    <li><b>speed_rating</b> - <em>Number</em> - Numerical rating of speed.</li>
+                    <li><b>primary_weapons</b> - <em>Array</em> - Array of primary weapons available for selection for the operator. Weapons are refrenced from the Weapons endpoint.</li>
+                    <li><b>secondary_weapons</b> - <em>Array</em> - Array of secondary weapons available for selection for the operator. Weapons are refrenced from the Weapons endpoint.</li>
+                    <li><b>gadgets</b> - <em>Array</em> - Array of gadgets available for selection for the operator. Gadgets are refrenced from the gadgets endpoint.</li>
+                </ul>
+
                 <h4>Defense Operators</h4>
+                <p>The Defense Operator Endpoints are defined as:</p>
+                <ul>
+                    <li>
+                        <section class="doccode">
+                            <code>/defop</code>
+                        </section>
+                        <p>Will return all Defense Operators.</p>
+                    </li>
+                    <li>
+                        <section class="doccode">
+                            <code>/defop/:id</code>
+                        </section>
+                        <p>Will return a specific Defense Operator with the given Id.</p>
+                    </li>
+                </ul>
+                <p>Example Request:</p>
+                <section class="doccode">
+                    <code> GET localhost:3000/api/defop/1</code>
+                </section>
+                <p>Example Response:</p>
+                <script src="https://gist.github.com/DaltonHart/d2255c7bb0481f9d49a57f5579f4eb57.js"></script>
+                <h5>Attributes</h5>
+                <ul class="attr">
+                    <li><b>name</b> - <em>String</em> - The name of the operator.</li>
+                    <li><b>_id</b> - <em>String</em> - Database ID of the specific operator.</li>
+                    <li><b>ability</b> - <em>Object</em> - Ability is an object refrenced from the Ability endpoint.</li>
+                    <li><b>desc</b> - <em>String</em> - A description of the operator.</li>
+                    <li><b>badge</b> - <em>String</em> - Url endpoint for the operator badge.</li>
+                    <li><b>org</b> - <em>String</em> - Organization the operator belongs to.</li>
+                    <li><b>img</b> - <em>String</em> - Url endpoint for hte operator image.</li>
+                    <li><b>bio</b> - <em>String</em> - Background story of the operator.</li>
+                    <li><b>armor_rating</b> - <em>Number</em> - Numerical rating of armor.</li>
+                    <li><b>speed_rating</b> - <em>Number</em> - Numerical rating of speed.</li>
+                    <li><b>primary_weapons</b> - <em>Array</em> - Array of primary weapons available for selection for the operator. Weapons are refrenced from the Weapons endpoint.</li>
+                    <li><b>secondary_weapons</b> - <em>Array</em> - Array of secondary weapons available for selection for the operator. Weapons are refrenced from the Weapons endpoint.</li>
+                    <li><b>gadgets</b> - <em>Array</em> - Array of gadgets available for selection for the operator. Gadgets are refrenced from the gadgets endpoint.</li>
+                </ul>
                 <h3 id="abil">Abilities</h3>
                 <h3 id="gadget">Gadgets</h3>
                 <h3 id="weapons">Weapons</h3>
-                
+
             </section>
 
         </div>
