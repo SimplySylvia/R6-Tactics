@@ -6,6 +6,7 @@ var gadgetList = [
   description: 'The Breach Charge is one of the basic Gadgets in Rainbow Six. Used by attackers the charge allows you to breach walls that would be otherwise impassable except by shooting through them. However it cannot break reinforcements.',
   assignment: 'Attack',
   _id: '1',
+  uses: 3,
 },
 // {
 //   name: 'Frag Grenade' ,
