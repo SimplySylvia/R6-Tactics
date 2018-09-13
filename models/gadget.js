@@ -6,5 +6,6 @@ module.exports = mongoose.model('Gadget', new mongoose.Schema({
   assignment: String,
   uses: Number,
   _id: String,
+  img: String,
 })
 );
