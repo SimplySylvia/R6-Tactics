@@ -228,15 +228,49 @@
                 <script src="https://gist.github.com/DaltonHart/9f5baef9ab0290220319fe4f4d79f361.js"></script>
                 <h5>Attributes</h5>
                 <ul class="attr">
-                    <li><b>name</b> - <em>String</em> - The name of the operator ability.</li>
-                    <li><b>_id</b> - <em>String</em> - Database ID of the specific ability.</li>
-                    <li><b>uses</b> - <em>Number</em> - Numerical value of the times an ability can be used.</li>
-                    <li><b>desc</b> - <em>String</em> - A description of the operator ability.</li>
-                    <li><b>img</b> - <em>String</em> - Url endpoint for the operator ability image.</li>
-                    <li><b>assignment</b> - <em>String</em> - Shows assignment to either attack operators ot defense operators.</li>
+                    <li><b>name</b> - <em>String</em> - The name of the operator gadget.</li>
+                    <li><b>_id</b> - <em>String</em> - Database ID of the specific gadget.</li>
+                    <li><b>uses</b> - <em>Number</em> - Numerical value of the times a gadget can be used.</li>
+                    <li><b>desc</b> - <em>String</em> - A description of the operator gadget.</li>
+                    <li><b>img</b> - <em>String</em> - Url endpoint for the operator gadget image.</li>
+                    <li><b>assignment</b> - <em>String</em> - Shows assignment to either attack operators or defense operators.</li>
                 </ul>
                 
                 <h3 id="weapons">Weapons</h3>
+                <p>The operator weapon endpoints are defined as:</p>
+                <ul>
+                    <li>
+                        <section class="doccode">
+                            <code>/weapons</code>
+                        </section>
+                        <p>Will return all operator weapons.</p>
+                    </li>
+                    <li>
+                        <section class="doccode">
+                            <code>/weapons/:id</code>
+                        </section>
+                        <p>Will return a specific operator weapon with the given Id.</p>
+                    </li>
+                </ul>
+                <p>Example Request:</p>
+                <section class="doccode">
+                    <code> GET localhost:3000/api/weapons/1</code>
+                </section>
+                <p>Example Response:</p>
+                <script src="https://gist.github.com/DaltonHart/0f36b11222936256c4cc938baded76e5.js"></script>
+                <h5>Attributes</h5>
+                <ul class="attr">
+                    <li><b>name</b> - <em>String</em> - The name of the operator weapon.</li>
+                    <li><b>_id</b> - <em>String</em> - Database ID of the specific weapon.</li>
+                    <li><b>img</b> - <em>String</em> - Url endpoint for the operator weapon image.</li>
+                    <li><b>type</b> - <em>String</em> - The type of weapon.</li>
+                    <li><b>assignment</b> - <em>String</em> - Shows assignment to either a primary weapon slot or secondary weapon slot.</li>
+                    <li><b>firemodes</b> - <em>Array</em> - An array of strings for the available firemodes.</li>
+                    <li><b>sights</b> - <em>Array</em> - An array of strings for the available sight attachments.</li>
+                    <li><b>barrels</b> - <em>Array</em> - An array of strings for the available barrel attachments.</li>
+                    <li><b>grips</b> - <em>Array</em> - An array of strings for the available grip attachments.</li>
+                    <li><b>underbarrel</b> - <em>Array</em> - An array of strings for the available underbarrel attachments.</li>
+                </ul>
 
             </section>
 
