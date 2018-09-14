@@ -1,4 +1,5 @@
 var db = require("./models");
+const mongoose = require('mongoose');
 
 var weaponList = [
   {
@@ -11,6 +12,7 @@ var weaponList = [
     barrels: ['Suppressor','Flash Hider','Compensator','Muzzle Brake'],
     grips: ['Vertical Grip'],
     underbarrel: ['Lazer'],
+    _id: mongoose.Types.ObjectId('L85A2assultr'),
   }
 
 ]
@@ -18,7 +20,6 @@ var weaponList = [
 db.Weapon.remove({},(err, weapon) =>{
     db.Weapon.create(weaponList, (err, weapons) =>{
       if (err) { return console.log('ERROR', err); }
-      console.log("all weapons:", weapons);
       console.log("created", weapons.length);
       process.exit();
     });

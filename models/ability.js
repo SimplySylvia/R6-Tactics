@@ -5,5 +5,6 @@ module.exports = mongoose.model('Ability', new mongoose.Schema({
   uses: Number,
   img: String,
   desc: String,
+  _id: String,
 })
 );

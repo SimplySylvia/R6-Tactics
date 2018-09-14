@@ -6,18 +6,22 @@ var atkopsList = [
     name : 'Thermite',
     badge: '/images/thermitebadge.png',
     img: '/images/thermite.png',
-    gadget : {
-        name: 'Exothermic Charge',
-        uses: 2},
-    primaries : {
-      pri1 : '556xi',
-      pri2 : 'M1014',
-      pri3 : 'NA',
+    ability : { 
+      _id: "exothermicch",
+      ref: "Ability"
       },
-    secondaries : {
-      sec1 : 'M45 MEUSOC',
-      sec2 : '5.7 USG',
+    primaries : [
+      { 
+        _id: "L85A2assultr",
+        ref: "Weapon"
       },
+    ],
+    secondaries : [
+      { 
+        _id: "L85A2assultr",
+        ref: "Weapon"
+      },
+    ],
     gadgets : [
       { 
         _id: "breachcharge",

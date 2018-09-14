@@ -10,5 +10,6 @@ module.exports = mongoose.model('Weapon', new mongoose.Schema({
   barrels: [String],
   grips: [String],
   underbarrel: [String],
+  _id: String,
 })
 );

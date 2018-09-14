@@ -4,6 +4,9 @@ module.exports = {
   index(req, res) {
     db.Atkop.find()
     .populate('gadgets')
+    .populate('ability')
+    .populate('primaries')
+    .populate('secondaries')
     .exec((err, atkop) => {
       if (err) {
         return console.log("index error: " + err); }
