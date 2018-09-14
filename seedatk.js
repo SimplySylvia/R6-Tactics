@@ -20,8 +20,8 @@ var atkopsList = [
       },
     gadgets : [
       { 
-        _id: '1',
-        ref: 'Gadget'
+        _id: "breachcharge",
+        ref: "Gadget"
       },
     ],
     ArmorRating : 2,

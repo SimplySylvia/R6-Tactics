@@ -6,36 +6,22 @@ module.exports =  mongoose.model('Atkop', new mongoose.Schema({
   badge: String,
   img: String,
   bio: String,
-  gadget : {
-    name : String,
-    uses: Number,
-    img: String,
-    desc: String,
+  ability : { 
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'Ability',
   },
-  primaries : {
-    pri1 : {
-      name: String,
-      img: String,
-    },
-    pri2 : {
-      name: String,
-      img: String,
-    },
-    pri3 : {
-      name: String,
-      img: String,
-    },
-    },
-  secondaries : {
-    sec1 : {
-      name: String,
-      img: String,
-    },
-    sec2 : {
-      name: String,
-      img: String,
-    },
-    },
+  primaries : [
+    { 
+      type: mongoose.Schema.Types.ObjectId,
+      ref: 'Weapon',
+    }
+  ],
+  secondaries : [
+    { 
+      type: mongoose.Schema.Types.ObjectId,
+      ref: 'Weapon',
+    }
+  ],
   gadgets : [
     { 
       type: mongoose.Schema.Types.ObjectId,

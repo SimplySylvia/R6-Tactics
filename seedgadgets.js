@@ -1,11 +1,13 @@
 var db = require("./models");
+const mongoose = require('mongoose');
 
 var gadgetList = [
 {
   name: 'Breach Charge' ,
   description: 'The Breach Charge is one of the basic Gadgets in Rainbow Six. Used by attackers the charge allows you to breach walls that would be otherwise impassable except by shooting through them. However it cannot break reinforcements.',
   assignment: 'Attack',
-  _id: '1',
+  _id: mongoose.Types.ObjectId('breachcharge'),
+  img: '/na',
   uses: 3,
 },
 // {
