@@ -480,20 +480,16 @@ var db = require("./models");
       _id: "signaldisrup",
       ref: "Ability"
       },
-    primaries : {
-      pri1 : {
-        name : 'MP5K',
-        img : '/images/MX4STORM.png',
+    primaries : [
+      {
+        _id: 'MP5K00000000',
+        ref: 'Weapon',
       },
-      pri2 : {
-        name : 'M590A1',
-        img : '/images/acs12.png',
+      {
+        _id: 'M590A1000000',
+        ref: 'Weapon',
       },
-      pri3 : {
-        name : 'na',
-        img : 'na',
-      },
-    },
+  ],
     secondaries : {
       sec1 : {
         name : 'P226 MK 25',
@@ -527,30 +523,26 @@ var db = require("./models");
       _id: "remotegasgrn",
       ref: "Ability"
       },
-    primaries : {
-      pri1 : {
-        name : 'FMG-9',
-        img : '/images/MX4STORM.png',
+    primaries : [
+      {
+        _id: 'fmg900000000',
+        ref: 'Weapon',
       },
-      pri2 : {
-        name : 'M590A1',
-        img : '/images/acs12.png',
+      {
+        _id: 'M590A1000000',
+        ref: 'Weapon',
       },
-      pri3 : {
-        name : 'na',
-        img : 'na',
+    ],
+    secondaries : [
+      {
+        _id: 'p226mk250000',
+        ref: 'Weapon',
       },
-    },
-    secondaries : {
-      sec1 : {
-        name : 'P226 MK 25',
-        img : '/images/KERATOS357PISTOL.png',
-    },
-      sec2 : {
-        name : 'SMG-11',
-        img : '/images/BAILIFF410PISTOL.png',
-    },
+      {
+        _id: 'SMG110000000',
+        ref: 'Weapon',
       },
+    ],
     gadgets : [
       { 
         _id: "impacgrenade",
@@ -574,30 +566,26 @@ var db = require("./models");
       _id: "armorpanel00",
       ref: "Ability"
       },
-    primaries : {
-      pri1 : {
-        name : 'UMP-45',
-        img : '/images/MX4STORM.png',
+    primaries : [
+      {
+        _id: 'UMP450000000',
+        ref: 'Weapon',
       },
-      pri2 : {
-        name : 'M1014',
-        img : '/images/acs12.png',
+      {
+        _id: 'M10140000000',
+        ref: 'Weapon',
       },
-      pri3 : {
-        name : 'na',
-        img : 'na',
+    ],
+    secondaries : [
+      {
+        _id: '57usg0000000',
+        ref: 'Weapon',
       },
-    },
-    secondaries : {
-      sec1 : {
-        name : '5.7 USG',
-        img : '/images/KERATOS357PISTOL.png',
-    },
-      sec2 : {
-        name : 'M45 MEUSOC',
-        img : '/images/BAILIFF410PISTOL.png',
-    },
+      {
+        _id: 'M45MEUSOC000',
+        ref: 'Weapon',
       },
+    ],
     gadgets : [
       { 
         _id: "nitrocell000",

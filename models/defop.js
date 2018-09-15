@@ -9,30 +9,18 @@ module.exports = mongoose.model('Defop', new mongoose.Schema({
     type: mongoose.Schema.Types.ObjectId,
     ref: 'Ability',
   },
-  primaries : {
-    pri1 : {
-      name: String,
-      img: String,
+  primaries : [
+    { 
+      type: mongoose.Schema.Types.ObjectId,
+      ref: 'Weapon',
     },
-    pri2 : {
-      name: String,
-      img: String,
+  ],
+  secondaries : [
+    { 
+      type: mongoose.Schema.Types.ObjectId,
+      ref: 'Weapon',
     },
-    pri3 : {
-      name: String,
-      img: String,
-    },
-    },
-  secondaries : {
-    sec1 : {
-      name: String,
-      img: String,
-    },
-    sec2 : {
-      name: String,
-      img: String,
-    },
-    },
+  ],
   gadgets : [
     { 
       type: mongoose.Schema.Types.ObjectId,
