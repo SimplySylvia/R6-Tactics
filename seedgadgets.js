@@ -47,7 +47,7 @@ var gadgetList = [
   description: 'Barbed Wire is a simple tool designed to slow down attacking operators. The noise it makes when traversed is also a tell of where attackers may be coming from. It is commonly used in important choke points to give defenders a tactical advantage. Due to its large coverage area it is often times hiding a trap or two underneath as well.',
   assignment: 'Defense',
   _id: mongoose.Types.ObjectId('barbedwire00'),
-  img: '/na',
+  img: '/images/BARBEDWIRE.png',
   uses: 2,
 },
 {
@@ -63,7 +63,7 @@ var gadgetList = [
   description: 'The Deployable Shield is a crouch sized cover that can be placed in strategic locations to protect defenders from incomming damage. It is often used to create choke points and hiding locations. This shield can be destroyed by explosives.',
   assignment: 'Defense',
   _id: mongoose.Types.ObjectId('deployshield'),
-  img: '/na',
+  img: '/images/deployableshield.png',
   uses: 1,
 },
 {
@@ -71,7 +71,7 @@ var gadgetList = [
   description: 'The Nitro Cell is a thowable explosive that can be detonated at will of the owning defense operator. It is a deadly device that will kill enemies within range. It can also be thrown onto surfaces to create traps. Attacking opperators will be able to hear it due to a beeping sound it makes.',
   assignment: 'Defense',
   _id: mongoose.Types.ObjectId('nitrocell000'),
-  img: '/na',
+  img: '/images/nitrocell.png',
   uses: 1,
 },
 {
@@ -79,10 +79,9 @@ var gadgetList = [
   description: 'Impact Grenades are used by defending operators. These small explosive devices although do less damage then their counterparts they are effective devices for creating rotation holes and surprising attacking operators.',
   assignment: 'Defense',
   _id: mongoose.Types.ObjectId('impacgrenade'),
-  img: '/na',
+  img: '/images/impactgren.png',
   uses: 2,
 },
-
 ]
 
 db.Gadget.remove({},(err, gadgets) =>{

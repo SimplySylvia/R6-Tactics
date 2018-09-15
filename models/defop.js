@@ -5,11 +5,9 @@ module.exports = mongoose.model('Defop', new mongoose.Schema({
   badge: String,
   img: String,
   bio: String,
-  gadget : {
-    name : String,
-    uses: Number,
-    img: String,
-    desc: String,
+  ability : { 
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'Ability',
   },
   primaries : {
     pri1 : {
@@ -35,16 +33,12 @@ module.exports = mongoose.model('Defop', new mongoose.Schema({
       img: String,
     },
     },
-  gadgets : {
-    gad1: {
-      name: String,
-      img: String,
+  gadgets : [
+    { 
+      type: mongoose.Schema.Types.ObjectId,
+      ref: 'Gadget',
     },
-    gad2: {
-      name: String,
-      img: String,
-    },
-  },
+  ],
   ArmorRating : Number,
   SpeedRating : Number,
   Organization : String,

@@ -36,7 +36,6 @@ var atkopsList = [
 db.Atkop.remove({},(err, atkops) =>{
     db.Atkop.create(atkopsList, (err, atkops) =>{
       if (err) { return console.log('ERROR', err); }
-      console.log("all atkops:", atkops);
       console.log("created", atkops.length, "atkops");
       process.exit();
     });

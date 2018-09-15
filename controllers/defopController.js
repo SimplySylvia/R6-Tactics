@@ -3,6 +3,8 @@ const db = require(`../models`);
 module.exports = {
   index(req, res) {
     db.Defop.find()
+    .populate('ability')
+    .populate('gadgets')
     .exec((err, defop) => {
       if (err) {
         return console.log("index error: " + err); }
