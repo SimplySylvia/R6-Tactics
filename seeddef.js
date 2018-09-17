@@ -339,30 +339,22 @@ var db = require("./models");
       _id: "luison000000",
       ref: "Ability"
       },
-    primaries : {
-      pri1 : {
-        name : 'M12',
-        img : '/images/MX4STORM.png',
-      },
-      pri2 : {
-        name : 'SPAS-15',
-        img : '/images/acs12.png',
-      },
-      pri3 : {
-        name : 'na',
-        img : 'na',
-      },
-    },
-    secondaries : {
-      sec1 : {
-        name : 'Luison',
-        img : '/images/KERATOS357PISTOL.png',
-    },
-      sec2 : {
-        name : '',
-        img : '/images/BAILIFF410PISTOL.png',
-    },
-      },
+    primaries : [
+        {
+          _id: 'M12000000000',
+          ref: 'Weapon',
+        },
+        {
+          _id: 'SPAS15000000',
+          ref: 'Weapon',
+        },
+      ],
+    secondaries : [
+        {
+          _id: 'LUISON000000',
+          ref: 'Weapon',
+        },
+      ],
     gadgets : [
       { 
         _id: "impacgrenade",
