@@ -386,30 +386,22 @@ var db = require("./models");
       _id: "blackeye0000",
       ref: "Ability"
       },
-    primaries : {
-      pri1 : {
-        name : 'MPX',
-        img : '/images/MX4STORM.png',
-      },
-      pri2 : {
-        name : 'SPAS-12',
-        img : '/images/acs12.png',
-      },
-      pri3 : {
-        name : 'na',
-        img : 'na',
-      },
-    },
-    secondaries : {
-      sec1 : {
-        name : 'D-50',
-        img : '/images/KERATOS357PISTOL.png',
-    },
-      sec2 : {
-        name : '',
-        img : '/images/BAILIFF410PISTOL.png',
-    },
-      },
+    primaries : [
+        {
+          _id: 'MPX000000000',
+          ref: 'Weapon',
+        },
+        {
+          _id: 'SPAS12000000',
+          ref: 'Weapon',
+        },
+    ],
+    secondaries : [
+        {
+          _id: 'D50000000000',
+          ref: 'Weapon',
+        },
+      ],
     gadgets : [
       { 
         _id: "nitrocell000",
@@ -433,30 +425,22 @@ var db = require("./models");
       _id: "welcomemat00",
       ref: "Ability"
       },
-    primaries : {
-      pri1 : {
-        name : 'Super 90',
-        img : '/images/MX4STORM.png',
-      },
-      pri2 : {
-        name : '9mm C1',
-        img : '/images/acs12.png',
-      },
-      pri3 : {
-        name : 'na',
-        img : 'na',
-      },
-    },
-    secondaries : {
-      sec1 : {
-        name : 'Mk1 9mm',
-        img : '/images/KERATOS357PISTOL.png',
-    },
-      sec2 : {
-        name : '',
-        img : '/images/BAILIFF410PISTOL.png',
-    },
-      },
+    primaries : [
+        {
+          _id: 'SUPER9000000',
+          ref: 'Weapon',
+        },
+        {
+          _id: '9MMC10000000',
+          ref: 'Weapon',
+        },
+      ],
+    secondaries : [
+        {
+          _id: 'MK19MM000000',
+          ref: 'Weapon',
+        },
+      ],
     gadgets : [
       { 
         _id: "barbedwire00",
@@ -609,30 +593,26 @@ var db = require("./models");
       _id: "heartbeatsen",
       ref: "Ability"
       },
-    primaries : {
-      pri1 : {
-        name : 'UMP-45',
-        img : '/images/MX4STORM.png',
+    primaries : [
+      {
+        _id: 'UMP450000000',
+        ref: 'Weapon',
       },
-      pri2 : {
-        name : 'M1014',
-        img : '/images/acs12.png',
+      {
+        _id: 'M10140000000',
+        ref: 'Weapon',
       },
-      pri3 : {
-        name : 'na',
-        img : 'na',
+  ],
+    secondaries : [
+      {
+        _id: '57usg0000000',
+        ref: 'Weapon',
       },
-    },
-    secondaries : {
-      sec1 : {
-        name : '5.7 USG',
-        img : '/images/KERATOS357PISTOL.png',
-    },
-      sec2 : {
-        name : 'M45 MEUSOC',
-        img : '/images/BAILIFF410PISTOL.png',
-    },
+      {
+        _id: 'M45MEUSOC000',
+        ref: 'Weapon',
       },
+    ],
     gadgets : [
       { 
         _id: "nitrocell000",
@@ -656,30 +636,30 @@ var db = require("./models");
       _id: "stimpistol00",
       ref: "Ability"
       },
-    primaries : {
-      pri1 : {
-        name : 'SG-CQB',
-        img : '/images/MX4STORM.png',
-      },
-      pri2 : {
-        name : 'MP5',
-        img : '/images/acs12.png',
-      },
-      pri3 : {
-        name : 'P90',
-        img : 'na',
-      },
-    },
-    secondaries : {
-      sec1 : {
-        name : 'P9',
-        img : '/images/KERATOS357PISTOL.png',
-    },
-      sec2 : {
-        name : 'LFP586',
-        img : '/images/BAILIFF410PISTOL.png',
-    },
-      },
+    primaries : [
+        {
+          _id: 'SGCQB0000000',
+          ref: 'Weapon',
+        },
+        {
+          _id: 'MP5000000000',
+          ref: 'Weapon',
+        },
+        {
+          _id: 'P9O000000000',
+          ref: 'Weapon',
+        },
+    ],
+    secondaries : [
+        {
+          _id: 'P90000000000',
+          ref: 'Weapon',
+        },
+        {
+          _id: 'LFP586000000',
+          ref: 'Weapon',
+        },
+      ],
     gadgets : [
       { 
         _id: "barbedwire00",
@@ -703,30 +683,30 @@ var db = require("./models");
       _id: "armorpack000",
       ref: "Ability"
       },
-    primaries : {
-      pri1 : {
-        name : 'SG-CQB',
-        img : '/images/MX4STORM.png',
-      },
-      pri2 : {
-        name : 'MP5',
-        img : '/images/acs12.png',
-      },
-      pri3 : {
-        name : 'P90',
-        img : 'na',
-      },
-    },
-    secondaries : {
-      sec1 : {
-        name : 'P9',
-        img : '/images/KERATOS357PISTOL.png',
-    },
-      sec2 : {
-        name : 'LFP586',
-        img : '/images/BAILIFF410PISTOL.png',
-    },
-      },
+    primaries : [
+        {
+          _id: 'SGCQB0000000',
+          ref: 'Weapon',
+        },
+        {
+          _id: 'MP5000000000',
+          ref: 'Weapon',
+        },
+        {
+          _id: 'P9O000000000',
+          ref: 'Weapon',
+        },
+    ],
+    secondaries : [
+        {
+          _id: 'P90000000000',
+          ref: 'Weapon',
+        },
+        {
+          _id: 'LFP586000000',
+          ref: 'Weapon',
+        },
+      ],
     gadgets : [
       { 
         _id: "impacgrenade",
@@ -742,6 +722,92 @@ var db = require("./models");
     Organization : 'GIGN',
   },
   {
+    name : 'Kapkan',
+    badge: '/images/kapkanbadge.png',
+    img: '/images/kapkan.png',
+    bio: "Born and raised in Kovrov, Basuda is the son of factory workers. To escape a life in the factory, he enlisted with the Ministry of Internal Affairs and was sent to a small port town on the Barents Sea. Basuda became an avid hunter and trapper during his time in the Arctic Circle.",
+    ability : { 
+      _id: "entrydeniald",
+      ref: "Ability"
+      },
+    primaries : [
+      {
+        _id: '9X19VSN00000',
+        ref: 'Weapon',
+      },
+      {
+        _id: 'SASG12000000',
+        ref: 'Weapon',
+      },
+  ],
+    secondaries : [
+      {
+        _id: 'PMM000000000',
+        ref: 'Weapon',
+      },
+      {
+        _id: 'GSH1800000000',
+        ref: 'Weapon',
+      },
+  ],
+    gadgets : [
+      { 
+        _id: "nitrocell000",
+        ref: "Gadget"
+        },
+        { 
+        _id: "impacgrenade",
+        ref: "Gadget"
+        },
+      ],
+    ArmorRating : 2,
+    SpeedRating : 2,
+    Organization : 'SPETSNAZ',
+  },
+  {
+    name : 'Tachanka',
+    badge: '/images/tachankabadge.png',
+    img: '/images/tachanka.png',
+    bio: "Alexsandr Senaviev is an iconoclast who came of age in a pre-glasnost red army family and has retained an interest in soviet machinery and weaponry.",
+    ability : { 
+      _id: "mountedlmg00",
+      ref: "Ability"
+      },
+    primaries : [
+        {
+          _id: '9X19VSN00000',
+          ref: 'Weapon',
+        },
+        {
+          _id: 'SASG12000000',
+          ref: 'Weapon',
+        },
+    ],
+    secondaries : [
+        {
+          _id: 'PMM000000000',
+          ref: 'Weapon',
+        },
+        {
+          _id: 'GSH1800000000',
+          ref: 'Weapon',
+        },
+    ],
+    gadgets : [
+      { 
+        _id: "barbedwire00",
+        ref: "Gadget"
+        },
+        { 
+        _id: "deployshield",
+        ref: "Gadget"
+        },
+      ],
+    ArmorRating : 3,
+    SpeedRating : 1,
+    Organization : 'SPETSNAZ',
+  },
+  {
     name : 'Jager',
     badge: '/images/jagerbadge.png',
     img: '/images/jager.png',
@@ -750,30 +816,22 @@ var db = require("./models");
       _id: "activedefens",
       ref: "Ability"
       },
-    primaries : {
-      pri1 : {
-        name : 'M870',
-        img : '/images/MX4STORM.png',
-      },
-      pri2 : {
-        name : '416-C Carbine',
-        img : '/images/acs12.png',
-      },
-      pri3 : {
-        name : 'na',
-        img : 'na',
-      },
-    },
-    secondaries : {
-      sec1 : {
-        name : 'P12',
-        img : '/images/KERATOS357PISTOL.png',
-    },
-      sec2 : {
-        name : 'na',
-        img : '/images/BAILIFF410PISTOL.png',
-    },
-      },
+    primaries : [
+        {
+          _id: 'M87000000000',
+          ref: 'Weapon',
+        },
+        {
+          _id: '416CCARBINE0',
+          ref: 'Weapon',
+        },
+    ],
+    secondaries : [
+        {
+          _id: 'P12000000000',
+          ref: 'Weapon',
+        },
+    ],
     gadgets : [
       { 
         _id: "barbedwire00",
@@ -797,30 +855,22 @@ var db = require("./models");
       _id: "shockwire000",
       ref: "Ability"
       },
-    primaries : {
-      pri1 : {
-        name : 'MP7',
-        img : '/images/MX4STORM.png',
+    primaries : [
+        {
+          _id: 'M87000000000',
+          ref: 'Weapon',
+        },
+        {
+          _id: 'MP7000000000',
+          ref: 'Weapon',
+        },
+    ],
+    secondaries : [
+      {
+        _id: 'P12000000000',
+        ref: 'Weapon',
       },
-      pri2 : {
-        name : 'M870',
-        img : '/images/acs12.png',
-      },
-      pri3 : {
-        name : 'na',
-        img : 'na',
-      },
-    },
-    secondaries : {
-      sec1 : {
-        name : 'P12',
-        img : '/images/KERATOS357PISTOL.png',
-    },
-      sec2 : {
-        name : 'na',
-        img : '/images/BAILIFF410PISTOL.png',
-    },
-      },
+  ],
     gadgets : [
       { 
         _id: "nitrocell000",
@@ -835,100 +885,8 @@ var db = require("./models");
     SpeedRating : 3,
     Organization : 'GSG9',
   },
-  {
-    name : 'Tachanka',
-    badge: '/images/tachankabadge.png',
-    img: '/images/tachanka.png',
-    bio: "Alexsandr Senaviev is an iconoclast who came of age in a pre-glasnost red army family and has retained an interest in soviet machinery and weaponry.",
-    ability : { 
-      _id: "mountedlmg00",
-      ref: "Ability"
-      },
-    primaries : {
-      pri1 : {
-        name : 'SASG-12',
-        img : '/images/MX4STORM.png',
-      },
-      pri2 : {
-        name : '9x19VSN',
-        img : '/images/acs12.png',
-      },
-      pri3 : {
-        name : 'na',
-        img : 'na',
-      },
-    },
-    secondaries : {
-      sec1 : {
-        name : 'GSh-18',
-        img : '/images/KERATOS357PISTOL.png',
-    },
-      sec2 : {
-        name : 'PMM',
-        img : '/images/BAILIFF410PISTOL.png',
-    },
-      },
-    gadgets : [
-      { 
-        _id: "barbedwire00",
-        ref: "Gadget"
-        },
-        { 
-        _id: "deployshield",
-        ref: "Gadget"
-        },
-      ],
-    ArmorRating : 3,
-    SpeedRating : 1,
-    Organization : 'SPETSNAZ',
-  },
-  {
-    name : 'Kapkan',
-    badge: '/images/kapkanbadge.png',
-    img: '/images/kapkan.png',
-    bio: "Born and raised in Kovrov, Basuda is the son of factory workers. To escape a life in the factory, he enlisted with the Ministry of Internal Affairs and was sent to a small port town on the Barents Sea. Basuda became an avid hunter and trapper during his time in the Arctic Circle.",
-    ability : { 
-      _id: "prisma000000",
-      ref: "Ability"
-      },
-    primaries : {
-      pri1 : {
-        name : 'SASG-12',
-        img : '/images/MX4STORM.png',
-      },
-      pri2 : {
-        name : '9x19VSN',
-        img : '/images/acs12.png',
-      },
-      pri3 : {
-        name : 'na',
-        img : 'na',
-      },
-    },
-    secondaries : {
-      sec1 : {
-        name : 'GSh-18',
-        img : '/images/KERATOS357PISTOL.png',
-    },
-      sec2 : {
-        name : 'PMM',
-        img : '/images/BAILIFF410PISTOL.png',
-    },
-      },
-    gadgets : [
-      { 
-        _id: "nitrocell000",
-        ref: "Gadget"
-        },
-        { 
-        _id: "impacgrenade",
-        ref: "Gadget"
-        },
-      ],
-    ArmorRating : 2,
-    SpeedRating : 2,
-    Organization : 'SPETSNAZ',
-  },
+  
+  
 ]
 
   db.Defop.remove({}, (err, defops) =>{
