@@ -1,5 +1,7 @@
 # Welcome to the R6 API
 
+![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)
+
 [Visit the live version!](https://boiling-fjord-73796.herokuapp.com/)
 
 This Api is built around the game Rainbow Six Siege. It includes a variety of detailed endpoints with referencing. At the moment is holds 42 operators, 20 maps, all of their unique abilites, gadgets, and weapons.
