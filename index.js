@@ -1,4 +1,4 @@
-const express = require("express");
+const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
 const cors = require('cors');
@@ -29,5 +29,5 @@ app.use('/api/weapons', routes.weapon);
 
 
 app.listen(process.env.PORT || 8000, ()=>{
-  console.log("Listening to port 8000");
+  console.log('Listening to port 8000');
 })

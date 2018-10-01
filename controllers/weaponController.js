@@ -4,9 +4,13 @@ module.exports = {
   index(req, res) {
     db.Weapon.find()
     .exec((err, weapon) => {
+      let total = weapon.length
       if (err) {
         return console.log("index error: " + err); }
-        res.json({data:weapon});
+        res.json({
+          amount: total,
+          data:weapon,
+        });
       });
     },
     create(req, res) {

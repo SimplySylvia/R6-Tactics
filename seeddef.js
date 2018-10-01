@@ -10,30 +10,26 @@ var db = require("./models");
       _id: "evileye00000",
       ref: "Ability"
       },
-    primaries : {
-      pri1 : {
-        name : 'Alda 5.56',
-        img : '/images/ALDA556.png',
-      },
-      pri2 : {
-        name : 'ACS 12',
-        img : '/images/acs12.png',
-      },
-      pri3 : {
-        name : 'na',
-        img : 'na',
-      },
-    },
-    secondaries : {
-      sec1 : {
-        name : 'Keratos 357 Pistol',
-        img : '/images/KERATOS357PISTOL.png',
-    },
-      sec2 : {
-        name : 'Bailiff 410 Pistol',
-        img : '/images/BAILIFF410PISTOL.png',
-    },
-      },
+      primaries : [
+        {
+          _id: 'ALDA55600000',
+          ref: 'Weapon',
+        },
+        {
+          _id: 'ACS120000000',
+          ref: 'Weapon',
+        },
+      ],
+    secondaries : [
+        {
+          _id: 'BAILIFF41000',
+          ref: 'Weapon',
+        },
+        {
+          _id: 'KERATOS35700',
+          ref: 'Weapon',
+        },
+      ],
     gadgets : [
       { 
         _id: "deployshield",
@@ -57,30 +53,26 @@ var db = require("./models");
       _id: "prisma000000",
       ref: "Ability"
       },
-    primaries : {
-      pri1 : {
-        name : 'MX4 Storm',
-        img : '/images/MX4STORM.png',
-      },
-      pri2 : {
-        name : 'ACS 12',
-        img : '/images/acs12.png',
-      },
-      pri3 : {
-        name : 'na',
-        img : 'na',
-      },
-    },
-    secondaries : {
-      sec1 : {
-        name : 'Keratos 357 Pistol',
-        img : '/images/KERATOS357PISTOL.png',
-    },
-      sec2 : {
-        name : 'Bailiff 410 Pistol',
-        img : '/images/BAILIFF410PISTOL.png',
-    },
-      },
+      primaries : [
+        {
+          _id: 'MX4STORM0000',
+          ref: 'Weapon',
+        },
+        {
+          _id: 'ACS120000000',
+          ref: 'Weapon',
+        },
+      ],
+    secondaries : [
+        {
+          _id: 'BAILIFF41000',
+          ref: 'Weapon',
+        },
+        {
+          _id: 'KERATOS35700',
+          ref: 'Weapon',
+        },
+      ],
     gadgets : [
       { 
         _id: "impacgrenade",
@@ -104,30 +96,26 @@ var db = require("./models");
       _id: "erc700000000",
       ref: "Ability"
       },
-    primaries : {
-      pri1 : {
-        name : 'K1A',
-        img : '/images/MX4STORM.png',
-      },
-      pri2 : {
-        name : 'BOSG.12.2',
-        img : '/images/acs12.png',
-      },
-      pri3 : {
-        name : 'na',
-        img : 'na',
-      },
-    },
-    secondaries : {
-      sec1 : {
-        name : 'C75 Auto',
-        img : '/images/KERATOS357PISTOL.png',
-    },
-      sec2 : {
-        name : 'SMG-12',
-        img : '/images/BAILIFF410PISTOL.png',
-    },
-      },
+      primaries : [
+        {
+          _id: 'K1A000000000',
+          ref: 'Weapon',
+        },
+        {
+          _id: 'BOSG12200000',
+          ref: 'Weapon',
+        },
+      ],
+    secondaries : [
+        {
+          _id: 'C75AUTO00000',
+          ref: 'Weapon',
+        },
+        {
+          _id: 'SMG120000000',
+          ref: 'Weapon',
+        },
+      ],
     gadgets : [
       { 
         _id: "impacgrenade",
@@ -151,30 +139,22 @@ var db = require("./models");
       _id: "grzmotmine00",
       ref: "Ability"
       },
-    primaries : {
-      pri1 : {
-        name : 'Scorpion EVO 3 A1',
-        img : '/images/MX4STORM.png',
-      },
-      pri2 : {
-        name : 'BOSG.12.2',
-        img : '/images/acs12.png',
-      },
-      pri3 : {
-        name : 'na',
-        img : 'na',
-      },
-    },
-    secondaries : {
-      sec1 : {
-        name : 'RG15',
-        img : '/images/KERATOS357PISTOL.png',
-    },
-      sec2 : {
-        name : 'NA',
-        img : '/images/BAILIFF410PISTOL.png',
-    },
-      },
+      primaries : [
+        {
+          _id: 'SCORPIONEVO3',
+          ref: 'Weapon',
+        },
+        {
+          _id: 'FO1200000000',
+          ref: 'Weapon',
+        },
+      ],
+    secondaries : [
+        {
+          _id: 'RG1500000000',
+          ref: 'Weapon',
+        },
+      ],
     gadgets : [
       { 
         _id: "barbedwire00",
@@ -198,30 +178,22 @@ var db = require("./models");
       _id: "gu0000000000",
       ref: "Ability"
       },
-    primaries : {
-      pri1 : {
-        name : 'SIX12 SD',
-        img : '/images/MX4STORM.png',
-      },
-      pri2 : {
-        name : 'T-5 SMG',
-        img : '/images/acs12.png',
-      },
-      pri3 : {
-        name : 'na',
-        img : 'na',
-      },
-    },
-    secondaries : {
-      sec1 : {
-        name : 'Q-929',
-        img : '/images/KERATOS357PISTOL.png',
-    },
-      sec2 : {
-        name : 'NA',
-        img : '/images/BAILIFF410PISTOL.png',
-    },
-      },
+      primaries : [
+        {
+          _id: 'SIX12SD00000',
+          ref: 'Weapon',
+        },
+        {
+          _id: 'T5SMG0000000',
+          ref: 'Weapon',
+        },
+      ],
+    secondaries : [
+        {
+          _id: 'Q92900000000',
+          ref: 'Weapon',
+        },
+      ],
     gadgets : [
       { 
         _id: "impacgrenade",
@@ -245,30 +217,22 @@ var db = require("./models");
       _id: "blackmirror0",
       ref: "Ability"
       },
-    primaries : {
-      pri1 : {
-        name : 'Vector .45 ACP',
-        img : '/images/MX4STORM.png',
-      },
-      pri2 : {
-        name : 'ITA12L',
-        img : '/images/acs12.png',
-      },
-      pri3 : {
-        name : 'na',
-        img : 'na',
-      },
-    },
-    secondaries : {
-      sec1 : {
-        name : 'ITA12S',
-        img : '/images/KERATOS357PISTOL.png',
-    },
-      sec2 : {
-        name : 'USP40',
-        img : '/images/BAILIFF410PISTOL.png',
-    },
-      },
+      primaries : [
+        {
+          _id: 'VECTOR45ACP0',
+          ref: 'Weapon',
+        },
+        {
+          _id: 'ITA12L000000',
+          ref: 'Weapon',
+        },
+      ],
+    secondaries : [
+        {
+          _id: 'ITA12S000000',
+          ref: 'Weapon',
+        },
+      ],
     gadgets : [
       { 
         _id: "nitrocell000",
@@ -466,16 +430,12 @@ var db = require("./models");
         ref: 'Weapon',
       },
   ],
-    secondaries : {
-      sec1 : {
-        name : 'P226 MK 25',
-        img : '/images/KERATOS357PISTOL.png',
-    },
-      sec2 : {
-        name : '',
-        img : '/images/BAILIFF410PISTOL.png',
-    },
+    secondaries : [
+      {
+        _id: 'p226mk250000',
+        ref: 'Weapon',
       },
+  ],
     gadgets : [
       { 
         _id: "nitrocell000",
