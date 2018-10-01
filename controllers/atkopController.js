@@ -8,9 +8,13 @@ module.exports = {
     .populate('primaries')
     .populate('secondaries')
     .exec((err, atkop) => {
+      let total = atkop.length
       if (err) {
         return console.log("index error: " + err); }
-        res.json(atkop);
+        res.json({
+          amount: total,
+          data:atkop,
+        });
       });
     },
   create(req, res) {

@@ -4,9 +4,13 @@ module.exports = {
   index(req, res) {
     db.Ability.find()
     .exec((err, ability) => {
+      let total = ability.length
       if (err) {
         return console.log("index error: " + err); }
-        res.json({data:ability});
+        res.json({
+          amount: total,
+          data:ability
+        });
       });
     },
     create(req, res) {

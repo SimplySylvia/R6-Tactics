@@ -4,9 +4,13 @@ module.exports = {
   index(req, res) {
     db.Gadget.find()
     .exec((err, gadget) => {
+      total = gadget.length
       if (err) {
         return console.log("index error: " + err); }
-        res.json({data:gadget});
+        res.json({
+          amount: total,
+          data:gadget
+        });
       });
     },
     create(req, res) {

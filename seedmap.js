@@ -1,6 +1,5 @@
-var db = require("./models");
-
-  var SmapList = [
+module.exports = {
+  SmapList: [
     {
     name : 'House',
     coverimg: '/images/house.jpg',
@@ -62,16 +61,5 @@ var db = require("./models");
       area4 : 'Master Bedroom',
     },
   }
-];
-
-db.Smap.remove({}, (err, smaps) =>{
-  // code in here runs after all posts are removed
-  db.Smap.create(SmapList, (err, smaps) =>{
-    // code in here runs after all posts are created
-    if (err) { return console.log('ERROR', err); }
-    console.log("all Smaps:", smaps);
-    console.log("created", smaps.length, "smaps");
-    process.exit();
-  });
-  
-});
+]
+}

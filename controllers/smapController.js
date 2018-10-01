@@ -4,9 +4,13 @@ module.exports = {
   index(req, res) {
     db.Smap.find()
     .exec((err, smap) => {
+      total = smap.length
       if (err) {
         return console.log("index error: " + err); }
-        res.json({data:smap});
+        res.json({
+          amount: total,
+          data:smap
+        });
       });
     },
     create(req, res) {
