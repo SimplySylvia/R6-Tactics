@@ -232,6 +232,10 @@ var db = require("./models");
           _id: 'ITA12S000000',
           ref: 'Weapon',
         },
+        {
+          _id: 'USP400000000',
+          ref: 'Weapon',
+        },
       ],
     gadgets : [
       { 
@@ -256,30 +260,26 @@ var db = require("./models");
       _id: "yokai0000000",
       ref: "Ability"
       },
-    primaries : {
-      pri1 : {
-        name : 'SuperNova',
-        img : '/images/MX4STORM.png',
-      },
-      pri2 : {
-        name : 'MP5SD',
-        img : '/images/acs12.png',
-      },
-      pri3 : {
-        name : 'na',
-        img : 'na',
-      },
-    },
-    secondaries : {
-      sec1 : {
-        name : 'P229',
-        img : '/images/KERATOS357PISTOL.png',
-    },
-      sec2 : {
-        name : 'Bearings 9',
-        img : '/images/BAILIFF410PISTOL.png',
-    },
-      },
+      primaries : [
+        {
+          _id: 'SUPERNOVA000',
+          ref: 'Weapon',
+        },
+        {
+          _id: 'MP5SD0000000',
+          ref: 'Weapon',
+        },
+      ],
+    secondaries : [
+        {
+          _id: 'P22900000000',
+          ref: 'Weapon',
+        },
+        {
+          _id: 'BEARING90000',
+          ref: 'Weapon',
+        },
+      ],
     gadgets : [
       { 
         _id: "barbedwire00",
@@ -698,7 +698,7 @@ var db = require("./models");
         ref: 'Weapon',
       },
       {
-        _id: 'GSH1800000000',
+        _id: 'GSH180000000',
         ref: 'Weapon',
       },
   ],
@@ -741,7 +741,7 @@ var db = require("./models");
           ref: 'Weapon',
         },
         {
-          _id: 'GSH1800000000',
+          _id: 'GSH180000000',
           ref: 'Weapon',
         },
     ],
@@ -836,6 +836,45 @@ var db = require("./models");
     ArmorRating : 1,
     SpeedRating : 3,
     Organization : 'GSG9',
+  },
+  {
+    name : 'Clash',
+    badge: '/images/clashbadge.png',
+    img: '/images/clash.png',
+    bio: "Born and raised in England, Clash is a tough officer who served with the Territorial Support Group, holding the front line during the 2011 London Riots. She earned her spot with the Specialist Firearms Command (SCO19), making herself known within London’s Metropolitan Police Services (MPS).",
+    ability : { 
+      _id: "CCESHIELD000",
+      ref: "Ability"
+      },
+    primaries : [
+        {
+          _id: 'CCESHIELD000',
+          ref: 'Weapon',
+        },
+    ],
+    secondaries : [
+      {
+        _id: 'P10C00000000',
+        ref: 'Weapon',
+      },
+      {
+        _id: 'SPSMG9000000',
+        ref: 'Weapon',
+      },
+  ],
+    gadgets : [
+      { 
+        _id: "impacgrenade",
+        ref: "Gadget"
+        },
+        { 
+        _id: "barbedwire00",
+        ref: "Gadget"
+        },
+  ],
+    ArmorRating : 3,
+    SpeedRating : 1,
+    Organization : 'GSUTR',
   },
   
   

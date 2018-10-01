@@ -149,6 +149,13 @@ var abilityList = [
   desc: 'This expert in lures and traps carries into battle a trap equipped with a laser trip for windows and doors certain to impede any foe (or friend) caught in its blast.',
   _id: mongoose.Types.ObjectId('entrydeniald'),
 },
+{
+  name: 'CCE SHIELD',
+  uses: 1,
+  img: '/images/evileye.png',
+  desc: 'Clash is the first defender with a shield. The CCE Shield is her primary weapon; she can swap to her secondary at any time, but to do so, she needs to put her shield away first. Her bulletproof extendable shield has the ability to slow down opponents by using a high voltage Charged Field Generator (CFG) that emanates directly in front of the shield in a cylindrical shape. Opponents caught in the CFG also sustain low damage over time. Effective use of the shield allows Clash to block entry points, and to prevent or delay a push by the Attackers.',
+  _id: mongoose.Types.ObjectId('CCESHIELD000'),
+},
 ]
 
 db.Ability.remove({},(err, ability) =>{

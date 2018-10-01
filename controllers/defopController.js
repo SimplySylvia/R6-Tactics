@@ -3,12 +3,18 @@ const db = require(`../models`);
 module.exports = {
   index(req, res) {
     db.Defop.find()
-    .populate('ability')
     .populate('gadgets')
+    .populate('ability')
+    .populate('primaries')
+    .populate('secondaries')
     .exec((err, defop) => {
+      let total = defop.length
       if (err) {
         return console.log("index error: " + err); }
-        res.json({data:defop});
+        res.json({
+          amount: total,
+          data:defop,
+        });
       });
     },
     create(req, res) {
