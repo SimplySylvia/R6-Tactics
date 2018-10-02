@@ -163,5 +163,52 @@ module.exports = {
       SpeedRating: 3,
       Organization: 'FBI SWAT',
     },
+    {
+      name: 'Twitch',
+      badge: '/images/twitchbadge.png',
+      img: '/images/twitch.png',
+      bio: "Born in the historic town of Nancy, Pichon grew up in a family that valued education, particularly math and science. Early participation in sponsored computer programming competitions led to her joining the army cadets at sixteen. Pichon demonstrates an affinity for complex robotic systems and mechanical academia, due to an early exposure to analytical problem-solving. This ability transcends academia. Unlike many engineers who have the propensity to be emotionally disconnected or apathetic, Pichon is strongly intuitive and empathetic. She believes that technology's best use is to improve the quality of life. This principle motivates Pichon in her military service.",
+      ability: {
+        _id: "SHOCKDRONE00",
+        ref: "Ability"
+      },
+      primaries: [
+        {
+        _id: "F20000000000",
+        ref: "Weapon"
+      },
+      {
+        _id: "417000000000",
+        ref: "Weapon"
+      },
+      {
+        _id: "SGCQB0000000",
+        ref: "Weapon"
+      },
+     ],
+      secondaries: [
+        {
+        _id: "P90000000000",
+        ref: "Weapon"
+      },
+      {
+        _id: "LFP586000000",
+        ref: "Weapon"
+      },
+     ],
+      gadgets: [
+        {
+        _id: "breachcharge",
+        ref: "Gadget"
+      },
+      {
+        _id: "claymores000",
+        ref: "Gadget"
+      },
+     ],
+      ArmorRating: 2,
+      SpeedRating: 2,
+      Organization: 'GIGN',
+    },
   ]
 }

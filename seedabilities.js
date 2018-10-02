@@ -178,5 +178,12 @@ module.exports = {
       desc: "Ash comes equipped with the M120 CREM. It can shoot up to two Breaching Rounds, which will burrow into a surface and detonate automatically.",
       _id: mongoose.Types.ObjectId('BREACHINGROU'),
     },
+    {
+      name: 'Shock Drone',
+      uses: 2,
+      img: '/images/na',
+      desc: "Ash comes equipped with the M120 CREM. It can shoot up to two Breaching Rounds, which will burrow into a surface and detonate automatically.",
+      _id: mongoose.Types.ObjectId('SHOCKDRONE00'),
+    },
   ]
 }
