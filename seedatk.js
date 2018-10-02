@@ -46,18 +46,34 @@ module.exports = {
         _id: "exothermicch",
         ref: "Ability"
       },
-      primaries: [{
-        _id: "L85A2assultr",
+      primaries: [
+        {
+        _id: "556XI0000000",
         ref: "Weapon"
-      }, ],
+      },
+      {
+        _id: "M10140000000",
+        ref: "Weapon"
+      }, 
+    ],
       secondaries: [{
-        _id: "L85A2assultr",
+        _id: "57usg0000000",
+        ref: "Weapon"
+      },
+      {
+        _id: "M45MEUSOC000",
         ref: "Weapon"
       }, ],
-      gadgets: [{
-        _id: "breachcharge",
+      gadgets: [
+        {
+        _id: "claymores000",
         ref: "Gadget"
-      }, ],
+      },
+      {
+        _id: "stungrenades",
+        ref: "Gadget"
+      }, 
+    ],
       ArmorRating: 2,
       SpeedRating: 2,
       Organization: 'FBI SWAT',
@@ -103,6 +119,49 @@ module.exports = {
       ArmorRating: 2,
       SpeedRating: 2,
       Organization: 'SAS',
+    },
+    {
+      name: 'Ash',
+      badge: '/images/ashbadge.png',
+      img: '/images/ash.png',
+      bio: 'Born and raised in Jerusalem, Israel, Cohen enrolled at Tel Aviv University after secondary school in the Engineering program. It was during this time she did a semester abroad at Boston University. After college, she enlisted in the Israeli Defense Forces. Her engineering background made her a great candidate for mechanical maintenance and demolitions. She was later transferred to FBI SWAT due to an international law enforcement exchange program. Cohen brought her knowledge of demolitions with her in producing a weapon-mounted breach charge capable of blowing open a door or wall from a distance.',
+      ability: {
+        _id: "BREACHINGROU",
+        ref: "Ability"
+      },
+      primaries: [
+        {
+        _id: "G36C00000000",
+        ref: "Weapon"
+      },
+      {
+        _id: "R4C000000000",
+        ref: "Weapon"
+      },
+     ],
+      secondaries: [
+        {
+        _id: "M45MEUSOC000",
+        ref: "Weapon"
+      },
+      {
+        _id: "57usg0000000",
+        ref: "Weapon"
+      },
+     ],
+      gadgets: [
+        {
+        _id: "breachcharge",
+        ref: "Gadget"
+      },
+      {
+        _id: "stungrenades",
+        ref: "Gadget"
+      },
+     ],
+      ArmorRating: 1,
+      SpeedRating: 3,
+      Organization: 'FBI SWAT',
     },
   ]
 }

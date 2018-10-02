@@ -171,5 +171,12 @@ module.exports = {
       desc: "The EMP Grenade gives Thatcher a means to destroy or disable any Defender's electronic gadgets from afar. When tossed, they will let out an electromagnetic pulse after a few seconds, either destroying or disabling defender gadgets caught within its 5-meter radius.",
       _id: mongoose.Types.ObjectId('EMPGRENADE00'),
     },
+    {
+      name: 'Breaching Rounds',
+      uses: 2,
+      img: '/images/na',
+      desc: "Ash comes equipped with the M120 CREM. It can shoot up to two Breaching Rounds, which will burrow into a surface and detonate automatically.",
+      _id: mongoose.Types.ObjectId('BREACHINGROU'),
+    },
   ]
 }
