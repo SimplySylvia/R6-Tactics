@@ -210,5 +210,44 @@ module.exports = {
       SpeedRating: 2,
       Organization: 'GIGN',
     },
+    {
+      name: 'Montagne',
+      badge: '/images/montagnebadge.png',
+      img: '/images/montagne.png',
+      bio: "The son of an army officer and school teacher, the family was stationed near Bordeaux, France. A few years after he graduated from high school, he became a member of the National Gendarmerie. As a police officer, Touré has dedicated his life to the defence work. His devotion and commitment to the ideals of National Gendarmerie allowed him to obtain a position within the GIGN.",
+      ability: {
+        _id: "EXTENDABLESH",
+        ref: "Ability"
+      },
+      primaries: [
+        {
+        _id: "EXTENDABLESH",
+        ref: "Weapon"
+      },
+     ],
+      secondaries: [
+        {
+        _id: "P90000000000",
+        ref: "Weapon"
+      },
+      {
+        _id: "LFP586000000",
+        ref: "Weapon"
+      },
+     ],
+      gadgets: [
+        {
+        _id: "smokegrenade",
+        ref: "Gadget"
+      },
+      {
+        _id: "stungrenades",
+        ref: "Gadget"
+      },
+     ],
+      ArmorRating: 3,
+      SpeedRating: 1,
+      Organization: 'GIGN',
+    },
   ]
 }

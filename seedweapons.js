@@ -770,5 +770,17 @@ module.exports = {
       underbarrel: ['Lazer'],
       _id: mongoose.Types.ObjectId('F20000000000'),
     },
+    {
+      name: 'Extendable Shield',
+      img: '/na',
+      assignment: 'primary',
+      firemodes: [],
+      type: 'Balistic Shield',
+      sights: [],
+      barrels: [],
+      grips: [],
+      underbarrel: [],
+      _id: mongoose.Types.ObjectId('EXTENDABLESH'),
+    },
   ]
 }
