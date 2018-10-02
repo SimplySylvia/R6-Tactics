@@ -32,7 +32,7 @@ module.exports = {
       assignment: 'Attack',
       _id: mongoose.Types.ObjectId('stungrenades'),
       img: '/na',
-      uses: 2,
+      uses: 3,
     },
     {
       name: 'Claymore',

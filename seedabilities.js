@@ -1,19 +1,13 @@
 const mongoose = require('mongoose');
 module.exports = {
   abilityList: [
+    // defenders
     {
       name: 'Evil Eye',
       uses: 2,
       img: '/images/evileye.png',
       desc: 'Maestro uses a remote-controlled turret firing high-energy laser beams. Once affixed to the floor or wall, Maestro can remote-surveil and provide overwatch in a location through the swivel-mounted camera. When the camera device breaks open to fire a laser beam the core is exposed to damage. Otherwise, the turret is unaffected by bullets and melee. Lastly, Evil Eye can see through smoke.',
       _id: mongoose.Types.ObjectId('evileye00000'),
-    },
-    {
-      name: 'Exothermic Charge',
-      uses: 2,
-      img: '/images/na',
-      desc: 'Thermite is cabable of creating large breaching points through reinforcments. His Exothermic charge will easily cut through defenses and let your team enter the objective.',
-      _id: mongoose.Types.ObjectId('exothermicch'),
     },
     {
       name: 'Prisma',
@@ -154,6 +148,21 @@ module.exports = {
       img: '/images/evileye.png',
       desc: 'Clash is the first defender with a shield. The CCE Shield is her primary weapon; she can swap to her secondary at any time, but to do so, she needs to put her shield away first. Her bulletproof extendable shield has the ability to slow down opponents by using a high voltage Charged Field Generator (CFG) that emanates directly in front of the shield in a cylindrical shape. Opponents caught in the CFG also sustain low damage over time. Effective use of the shield allows Clash to block entry points, and to prevent or delay a push by the Attackers.',
       _id: mongoose.Types.ObjectId('CCESHIELD000'),
+    },
+    // attackers
+    {
+      name: 'Exothermic Charge',
+      uses: 2,
+      img: '/images/na',
+      desc: 'Thermite is cabable of creating large breaching points through reinforcments. His Exothermic charge will easily cut through defenses and let your team enter the objective.',
+      _id: mongoose.Types.ObjectId('exothermicch'),
+    },
+    {
+      name: 'THE CABER',
+      uses: 25,
+      img: '/images/na',
+      desc: 'Sledge is the operator to choose for quick and relatively silent destruction. His breaching hammer can be used to quickly go through multiple destructible walls, floors and barricades.',
+      _id: mongoose.Types.ObjectId('THECABER0000'),
     },
   ]
 }
