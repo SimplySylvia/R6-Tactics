@@ -698,5 +698,17 @@ module.exports = {
       underbarrel: ['Lazer'],
       _id: mongoose.Types.ObjectId('SPSMG9000000'),
     },
+    {
+      name: 'AR33',
+      img: '/na',
+      assignment: 'primary',
+      firemodes: ['automatic', 'semi-automatic','2-round burst'],
+      type: 'Assult Rifle',
+      sights: ['Red Dot Sight', 'Holographic Sight', 'Reflex Sight', 'ACOG Sight'],
+      barrels: ['Suppressor', 'Flash Hider', 'Compensator', 'Muzzle Brake'],
+      grips: ['Vertical Grip','Angled Grip'],
+      underbarrel: ['Lazer'],
+      _id: mongoose.Types.ObjectId('AR3300000000'),
+    },
   ]
 }

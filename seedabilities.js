@@ -164,5 +164,12 @@ module.exports = {
       desc: 'Sledge is the operator to choose for quick and relatively silent destruction. His breaching hammer can be used to quickly go through multiple destructible walls, floors and barricades.',
       _id: mongoose.Types.ObjectId('THECABER0000'),
     },
+    {
+      name: 'EMP Grenade',
+      uses: 3,
+      img: '/images/na',
+      desc: "The EMP Grenade gives Thatcher a means to destroy or disable any Defender's electronic gadgets from afar. When tossed, they will let out an electromagnetic pulse after a few seconds, either destroying or disabling defender gadgets caught within its 5-meter radius.",
+      _id: mongoose.Types.ObjectId('EMPGRENADE00'),
+    },
   ]
 }
