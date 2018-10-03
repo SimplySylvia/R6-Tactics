@@ -522,5 +522,44 @@ module.exports = {
       SpeedRating: 2,
       Organization: 'Navy SEALs',
     },
+    {
+      name: 'Capitão',
+      badge: '/images/capitaobadge.png',
+      img: '/images/capitao.png',
+      bio: ``,
+      ability: {
+        _id: "",
+        ref: "Ability"
+      },
+      primaries: [
+        {
+        _id: "",
+        ref: "Weapon"
+      },
+      {
+        _id: "",
+        ref: "Weapon"
+      },
+     ],
+      secondaries: [
+        {
+        _id: "",
+        ref: "Weapon"
+      },
+     ],
+      gadgets: [
+        {
+        _id: "claymores000",
+        ref: "Gadget"
+      },
+      {
+        _id: "stungrenades",
+        ref: "Gadget"
+      },
+     ],
+      ArmorRating: 1,
+      SpeedRating: 3,
+      Organization: 'Navy SEALs',
+    },
   ]
 }
