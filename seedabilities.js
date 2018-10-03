@@ -203,8 +203,15 @@ module.exports = {
       name: 'Cluster Charge',
       uses: 1,
       img: '/images/na',
-      desc: 'A Heavy Armored Operator, Fuze carries three APM-6 "Matryoshka" Cluster Charges capable of clearing rooms by deploying five sub-grenades through destructible structures such as walls, floors, and windows.',
+      desc: 'Fuze carries three APM-6 "Matryoshka" Cluster Charges capable of clearing rooms by deploying five sub-grenades through destructible structures such as walls, floors, and windows.',
       _id: mongoose.Types.ObjectId('CLUSTERCHARG'),
+    },
+    {
+      name: 'Flash Shield',
+      uses: 4,
+      img: '/images/na',
+      desc: "Blitz's unique gadget is the G52-Tactical Shield, which comes with three rows of flash charges that blind anyone facing the Shield. Unlike other Shield Operators, Blitz can also wield his shield up while sprinting.",
+      _id: mongoose.Types.ObjectId('FLASHSHIELD0'),
     },
   ]
 }

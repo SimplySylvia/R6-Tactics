@@ -374,5 +374,40 @@ module.exports = {
       SpeedRating: 1,
       Organization: 'Spetsnaz',
     },
+    {
+      name: 'Blitz',
+      badge: '/images/blitzbadge.png',
+      img: '/images/blitz.png',
+      bio: "A student of Hermann-Böse-Gymnasium, Kötz excelled academically and as a sportsman in the HBG's bilingual program. His imposing physique made him an exceptional athlete, he carried his experience on the field into his military training. His jovial nature and academic background eased the transition from a Schnelle Kräfte soldier in Kosovo to a member of GSG 9. Kötz was integral to establishing an anti-terrorism unit in India following the 2008 attack in Mumbai.",
+      ability: {
+        _id: "FLASHSHIELD0",
+        ref: "Ability"
+      },
+      primaries: [
+        {
+        _id: "FLASHSHIELD0",
+        ref: "Weapon"
+      },
+     ],
+      secondaries: [
+        {
+        _id: "P12000000000",
+        ref: "Weapon"
+      },
+     ],
+      gadgets: [
+        {
+        _id: "breachcharge",
+        ref: "Gadget"
+      },
+      {
+        _id: "smokegrenade",
+        ref: "Gadget"
+      },
+     ],
+      ArmorRating: 3,
+      SpeedRating: 1,
+      Organization: 'GSG9',
+    },
   ]
 }
