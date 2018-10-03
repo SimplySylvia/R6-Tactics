@@ -213,5 +213,12 @@ module.exports = {
       desc: "Blitz's unique gadget is the G52-Tactical Shield, which comes with three rows of flash charges that blind anyone facing the Shield. Unlike other Shield Operators, Blitz can also wield his shield up while sprinting.",
       _id: mongoose.Types.ObjectId('FLASHSHIELD0'),
     },
+    {
+      name: 'Electronics Detector',
+      uses: 1,
+      img: '/images/na',
+      desc: `IQ's unique gadget is the RED Mk III "Spectre", which can locate any electronic device in the immediate vicinity.`,
+      _id: mongoose.Types.ObjectId('ELECTRONICSD'),
+    },
   ]
 }

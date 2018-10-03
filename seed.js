@@ -1,11 +1,11 @@
 const
 db = require('./models'),
-def = require('./seeddef'),
-atk = require('./seedatk'),
-gad = require('./seedgadgets'),
-abil = require('./seedabilities'),
-weap = require('./seedweapons'),
-map = require('./seedmap'),
+def = require('./seed-files/seeddef'),
+atk = require('./seed-files/seedatk'),
+gad = require('./seed-files/seedgadgets'),
+abil = require('./seed-files/seedabilities'),
+weap = require('./seed-files/seedweapons'),
+map = require('./seed-files/seedmap'),
 colors = require('colors')
 
 db.Gadget.remove({}, (err, gadgets) => {

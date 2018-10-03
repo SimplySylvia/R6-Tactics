@@ -413,9 +413,9 @@ module.exports = {
       name: 'IQ',
       badge: '/images/iqbadge.png',
       img: '/images/iq.png',
-      bio: "",
+      bio: "Weiss developed a knack for electrical engineering early in life. At sixteen, she completed her first internship with a local tech company. She would continue her education at MIT and Caltech in the United States. After university, she traveled for a year before dedicating her life to a new challenge, the Bundespolizei (BPOL). Weiss thrived in her new environment and after two years with the BPOL, she was recruited by GSG-9. A brilliant overachiever and a fast learner, Monika Weiss is a natural at almost everything she tries. With an Ivy League education in electrical engineering and service in GSG-9's technical testing and airborne units, she uses a device which detects electronic traps and gadgets at a distance.",
       ability: {
-        _id: "",
+        _id: "ELECTRONICSD",
         ref: "Ability"
       },
       primaries: [
@@ -443,6 +443,41 @@ module.exports = {
       ArmorRating: 1,
       SpeedRating: 3,
       Organization: 'GSG 9',
+    },
+    {
+      name: 'Buck',
+      badge: '/images/buckbadge.png',
+      img: '/images/buck.png',
+      bio: "",
+      ability: {
+        _id: "",
+        ref: "Ability"
+      },
+      primaries: [
+        {
+        _id: "C8SFW0000000",
+        ref: "Weapon"
+      },
+     ],
+      secondaries: [
+        {
+        _id: "MK19MM000000",
+        ref: "Weapon"
+      },
+     ],
+      gadgets: [
+        {
+        _id: "fraggrenades",
+        ref: "Gadget"
+      },
+      {
+        _id: "stungrenades",
+        ref: "Gadget"
+      },
+     ],
+      ArmorRating: 2,
+      SpeedRating: 2,
+      Organization: 'JTF2',
     },
   ]
 }

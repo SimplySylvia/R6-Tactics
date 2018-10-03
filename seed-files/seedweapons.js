@@ -866,5 +866,17 @@ module.exports = {
       underbarrel: ['Lazer'],
       _id: mongoose.Types.ObjectId('552COMMANDO0'),
     },
+    {
+      name: 'C8-SFW',
+      img: '/na',
+      assignment: 'primary',
+      firemodes: ['automatic', 'semi-automatic','2-round burst'],
+      type: 'Assult Rifle',
+      sights: ['Red Dot Sight', 'Holographic Sight', 'Reflex Sight', 'ACOG Sight'],
+      barrels: ['Suppressor', 'Flash Hider', 'Compensator', 'Muzzle Brake','Extended Barrel'],
+      grips: [],
+      underbarrel: ['Lazer'],
+      _id: mongoose.Types.ObjectId('C8SFW0000000'),
+    },
   ]
 }
