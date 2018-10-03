@@ -782,5 +782,17 @@ module.exports = {
       underbarrel: [],
       _id: mongoose.Types.ObjectId('EXTENDABLESH'),
     },
+    {
+      name: 'OTs-03',
+      img: '/na',
+      assignment: 'primary',
+      firemodes: ['semi-automatic'],
+      type: 'Marksmen Rifle',
+      sights: ['Red Dot Sight', 'Holographic Sight','Reflex Sight'],
+      barrels: ['Suppressor', 'Flash Hider', 'Muzzle Brake'],
+      grips: [],
+      underbarrel: [],
+      _id: mongoose.Types.ObjectId('OTS030000000'),
+    },
   ]
 }

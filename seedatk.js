@@ -288,5 +288,44 @@ module.exports = {
       SpeedRating: 1,
       Organization: 'GIGN',
     },
+    {
+      name: 'Glaz',
+      badge: '/images/glazbadge.png',
+      img: '/images/glaz.png',
+      bio: "Glazkov was born and raised in Vladivostok, Russia where his father worked in the shipping industry. Glazkov studied art in secondary school, until the Beslan school hostage crisis inspired him to transfer to the Cadet Corps and pursue a career in the armed forces.",
+      ability: {
+        _id: "FLIPSIGHT000",
+        ref: "Ability"
+      },
+      primaries: [
+        {
+        _id: "OTS030000000",
+        ref: "Weapon"
+      },
+     ],
+      secondaries: [
+        {
+        _id: "GSH180000000",
+        ref: "Weapon"
+      },
+      {
+        _id: "PMM000000000",
+        ref: "Weapon"
+      },
+     ],
+      gadgets: [
+        {
+        _id: "smokegrenade",
+        ref: "Gadget"
+      },
+      {
+        _id: "claymores000",
+        ref: "Gadget"
+      },
+     ],
+      ArmorRating: 2,
+      SpeedRating: 2,
+      Organization: 'Spetsnaz',
+    },
   ]
 }

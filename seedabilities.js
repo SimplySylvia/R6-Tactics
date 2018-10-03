@@ -192,5 +192,12 @@ module.exports = {
       desc: 'A Heavy Armored Operator, Montagne comes equipped with his Extendable Shield, "Le Roc", which can fully cover him from head-to-toe while standing, providing extra protection that no other shield in the game offers. This also allows him to be the ultimate point-man, blocking enemy bullets as allies attack from his protection.',
       _id: mongoose.Types.ObjectId('EXTENDABLESH'),
     },
+    {
+      name: 'Flip Sight',
+      uses: 1,
+      img: '/images/na',
+      desc: "Glaz's unique gadget is an HDS Flip Sight for his OTs-03 marksman rifle. Whilst Aiming Down Sights with it, it also comes with a Thermal Feedback System which can outline long-range marks even through smoke for easier shooting.",
+      _id: mongoose.Types.ObjectId('FLIPSIGHT000'),
+    },
   ]
 }
