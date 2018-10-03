@@ -227,5 +227,12 @@ module.exports = {
       desc: `Buck's unique gadget is an under-barrel mounted shotgun known as the "Skeleton Key", otherwise designated as the SK 4-12. This shotgun has a higher destructive potential than any of the other known shotguns`,
       _id: mongoose.Types.ObjectId('SKELETONKEY0'),
     },
+    {
+      name: 'Rifle Shield',
+      uses: 2,
+      img: '/images/na',
+      desc: `Blackbeard's unique gadgets are his two Transparent Armored Rifle-Shields. These shields protect his head from a few bullets, allowing a higher survivability rate at the cost of mobility and recoil control.`,
+      _id: mongoose.Types.ObjectId('RIFLESHIELD0'),
+    },
   ]
 }

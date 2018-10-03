@@ -483,5 +483,44 @@ module.exports = {
       SpeedRating: 2,
       Organization: 'JTF2',
     },
+    {
+      name: 'Blackbeard',
+      badge: '/images/blackbeardbadge.png',
+      img: '/images/blackbeard.png',
+      bio: `Jenson grew up in a comfortable upper middle-class family with no military history. He decided that he wanted to be a Navy SEAL at a young age and devoted his life to achieving this goal. With the help of his father, a kinesiology professor at the University of Washington, he started training at twelve and enlisted at eighteen.`,
+      ability: {
+        _id: "RIFLESHIELD0",
+        ref: "Ability"
+      },
+      primaries: [
+        {
+        _id: "MK17CQB00000",
+        ref: "Weapon"
+      },
+      {
+        _id: "SR2500000000",
+        ref: "Weapon"
+      },
+     ],
+      secondaries: [
+        {
+        _id: "D50000000000",
+        ref: "Weapon"
+      },
+     ],
+      gadgets: [
+        {
+        _id: "breachcharge",
+        ref: "Gadget"
+      },
+      {
+        _id: "stungrenades",
+        ref: "Gadget"
+      },
+     ],
+      ArmorRating: 2,
+      SpeedRating: 2,
+      Organization: 'Navy SEALs',
+    },
   ]
 }
