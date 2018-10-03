@@ -407,7 +407,42 @@ module.exports = {
      ],
       ArmorRating: 3,
       SpeedRating: 1,
-      Organization: 'GSG9',
+      Organization: 'GSG 9',
+    },
+    {
+      name: 'IQ',
+      badge: '/images/iqbadge.png',
+      img: '/images/iq.png',
+      bio: "",
+      ability: {
+        _id: "",
+        ref: "Ability"
+      },
+      primaries: [
+        {
+        _id: "AUGA20000000",
+        ref: "Weapon"
+      },
+     ],
+      secondaries: [
+        {
+        _id: "P12000000000",
+        ref: "Weapon"
+      },
+     ],
+      gadgets: [
+        {
+        _id: "breachcharge",
+        ref: "Gadget"
+      },
+      {
+        _id: "claymores000",
+        ref: "Gadget"
+      },
+     ],
+      ArmorRating: 1,
+      SpeedRating: 3,
+      Organization: 'GSG 9',
     },
   ]
 }
