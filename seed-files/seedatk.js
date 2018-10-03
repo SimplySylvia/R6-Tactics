@@ -448,14 +448,18 @@ module.exports = {
       name: 'Buck',
       badge: '/images/buckbadge.png',
       img: '/images/buck.png',
-      bio: "",
+      bio: `A Montreal native, Côté always wanted to lead an unconventional life. He enrolled in the Canadian Armed Force via the Regular Officer Training Plan, which allowed him to attend University and obtain a degree in criminology. After graduation, he became an MP in the Canadian Army. When his time in the Army was completed he joined the Royal Canadian Mounted Police and eventually became a part of the Emergency Response Team. After excelling in his ERT role he was invited by the Canadian military to re-up and become a member of JTF2.`,
       ability: {
-        _id: "",
+        _id: "SKELETONKEY0",
         ref: "Ability"
       },
       primaries: [
         {
         _id: "C8SFW0000000",
+        ref: "Weapon"
+      },
+      {
+        _id: "CAMRS0000000",
         ref: "Weapon"
       },
      ],

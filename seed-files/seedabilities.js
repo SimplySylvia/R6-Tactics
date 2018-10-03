@@ -220,5 +220,12 @@ module.exports = {
       desc: `IQ's unique gadget is the RED Mk III "Spectre", which can locate any electronic device in the immediate vicinity.`,
       _id: mongoose.Types.ObjectId('ELECTRONICSD'),
     },
+    {
+      name: 'Skeleton Key',
+      uses: 21,
+      img: '/images/na',
+      desc: `Buck's unique gadget is an under-barrel mounted shotgun known as the "Skeleton Key", otherwise designated as the SK 4-12. This shotgun has a higher destructive potential than any of the other known shotguns`,
+      _id: mongoose.Types.ObjectId('SKELETONKEY0'),
+    },
   ]
 }

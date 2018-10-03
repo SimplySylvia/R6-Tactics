@@ -878,5 +878,17 @@ module.exports = {
       underbarrel: ['Lazer'],
       _id: mongoose.Types.ObjectId('C8SFW0000000'),
     },
+    {
+      name: 'CAMRS',
+      img: '/na',
+      assignment: 'primary',
+      firemodes: ['semi-automatic'],
+      type: 'Marksmen Rifle',
+      sights: ['Red Dot Sight', 'Holographic Sight','Reflex Sight','ACOG Sight'],
+      barrels: ['Suppressor', 'Flash Hider', 'Compensator', 'Muzzle Brake'],
+      grips: [],
+      underbarrel: ['Lazer'],
+      _id: mongoose.Types.ObjectId('CAMRS0000000'),
+    },
   ]
 }
