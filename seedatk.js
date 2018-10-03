@@ -327,5 +327,52 @@ module.exports = {
       SpeedRating: 2,
       Organization: 'Spetsnaz',
     },
+    {
+      name: 'Fuze',
+      badge: '/images/fuzebadge.png',
+      img: '/images/fuze.png',
+      bio: "Kessikbayev grew up in a military family in Samarkand, Uzbekistan. After his family emigrated to Russia shortly before the collapse of the Soviet Union, Kessikbayev followed in his father's footsteps and enrolled in the military, where his facility with technology landed him a spot in the coveted weapon testing brigade at Alabino firing range near Moscow.",
+      ability: {
+        _id: "CLUSTERCHARG",
+        ref: "Ability"
+      },
+      primaries: [
+        {
+        _id: "BALISTICSHIE",
+        ref: "Weapon"
+      },
+      {
+        _id: "6P4100000000",
+        ref: "Weapon"
+      },
+      {
+        _id: "AK1200000000",
+        ref: "Weapon"
+      },
+     ],
+      secondaries: [
+        {
+        _id: "GSH180000000",
+        ref: "Weapon"
+      },
+      {
+        _id: "PMM000000000",
+        ref: "Weapon"
+      },
+     ],
+      gadgets: [
+        {
+        _id: "breachcharge",
+        ref: "Gadget"
+      },
+      {
+        _id: "smokegrenade",
+        ref: "Gadget"
+      },
+     ],
+      ArmorRating: 3,
+      SpeedRating: 1,
+      Organization: 'Spetsnaz',
+    },
   ]
 }

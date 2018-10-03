@@ -199,5 +199,12 @@ module.exports = {
       desc: "Glaz's unique gadget is an HDS Flip Sight for his OTs-03 marksman rifle. Whilst Aiming Down Sights with it, it also comes with a Thermal Feedback System which can outline long-range marks even through smoke for easier shooting.",
       _id: mongoose.Types.ObjectId('FLIPSIGHT000'),
     },
+    {
+      name: 'Cluster Charge',
+      uses: 1,
+      img: '/images/na',
+      desc: 'A Heavy Armored Operator, Fuze carries three APM-6 "Matryoshka" Cluster Charges capable of clearing rooms by deploying five sub-grenades through destructible structures such as walls, floors, and windows.',
+      _id: mongoose.Types.ObjectId('CLUSTERCHARG'),
+    },
   ]
 }
