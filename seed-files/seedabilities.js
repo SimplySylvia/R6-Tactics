@@ -270,6 +270,13 @@ module.exports = {
       desc: `Zofia's KS79 LIFELINE can fire Impact Grenades and Proximity Concussion Grenades. She has 2 Impact Grenades and 4 Concussion Grenades. The LIFELINE is set to Impact Grenades on spawn and Zofia is able to switch between ammunition types on the fly using the fire mode key`,
       _id: mongoose.Types.ObjectId('KS79LIFELINE'),
     },
+    {
+      name: 'Logic Bomb',
+      uses: 2,
+      img: '/images/na',
+      desc: `Dokkaebi comes equipped with her Ballistic Armor Military Laptop, Logic Bomb. This device can upload a virus into the Defenders' phones and cause them to ring incessantly until they reset it manually. If a Defender is killed and Dokkaebi is with the Attackers, she can hack these phones to gain access to their CCTV feeds.`,
+      _id: mongoose.Types.ObjectId('LOGICBOMB000'),
+    },
     
   ]
 }

@@ -696,5 +696,52 @@ module.exports = {
       SpeedRating: 2,
       Organization: 'GROM',
     },
+    {
+      name: 'Dokkaebi',
+      badge: '/images/dokkaebibadge.png',
+      img: '/images/dokkaebi.png',
+      bio: `
+      Grace, named for the incomparable actress Grace Kelly, always broke expectations, even when it meant she stuck out somehow. She scavenged or bought spare components to build her own computers. She played soccer with the neighborhood boys and got into fights with them, but it was her sharp tongue that landed her in trouble with her teachers. She looked and acted like a troublemaker, so they tried to force her to conform to expectations. To survive, Grace learned to soften her image, to better play with and manipulate preconceptions; she bought fake glasses and adopted the geek girl persona.
+      
+      Grace's skills earned a National Scholarship at KAIST (Korean Advanced Institute of Science and Technology), but after graduating decided to join the Army. Her athleticism and daring paid off, and she was assigned to the ROK Army Special Warfare Command before earning a spot in the 9th Special Forces Brigade known as the Ghosts. Despite her unorthodox behavior within the highly disciplined ROK army, she gained notice for her exemplary tech skills and for being highly adaptable to situations. After Grace participated in joint training with Detachment K Green Berets, the American instructors encouraged her to try out with the 707th Special Mission Battalion: White Tigers.
+      `,
+      ability: {
+        _id: "LOGICBOMB000",
+        ref: "Ability"
+      },
+      primaries: [
+        {
+        _id: "MK14EBR00000",
+        ref: "Weapon"
+      },
+      {
+        _id: "BOSG12200000",
+        ref: "Weapon"
+      },
+     ],
+      secondaries: [
+        {
+        _id: "SMG120000000",
+        ref: "Weapon"
+      },
+      {
+        _id: "C75AUTO00000",
+        ref: "Weapon"
+      },
+     ],
+      gadgets: [
+        {
+        _id: "smokegrenade",
+        ref: "Gadget"
+      },
+      {
+        _id: "stungrenades",
+        ref: "Gadget"
+      },
+     ],
+      ArmorRating: 2,
+      SpeedRating: 2,
+      Organization: '707th SMB',
+    },
   ]
 }

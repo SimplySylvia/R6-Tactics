@@ -1034,5 +1034,17 @@ module.exports = {
       underbarrel: ['Lazer'],
       _id: mongoose.Types.ObjectId('M76200000000'),
     },
+    {
+      name: 'MK 14 EBR',
+      img: '/na',
+      assignment: 'primary',
+      firemodes: ['semi-automatic'],
+      type: 'Marksmen Rifle',
+      sights: ['Red Dot Sight', 'Holographic Sight','Reflex Sight','ACOG Sight'],
+      barrels: ['Suppressor', 'Flash Hider', 'Compensator', 'Muzzle Brake'],
+      grips: ['Vertical Grip', 'Angled Grip'],
+      underbarrel: ['Lazer'],
+      _id: mongoose.Types.ObjectId('MK14EBR00000'),
+    },
   ]
 }
