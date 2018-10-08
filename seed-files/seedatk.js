@@ -702,7 +702,7 @@ module.exports = {
       img: '/images/dokkaebi.png',
       bio: `
       Grace, named for the incomparable actress Grace Kelly, always broke expectations, even when it meant she stuck out somehow. She scavenged or bought spare components to build her own computers. She played soccer with the neighborhood boys and got into fights with them, but it was her sharp tongue that landed her in trouble with her teachers. She looked and acted like a troublemaker, so they tried to force her to conform to expectations. To survive, Grace learned to soften her image, to better play with and manipulate preconceptions; she bought fake glasses and adopted the geek girl persona.
-      
+
       Grace's skills earned a National Scholarship at KAIST (Korean Advanced Institute of Science and Technology), but after graduating decided to join the Army. Her athleticism and daring paid off, and she was assigned to the ROK Army Special Warfare Command before earning a spot in the 9th Special Forces Brigade known as the Ghosts. Despite her unorthodox behavior within the highly disciplined ROK army, she gained notice for her exemplary tech skills and for being highly adaptable to situations. After Grace participated in joint training with Detachment K Green Berets, the American instructors encouraged her to try out with the 707th Special Mission Battalion: White Tigers.
       `,
       ability: {
@@ -742,6 +742,56 @@ module.exports = {
       ArmorRating: 2,
       SpeedRating: 2,
       Organization: '707th SMB',
+    },
+    {
+      name: 'Lion',
+      badge: '/images/lionbadge.png',
+      img: '/images/lion.png',
+      bio: `In 2015, the army asked Lion to lead the 2nd Dragoons to West Africa to assist medical personnel fighting the Ebola epidemic. Tragedy ensued, and the decisions Olivier made for safety reasons put him at odds with Doc, who blamed him for the death of several medical personnel on-site including Doc's colleague. The tension between the two continues to this day in Team Rainbow.
+
+      After studying his jacket, Finka recommended Olivier for Rainbow as a CBRN specialist, and Six agreed. Olivier immediately proved his value when Finka and he uncovered the source of the mysterious mist that came ashore in Sussex and poisoned people, though he claims he shares that success with Twitch, who provided him with the new aerial drone to locate the mist plume.
+      `,
+      ability: {
+        _id: "EEONED000000",
+        ref: "Ability"
+      },
+      primaries: [
+        {
+        _id: "V30800000000",
+        ref: "Weapon"
+      },
+      {
+        _id: "417000000000",
+        ref: "Weapon"
+      },
+      {
+        _id: "SGCQB0000000",
+        ref: "Weapon"
+      },
+     ],
+      secondaries: [
+        {
+        _id: "LFP586000000",
+        ref: "Weapon"
+      },
+      {
+        _id: "P90000000000",
+        ref: "Weapon"
+      },
+     ],
+      gadgets: [
+        {
+        _id: "claymores000",
+        ref: "Gadget"
+      },
+      {
+        _id: "stungrenades",
+        ref: "Gadget"
+      },
+     ],
+      ArmorRating: 2,
+      SpeedRating: 2,
+      Organization: ' CBRN Threat Unit (GIGN)',
     },
   ]
 }

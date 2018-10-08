@@ -277,6 +277,13 @@ module.exports = {
       desc: `Dokkaebi comes equipped with her Ballistic Armor Military Laptop, Logic Bomb. This device can upload a virus into the Defenders' phones and cause them to ring incessantly until they reset it manually. If a Defender is killed and Dokkaebi is with the Attackers, she can hack these phones to gain access to their CCTV feeds.`,
       _id: mongoose.Types.ObjectId('LOGICBOMB000'),
     },
+    {
+      name: 'EE-ONE-D',
+      uses: 2,
+      img: '/images/na',
+      desc: `Lion comes with his EE-ONE-D, which flies up above the map to scan for enemy movement at his command. If a Defender moves their footing, the drone will detect that movement and paint them in a red outline for Attackers to see, even through walls.`,
+      _id: mongoose.Types.ObjectId('EEONED000000'),
+    },
     
   ]
 }
