@@ -1058,5 +1058,17 @@ module.exports = {
       underbarrel: ['Lazer'],
       _id: mongoose.Types.ObjectId('V30800000000'),
     },
+    {
+      name: 'Spear .308',
+      img: '/na',
+      assignment: 'primary',
+      firemodes: ['automatic'],
+      type: 'Assult Rifle',
+      sights: ['Red Dot Sight', 'Holographic Sight', 'Reflex Sight', 'ACOG Sight'],
+      barrels: ['Suppressor', 'Flash Hider', 'Compensator', 'Muzzle Brake'],
+      grips: ['Vertical Grip'],
+      underbarrel: ['Lazer'],
+      _id: mongoose.Types.ObjectId('SPEAR3080000'),
+    },
   ]
 }

@@ -793,5 +793,53 @@ module.exports = {
       SpeedRating: 2,
       Organization: ' CBRN Threat Unit (GIGN)',
     },
+    {
+      name: 'Finka',
+      badge: '/images/finkabadge.png',
+      img: '/images/finka.png',
+      bio: `
+      `,
+      ability: {
+        _id: "ADRENALSURGE",
+        ref: "Ability"
+      },
+      primaries: [
+        {
+        _id: "SPEAR3080000",
+        ref: "Weapon"
+      },
+      {
+        _id: "6P4100000000",
+        ref: "Weapon"
+      },
+      {
+        _id: "SASG12000000",
+        ref: "Weapon"
+      },
+     ],
+      secondaries: [
+        {
+        _id: "PMM000000000",
+        ref: "Weapon"
+      },
+      {
+        _id: "GSH180000000",
+        ref: "Weapon"
+      },
+     ],
+      gadgets: [
+        {
+        _id: "breachcharge",
+        ref: "Gadget"
+      },
+      {
+        _id: "fraggrenades",
+        ref: "Gadget"
+      },
+     ],
+      ArmorRating: 2,
+      SpeedRating: 2,
+      Organization: 'CBRN Threat Unit (Spetsnaz)',
+    },
   ]
 }

@@ -284,6 +284,13 @@ module.exports = {
       desc: `Lion comes with his EE-ONE-D, which flies up above the map to scan for enemy movement at his command. If a Defender moves their footing, the drone will detect that movement and paint them in a red outline for Attackers to see, even through walls.`,
       _id: mongoose.Types.ObjectId('EEONED000000'),
     },
+    {
+      name: 'Adrenal Surge',
+      uses: 3,
+      img: '/images/na',
+      desc: `Finka comes equipped with her specially-designed nanobots. Having them injected into each of her teammates prior to each mission, her Adrenal Surge allows affected allies to gain a temporary boost in health and a reduction in recoil, on top of other small benefits.`,
+      _id: mongoose.Types.ObjectId('EEONED000000'),
+    },
     
   ]
 }
