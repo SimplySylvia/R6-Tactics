@@ -251,10 +251,17 @@ module.exports = {
     },
     {
       name: 'Footprint Tracker',
-      uses: 20,
+      uses: 1,
       img: '/images/na',
       desc: `Jackal's unique gadget is the Eyenox Model III, which can track enemy footprints and can identify its targets. When scanned the target will be tracked for all allies to see.`,
       _id: mongoose.Types.ObjectId('EYENOXMODEL3'),
+    },
+    {
+      name: 'Candela',
+      uses: 3,
+      img: '/images/na',
+      desc: `Ying comes equipped with her Candelas, specialized timed explosives which can either be thrown or anchored onto a deployable surface to shoot out six flash charges into an area.`,
+      _id: mongoose.Types.ObjectId('CANDELA00000'),
     },
     
   ]

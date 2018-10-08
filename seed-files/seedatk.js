@@ -653,5 +653,47 @@ module.exports = {
       SpeedRating: 2,
       Organization: 'GEO',
     },
+    {
+      name: 'Ying',
+      badge: '/images/yingbadge.png',
+      img: '/images/ying.png',
+      bio: `Born in the comfortable Central district of Hong Kong, Siu Mei Lin was a close protection operative before joining the Special Duties Unit (SDU). With her acute reflexes and cunning CQB methods, she took the lead on several VIP and witness protection operations.
+
+      As a Flying Tiger (SDU), she uses her experience in close protection to ensure minimum casualties while leading high-risk operations amidst Hong Kong's dense urban population.
+      `,
+      ability: {
+        _id: "CANDELA00000",
+        ref: "Ability"
+      },
+      primaries: [
+        {
+        _id: "SIX120000000",
+        ref: "Weapon"
+      },
+      {
+        _id: "T95LSW000000",
+        ref: "Weapon"
+      },
+     ],
+      secondaries: [
+        {
+        _id: "Q92900000000",
+        ref: "Weapon"
+      },
+     ],
+      gadgets: [
+        {
+        _id: "breachcharge",
+        ref: "Gadget"
+      },
+      {
+        _id: "smokegrenade",
+        ref: "Gadget"
+      },
+     ],
+      ArmorRating: 2,
+      SpeedRating: 2,
+      Organization: 'SDU',
+    },
   ]
 }
