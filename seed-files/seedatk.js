@@ -559,5 +559,48 @@ module.exports = {
       SpeedRating: 3,
       Organization: 'BOPE',
     },
+    {
+      name: 'Hibana',
+      badge: '/images/hibanabadge.png',
+      img: '/images/hibana.png',
+      bio: `A Nagoya native, Imagawa traveled the world to perfect her skills and technique. She is specialized in paramilitary techniques gained by training with the SAS, FBI SWAT, and GIGN, to name a few. From her diverse training, she acquired a rare tactical versatility, which includes a proficiency in tubular (bus, train, and airplane) assaults.`,
+      ability: {
+        _id: "XKAIROS00000",
+        ref: "Ability"
+      },
+      primaries: [
+        {
+        _id: "TYPE89000000",
+        ref: "Weapon"
+      },
+      {
+        _id: "SUPERNOVA000",
+        ref: "Weapon"
+      },
+     ],
+      secondaries: [
+        {
+        _id: "P22900000000",
+        ref: "Weapon"
+      },
+      {
+        _id: "BEARING90000",
+        ref: "Weapon"
+      },
+     ],
+      gadgets: [
+        {
+        _id: "breachcharge",
+        ref: "Gadget"
+      },
+      {
+        _id: "stungrenades",
+        ref: "Gadget"
+      },
+     ],
+      ArmorRating: 1,
+      SpeedRating: 3,
+      Organization: 'SAT',
+    },
   ]
 }

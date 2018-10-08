@@ -950,5 +950,17 @@ module.exports = {
       underbarrel: ['Lazer'],
       _id: mongoose.Types.ObjectId('M24900000000'),
     },
+    {
+      name: 'Type-89',
+      img: '/na',
+      assignment: 'primary',
+      firemodes: ['automatic', 'semi-automatic', '3-round burst'],
+      type: 'Assult Rifle',
+      sights: ['Red Dot Sight', 'Holographic Sight', 'Reflex Sight', 'ACOG Sight'],
+      barrels: ['Suppressor', 'Flash Hider', 'Compensator', 'Muzzle Brake'],
+      grips: ['Vertical Grip','Angled Grip'],
+      underbarrel: ['Lazer'],
+      _id: mongoose.Types.ObjectId('TYPE89000000'),
+    },
   ]
 }
