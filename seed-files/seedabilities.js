@@ -263,6 +263,13 @@ module.exports = {
       desc: `Ying comes equipped with her Candelas, specialized timed explosives which can either be thrown or anchored onto a deployable surface to shoot out six flash charges into an area.`,
       _id: mongoose.Types.ObjectId('CANDELA00000'),
     },
+    {
+      name: 'KS79 Lifeline',
+      uses: 6,
+      img: '/images/na',
+      desc: `Zofia's KS79 LIFELINE can fire Impact Grenades and Proximity Concussion Grenades. She has 2 Impact Grenades and 4 Concussion Grenades. The LIFELINE is set to Impact Grenades on spawn and Zofia is able to switch between ammunition types on the fly using the fire mode key`,
+      _id: mongoose.Types.ObjectId('KS79LIFELINE'),
+    },
     
   ]
 }

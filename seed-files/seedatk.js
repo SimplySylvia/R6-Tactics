@@ -695,5 +695,45 @@ module.exports = {
       SpeedRating: 2,
       Organization: 'SDU',
     },
+    {
+      name: 'Zofia',
+      badge: '/images/zofiabadge.png',
+      img: '/images/zofia.png',
+      bio: `Born in Wroclaw, Zofia Bosak is the oldest daughter of Jan Bosak, former commander of the Polish Special Forces Unit GROM. While attending her father's military high school, she was pressured to perform on every level – a burden her younger sister (Ela) was not able to cope with. After many years of training and succesful missions Zofia was offered a seat among the Rainbow Six team. 
+      `,
+      ability: {
+        _id: "KS79LIFELINE",
+        ref: "Ability"
+      },
+      primaries: [
+        {
+        _id: "LMGE00000000",
+        ref: "Weapon"
+      },
+      {
+        _id: "M76200000000",
+        ref: "Weapon"
+      },
+     ],
+      secondaries: [
+        {
+        _id: "RG1500000000",
+        ref: "Weapon"
+      },
+     ],
+      gadgets: [
+        {
+        _id: "breachcharge",
+        ref: "Gadget"
+      },
+      {
+        _id: "claymores000",
+        ref: "Gadget"
+      },
+     ],
+      ArmorRating: 2,
+      SpeedRating: 2,
+      Organization: 'GROM',
+    },
   ]
 }
