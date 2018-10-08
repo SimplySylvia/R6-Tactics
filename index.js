@@ -1,8 +1,9 @@
-const express = require('express');
-const app = express();
-const bodyParser = require('body-parser');
-const cors = require('cors');
-const routes = require('./config');
+const 
+  express = require('express'),
+  app = express(),
+  bodyParser = require('body-parser'),
+  cors = require('cors'),
+  routes = require('./config')
 
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(cors());
@@ -14,9 +15,6 @@ app.get('/', (req, res) => {
 })
 app.get('/documentation', (req, res) => {
   res.sendFile('views/documentation.html' , { root : __dirname});
-})
-app.get('/about', (req, res) => {
-  res.sendFile('views/about.html' , { root : __dirname});
 })
 
 app.use('/api',routes.api);

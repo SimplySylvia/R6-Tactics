@@ -1,6 +1,7 @@
-const express = require('express');
-const router = express.Router();
-const controllers = require('../controllers');
+const 
+  express = require('express'),
+  router = express.Router(),
+  controllers = require('../controllers');
 
 module.exports = router
   .get('/', controllers.smap.index)
