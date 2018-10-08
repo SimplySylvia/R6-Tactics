@@ -524,24 +524,24 @@ module.exports = {
       name: 'Capitão',
       badge: '/images/capitaobadge.png',
       img: '/images/capitao.png',
-      bio: ``,
+      bio: `Vincente Souza grew up in Nova Iguaçu outside of Rio de Janeiro, the youngest of three children. Tenacious and dedicated, Souza joined the Policia Civil after high school. He was quickly recruited by Cooredenadoria de Recursos Especiais (CORE). Soon after BOPE made him an offer, seeing in him their unit's spirit, 'victory over death'. Souza could not turn them down; it meant working in the favela where his gear would lessen casualties.`,
       ability: {
-        _id: "",
+        _id: "TACTICALCROS",
         ref: "Ability"
       },
       primaries: [
         {
-        _id: "",
+        _id: "PARA30800000",
         ref: "Weapon"
       },
       {
-        _id: "",
+        _id: "M24900000000",
         ref: "Weapon"
       },
      ],
       secondaries: [
         {
-        _id: "",
+        _id: "PRB920000000",
         ref: "Weapon"
       },
      ],
@@ -557,7 +557,7 @@ module.exports = {
      ],
       ArmorRating: 1,
       SpeedRating: 3,
-      Organization: 'Navy SEALs',
+      Organization: 'BOPE',
     },
   ]
 }

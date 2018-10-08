@@ -235,5 +235,13 @@ module.exports = {
       desc: `Blackbeard's unique gadgets are his two Transparent Armored Rifle-Shields. These shields protect his head from a few bullets, allowing a higher survivability rate at the cost of mobility and recoil control.`,
       _id: mongoose.Types.ObjectId('RIFLESHIELD0'),
     },
+    {
+      name: 'Tactical Crossbow',
+      uses: 4,
+      img: '/images/na',
+      desc: `Capitão's unique gadget is a Tactical Crossbow that can fire Asphyxiating Bolts, which will burn oxygen within a certain radius, as well as Micro Smoke grenades, that can mask positions and team movements.`,
+      _id: mongoose.Types.ObjectId('TACTICALCROS'),
+    },
+    
   ]
 }
