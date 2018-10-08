@@ -602,5 +602,56 @@ module.exports = {
       SpeedRating: 3,
       Organization: 'SAT',
     },
+    {
+      name: 'Jackal',
+      badge: '/images/jackalbadge.png',
+      img: '/images/jackal.png',
+      bio: `Pushed from one family to the next, Ryad emerged from the foster care system when his older brother, Faisal Ramírez, turned 18 and became his legal guardian.
+
+      Blaming his shortcomings for the loss of his older brother, Ramírez decided to join the Policía Nacional. He passed the mandatory ESO (Secondary studies) and became a CNP (Cuerpo Nacional de Policía) at 19 years old. He is still investigating his brother's case and to this day, but was unable to find any solid evidence against his brother's murderer.
+      
+      With strong resolve and broad resourcefulness in difficult terrains, Ramírez joined the Grupo Especial de Operaciones (GEO) to track down HVTs and intercept narcotics shipments.`,
+      ability: {
+        _id: "EYENOXMODEL3",
+        ref: "Ability"
+      },
+      primaries: [
+        {
+        _id: "ITA12L000000",
+        ref: "Weapon"
+      },
+      {
+        _id: "C7E000000000",
+        ref: "Weapon"
+      },
+      {
+        _id: "PDW900000000",
+        ref: "Weapon"
+      },
+     ],
+      secondaries: [
+        {
+        _id: "ITA12S000000",
+        ref: "Weapon"
+      },
+      {
+        _id: "USP400000000",
+        ref: "Weapon"
+      },
+     ],
+      gadgets: [
+        {
+        _id: "breachcharge",
+        ref: "Gadget"
+      },
+      {
+        _id: "smokegrenade",
+        ref: "Gadget"
+      },
+     ],
+      ArmorRating: 2,
+      SpeedRating: 2,
+      Organization: 'GEO',
+    },
   ]
 }

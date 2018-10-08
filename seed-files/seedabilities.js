@@ -249,6 +249,13 @@ module.exports = {
       desc: `Hibana's unique gadget is the X-KAIROS Launcher, which can fire explosive pellets that can be remotely detonated simultaneously and can pierce reinforced walls.`,
       _id: mongoose.Types.ObjectId('XKAIROS00000'),
     },
+    {
+      name: 'Footprint Tracker',
+      uses: 20,
+      img: '/images/na',
+      desc: `Jackal's unique gadget is the Eyenox Model III, which can track enemy footprints and can identify its targets. When scanned the target will be tracked for all allies to see.`,
+      _id: mongoose.Types.ObjectId('EYENOXMODEL3'),
+    },
     
   ]
 }
