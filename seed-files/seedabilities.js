@@ -289,7 +289,14 @@ module.exports = {
       uses: 3,
       img: '/images/na',
       desc: `Finka comes equipped with her specially-designed nanobots. Having them injected into each of her teammates prior to each mission, her Adrenal Surge allows affected allies to gain a temporary boost in health and a reduction in recoil, on top of other small benefits.`,
-      _id: mongoose.Types.ObjectId('EEONED000000'),
+      _id: mongoose.Types.ObjectId('ADRENALSURGE'),
+    },
+    {
+      name: 'Breaching Torch',
+      uses: 5,
+      img: '/images/na',
+      desc: `Maverick comes equipped with his Exothermic-S "Suri" Torch. It can make holes in any breachable surface, including Reinforced Walls, creating new lines of sight silently.`,
+      _id: mongoose.Types.ObjectId('BREACHINGTOR'),
     },
     
   ]

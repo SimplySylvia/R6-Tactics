@@ -841,5 +841,45 @@ module.exports = {
       SpeedRating: 2,
       Organization: 'CBRN Threat Unit (Spetsnaz)',
     },
+    {
+      name: 'Maverick',
+      badge: '/images/maverickbadge.png',
+      img: '/images/maverick.png',
+      bio: `
+      `,
+      ability: {
+        _id: "BREACHINGTOR",
+        ref: "Ability"
+      },
+      primaries: [
+        {
+        _id: "M40000000000",
+        ref: "Weapon"
+      },
+      {
+        _id: "AR1550000000",
+        ref: "Weapon"
+      },
+     ],
+      secondaries: [
+        {
+        _id: "1911TACOPS00",
+        ref: "Weapon"
+      },
+     ],
+      gadgets: [
+        {
+        _id: "claymores000",
+        ref: "Gadget"
+      },
+      {
+        _id: "stungrenades",
+        ref: "Gadget"
+      },
+     ],
+      ArmorRating: 1,
+      SpeedRating: 3,
+      Organization: 'GSUTR (Delta Force)',
+    },
   ]
 }
