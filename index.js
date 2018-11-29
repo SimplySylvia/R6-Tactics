@@ -10,6 +10,8 @@ app.use(cors());
 
 app.use(express.static(__dirname + '/public'));
 
+app.use('/files', express.static('files'))
+
 app.get('/', (req, res) => {
   res.sendFile('views/index.html' , { root : __dirname});
 })
