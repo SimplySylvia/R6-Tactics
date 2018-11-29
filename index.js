@@ -13,6 +13,7 @@ app.use(express.static(__dirname + '/public'));
 app.get('/', (req, res) => {
   res.sendFile('views/index.html' , { root : __dirname});
 })
+
 app.get('/documentation', (req, res) => {
   res.sendFile('views/documentation.html' , { root : __dirname});
 })

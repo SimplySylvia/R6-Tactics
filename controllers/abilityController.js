@@ -1,7 +1,7 @@
 const db = require(`../models`);
 
 module.exports = {
-  index(req, res) {
+  index: (req, res) => {
     db.Ability.find()
     .exec((err, ability) => {
       let total = ability.length
@@ -13,8 +13,8 @@ module.exports = {
         });
       });
     },
-    create(req, res) {
-      var newAbility = req.body
+    create: (req, res) => {
+      let newAbility = req.body
       console.log(req.body);
       db.Ability.create(newAbility, (err, newAbility) => {
         if(err){
@@ -22,7 +22,7 @@ module.exports = {
         res.json(newAbility);
       });
     },
-    show(req, res){
+    show: (req, res) => {
       let AbilityId = req.params.id;
       db.Ability.findById(AbilityId, (err, ability) => {
         if(err){

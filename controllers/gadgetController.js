@@ -1,7 +1,7 @@
 const db = require(`../models`);
 
 module.exports = {
-  index(req, res) {
+  index: (req, res) => {
     db.Gadget.find()
     .exec((err, gadget) => {
       total = gadget.length
@@ -13,8 +13,8 @@ module.exports = {
         });
       });
     },
-    create(req, res) {
-      var newGadget = req.body
+    create: (req, res) => {
+      let newGadget = req.body
       console.log(req.body);
       db.Gadget.create(newGadget, (err, newGadget) => {
         if(err){
@@ -22,7 +22,7 @@ module.exports = {
         res.json(newGadget);
       });
     },
-    show(req, res){
+    show: (req, res) => {
       let gadgetId = req.params.id;
       db.Gadget.findById(gadgetId, (err, gadget) => {
         if(err){

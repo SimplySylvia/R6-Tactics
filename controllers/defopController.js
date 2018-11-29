@@ -1,7 +1,7 @@
 const db = require(`../models`);
 
 module.exports = {
-  index(req, res) {
+  index: (req, res) => {
     db.Defop.find()
     .populate('gadgets')
     .populate('ability')
@@ -17,8 +17,8 @@ module.exports = {
         });
       });
     },
-    create(req, res) {
-      var newDefop = req.body
+    create: (req, res) => {
+      let newDefop = req.body
       console.log(req.body);
       db.Defop.create(newDefop, (err, newDefop) => {
         if(err){
@@ -26,9 +26,14 @@ module.exports = {
         res.json(newDefop);
       });
     },
-    show(req, res){
+    show: (req, res) =>{
       let defopId = req.params.id;
-      db.Defop.findById(defopId, (err, defop) => {
+      db.Defop.findById(defopId)
+      .populate('gadgets')
+      .populate('ability')
+      .populate('primaries')
+      .populate('secondaries')
+      .exec( (err, defop) => {
         if(err){
           res.status(500).json({"ERROR":"Database Error"});}
         res.json({data:defop});

@@ -1,7 +1,7 @@
 const db = require(`../models`);
 
 module.exports = {
-  index(req, res) {
+  index: (req, res) => {
     db.Weapon.find()
     .exec((err, weapon) => {
       let total = weapon.length
@@ -13,8 +13,8 @@ module.exports = {
         });
       });
     },
-    create(req, res) {
-      var newWeapon = req.body
+    create: (req, res) => {
+      let newWeapon = req.body
       console.log(req.body);
       db.Weapon.create(newWeapon, (err, newWeapon) => {
         if(err){
@@ -22,7 +22,7 @@ module.exports = {
         res.json(newWeapon);
       });
     },
-    show(req, res){
+    show: (req, res) => {
       let weaponId = req.params.id;
       db.Weapon.findById(weaponId, (err, weapon) => {
         if(err){
