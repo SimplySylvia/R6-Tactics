@@ -4,7 +4,7 @@ module.exports = {
   weaponList: [
     {
       name: 'L85A2',
-      img: '/na',
+      img:'/files/weapons/',
       assignment: 'primary',
       firemodes: ['automatic', 'semi-automatic'],
       type: 'Assult Rifle',
@@ -16,7 +16,7 @@ module.exports = {
     },
     {
       name: 'FMG-9',
-      img: '/na',
+      img:'/files/weapons/',
       assignment: 'primary',
       firemodes: ['automatic', 'semi-automatic'],
       type: 'Submachine Gun',
@@ -28,7 +28,7 @@ module.exports = {
     },
     {
       name: 'M590A1',
-      img: '/na',
+      img:'/files/weapons/',
       assignment: 'primary',
       firemodes: ['Pump-Action'],
       type: 'Shotgun',
@@ -40,7 +40,7 @@ module.exports = {
     },
     {
       name: 'P226 Mk 25',
-      img: '/na',
+      img:'/files/weapons/',
       assignment: 'secondary',
       firemodes: ['semi-automatic'],
       type: 'Handgun',
@@ -52,7 +52,7 @@ module.exports = {
     },
     {
       name: 'SMG-11',
-      img: '/na',
+      img:'/files/weapons/',
       assignment: 'secondary',
       firemodes: ['automatic'],
       type: 'Machine Pistol',
@@ -64,7 +64,7 @@ module.exports = {
     },
     {
       name: 'MP5K',
-      img: '/na',
+      img:'/files/weapons/',
       assignment: 'primary',
       firemodes: ['automatic', '3-round burst', 'Semi-automatic'],
       type: 'Submachine Gun',
@@ -76,7 +76,7 @@ module.exports = {
     },
     {
       name: 'UMP45',
-      img: '/na',
+      img:'/files/weapons/',
       assignment: 'primary',
       firemodes: ['automatic', 'semi-automatic', '3-round Burst'],
       type: 'Submachine Gun',
@@ -88,7 +88,7 @@ module.exports = {
     },
     {
       name: 'M1014',
-      img: '/na',
+      img:'/files/weapons/',
       assignment: 'primary',
       firemodes: ['Semi-automatic'],
       type: 'Shotgun',
@@ -100,7 +100,7 @@ module.exports = {
     },
     {
       name: '5.7 USG',
-      img: '/na',
+      img:'/files/weapons/',
       assignment: 'secondary',
       firemodes: ['semi-automatic'],
       type: 'Handgun',
@@ -112,7 +112,7 @@ module.exports = {
     },
     {
       name: 'M45 MEUSOC',
-      img: '/na',
+      img:'/files/weapons/',
       assignment: 'secondary',
       firemodes: ['semi-automatic'],
       type: 'Handgun',
@@ -124,7 +124,7 @@ module.exports = {
     },
     {
       name: 'SG-CQB',
-      img: '/na',
+      img:'/files/weapons/',
       assignment: 'primary',
       firemodes: ['Pump-action'],
       type: 'Shotgun',
@@ -136,7 +136,7 @@ module.exports = {
     },
     {
       name: 'MP5',
-      img: '/na',
+      img:'/files/weapons/',
       assignment: 'primary',
       firemodes: ['automatic', 'semi-automatic', '3-round Burst'],
       type: 'Submachine Gun',
@@ -148,7 +148,7 @@ module.exports = {
     },
     {
       name: 'P90',
-      img: '/na',
+      img:'/files/weapons/',
       assignment: 'primary',
       firemodes: ['automatic', 'semi-automatic'],
       type: 'Submachine Gun',
@@ -160,7 +160,7 @@ module.exports = {
     },
     {
       name: 'P9',
-      img: '/na',
+      img:'/files/weapons/',
       assignment: 'secondary',
       firemodes: ['semi-automatic'],
       type: 'Handgun',
@@ -172,7 +172,7 @@ module.exports = {
     },
     {
       name: 'LFP586',
-      img: '/na',
+      img:'/files/weapons/',
       assignment: 'secondary',
       firemodes: ['Double-action'],
       type: 'Handgun',
@@ -184,7 +184,7 @@ module.exports = {
     },
     {
       name: '9×19VSN',
-      img: '/na',
+      img:'/files/weapons/',
       assignment: 'primary',
       firemodes: ['automatic', 'semi-automatic'],
       type: 'Submachine Gun',
@@ -196,7 +196,7 @@ module.exports = {
     },
     {
       name: 'SASG-12',
-      img: '/na',
+      img:'/files/weapons/',
       assignment: 'primary',
       firemodes: ['Semi-Automatic'],
       type: 'Shotgun',
@@ -208,7 +208,7 @@ module.exports = {
     },
     {
       name: 'PMM',
-      img: '/na',
+      img:'/files/weapons/',
       assignment: 'secondary',
       firemodes: ['semi-automatic'],
       type: 'Handgun',
@@ -220,7 +220,7 @@ module.exports = {
     },
     {
       name: 'Gsh-18',
-      img: '/na',
+      img:'/files/weapons/',
       assignment: 'secondary',
       firemodes: ['semi-automatic'],
       type: 'Handgun',
@@ -232,7 +232,7 @@ module.exports = {
     },
     {
       name: 'M870',
-      img: '/na',
+      img:'/files/weapons/',
       assignment: 'primary',
       firemodes: ['Pump-action'],
       type: 'Shotgun',
@@ -244,7 +244,7 @@ module.exports = {
     },
     {
       name: '416-C Carbine',
-      img: '/na',
+      img:'/files/weapons/',
       assignment: 'primary',
       firemodes: ['automatic', 'semi-automatic'],
       type: 'Assult Rifle',
@@ -256,7 +256,7 @@ module.exports = {
     },
     {
       name: 'P12',
-      img: '/na',
+      img:'/files/weapons/',
       assignment: 'secondary',
       firemodes: ['semi-automatic'],
       type: 'Handgun',
@@ -268,7 +268,7 @@ module.exports = {
     },
     {
       name: 'MP7',
-      img: '/na',
+      img:'/files/weapons/',
       assignment: 'primary',
       firemodes: ['automatic', 'semi-automatic'],
       type: 'Submachine Gun',
@@ -280,7 +280,7 @@ module.exports = {
     },
     {
       name: 'Super 90',
-      img: '/na',
+      img:'/files/weapons/',
       assignment: 'primary',
       firemodes: ['Semi-Automatic'],
       type: 'Shotgun',
@@ -292,7 +292,7 @@ module.exports = {
     },
     {
       name: '9mm C1',
-      img: '/na',
+      img:'/files/weapons/',
       assignment: 'primary',
       firemodes: ['automatic'],
       type: 'Submachine Gun',
@@ -304,7 +304,7 @@ module.exports = {
     },
     {
       name: 'Mk1 9mm',
-      img: '/na',
+      img:'/files/weapons/',
       assignment: 'secondary',
       firemodes: ['semi-automatic'],
       type: 'Handgun',
@@ -316,7 +316,7 @@ module.exports = {
     },
     {
       name: 'MPX',
-      img: '/na',
+      img:'/files/weapons/',
       assignment: 'primary',
       firemodes: ['automatic', 'semi-automatic'],
       type: 'Submachine Gun',
@@ -328,7 +328,7 @@ module.exports = {
     },
     {
       name: 'SPAS-12',
-      img: '/na',
+      img:'/files/weapons/',
       assignment: 'primary',
       firemodes: ['Semi-Automatic'],
       type: 'Shotgun',
@@ -340,7 +340,7 @@ module.exports = {
     },
     {
       name: 'D-50',
-      img: '/na',
+      img:'/files/weapons/',
       assignment: 'secondary',
       firemodes: ['semi-automatic'],
       type: 'Handgun',
@@ -352,7 +352,7 @@ module.exports = {
     },
     {
       name: 'M12',
-      img: '/na',
+      img:'/files/weapons/',
       assignment: 'primary',
       firemodes: ['automatic', 'semi-automatic'],
       type: 'Submachine Gun',
@@ -364,7 +364,7 @@ module.exports = {
     },
     {
       name: 'SPAS-15',
-      img: '/na',
+      img:'/files/weapons/',
       assignment: 'primary',
       firemodes: ['Semi-Automatic'],
       type: 'Shotgun',
@@ -376,7 +376,7 @@ module.exports = {
     },
     {
       name: '"Luison"',
-      img: '/na',
+      img:'/files/weapons/',
       assignment: 'secondary',
       firemodes: ['semi-automatic'],
       type: 'Handgun',
@@ -388,7 +388,7 @@ module.exports = {
     },
     {
       name: 'ALDA 5.56',
-      img: '/na',
+      img:'/files/weapons/',
       assignment: 'primary',
       firemodes: ['automatic'],
       type: 'Light Machine Gun',
@@ -400,7 +400,7 @@ module.exports = {
     },
     {
       name: 'ACS12',
-      img: '/na',
+      img:'/files/weapons/',
       assignment: 'primary',
       firemodes: ['automatic'],
       type: 'Shotgun',
@@ -412,7 +412,7 @@ module.exports = {
     },
     {
       name: '"Bailiff 410"',
-      img: '/na',
+      img:'/files/weapons/',
       assignment: 'secondary',
       firemodes: ['Double-action'],
       type: 'Handgun',
@@ -424,7 +424,7 @@ module.exports = {
     },
     {
       name: '"Keratos .357"',
-      img: '/na',
+      img:'/files/weapons/',
       assignment: 'secondary',
       firemodes: ['Double-action'],
       type: 'Handgun',
@@ -436,7 +436,7 @@ module.exports = {
     },
     {
       name: 'Mx4 Storm',
-      img: '/na',
+      img:'/files/weapons/',
       assignment: 'primary',
       firemodes: ['automatic'],
       type: 'Submachine Gun',
@@ -448,7 +448,7 @@ module.exports = {
     },
     {
       name: 'SMG-12',
-      img: '/na',
+      img:'/files/weapons/',
       assignment: 'secondary',
       firemodes: ['automatic'],
       type: 'Machine Pistol',
@@ -460,7 +460,7 @@ module.exports = {
     },
     {
       name: 'K1A',
-      img: '/na',
+      img:'/files/weapons/',
       assignment: 'primary',
       firemodes: ['automatic', 'semi-automatic', '3-round burst'],
       type: 'Submachine Gun',
@@ -472,7 +472,7 @@ module.exports = {
     },
     {
       name: 'BOSG.12.2',
-      img: '/na',
+      img:'/files/weapons/',
       assignment: 'primary',
       firemodes: ['break-action'],
       type: 'Shotgun',
@@ -484,7 +484,7 @@ module.exports = {
     },
     {
       name: 'C75 Auto',
-      img: '/na',
+      img:'/files/weapons/',
       assignment: 'secondary',
       firemodes: ['automatic', 'semi-automatic'],
       type: 'Machine Pistol',
@@ -496,7 +496,7 @@ module.exports = {
     },
     {
       name: 'Scorpion EVO 3 A1',
-      img: '/na',
+      img:'/files/weapons/',
       assignment: 'primary',
       firemodes: ['automatic', 'semi-automatic'],
       type: 'Submachine Gun',
@@ -508,7 +508,7 @@ module.exports = {
     },
     {
       name: 'FO-12',
-      img: '/na',
+      img:'/files/weapons/',
       assignment: 'primary',
       firemodes: ['break-action'],
       type: 'Shotgun',
@@ -520,7 +520,7 @@ module.exports = {
     },
     {
       name: '"RG15"',
-      img: '/na',
+      img:'/files/weapons/',
       assignment: 'secondary',
       firemodes: ['semi-automatic'],
       type: 'Handgun',
@@ -532,7 +532,7 @@ module.exports = {
     },
     {
       name: 'SIX12 SD',
-      img: '/na',
+      img:'/files/weapons/',
       assignment: 'primary',
       firemodes: ['double-action'],
       type: 'Shotgun',
@@ -544,7 +544,7 @@ module.exports = {
     },
     {
       name: 'T-5 SMG',
-      img: '/na',
+      img:'/files/weapons/',
       assignment: 'primary',
       firemodes: ['automatic', 'semi-automatic'],
       type: 'Submachine Gun',
@@ -556,7 +556,7 @@ module.exports = {
     },
     {
       name: '"Q-929"',
-      img: '/na',
+      img:'/files/weapons/',
       assignment: 'secondary',
       firemodes: ['semi-automatic'],
       type: 'Handgun',
@@ -568,7 +568,7 @@ module.exports = {
     },
     {
       name: 'Vector .45 ACP',
-      img: '/na',
+      img:'/files/weapons/',
       assignment: 'primary',
       firemodes: ['automatic', 'semi-automatic', '2-round burst'],
       type: 'Submachine Gun',
@@ -580,7 +580,7 @@ module.exports = {
     },
     {
       name: 'ITA12L',
-      img: '/na',
+      img:'/files/weapons/',
       assignment: 'primary',
       firemodes: ['Pump-Action'],
       type: 'Shotgun',
@@ -592,7 +592,7 @@ module.exports = {
     },
     {
       name: 'ITA12S',
-      img: '/na',
+      img:'/files/weapons/',
       assignment: 'secondary',
       firemodes: ['Pump-Action'],
       type: 'Shotgun',
@@ -604,7 +604,7 @@ module.exports = {
     },
     {
       name: '"USP40"',
-      img: '/na',
+      img:'/files/weapons/',
       assignment: 'secondary',
       firemodes: ['semi-automatic'],
       type: 'Handgun',
@@ -616,7 +616,7 @@ module.exports = {
     },
     {
       name: 'SuperNova',
-      img: '/na',
+      img:'/files/weapons/',
       assignment: 'primary',
       firemodes: ['Pump-Action'],
       type: 'Shotgun',
@@ -628,7 +628,7 @@ module.exports = {
     },
     {
       name: 'MP5SD',
-      img: '/na',
+      img:'/files/weapons/',
       assignment: 'primary',
       firemodes: ['automatic', 'semi-automatic'],
       type: 'Submachine Gun',
@@ -640,7 +640,7 @@ module.exports = {
     },
     {
       name: 'P229',
-      img: '/na',
+      img:'/files/weapons/',
       assignment: 'secondary',
       firemodes: ['semi-automatic'],
       type: 'Handgun',
@@ -652,7 +652,7 @@ module.exports = {
     },
     {
       name: 'Bearing 9',
-      img: '/na',
+      img:'/files/weapons/',
       assignment: 'secondary',
       firemodes: ['automatic'],
       type: 'Machine Pistol',
@@ -664,7 +664,7 @@ module.exports = {
     },
     {
       name: 'CCE Shield',
-      img: '/na',
+      img:'/files/weapons/',
       assignment: 'primary',
       firemodes: [],
       type: 'Balistic Shield',
@@ -676,7 +676,7 @@ module.exports = {
     },
     {
       name: 'P-10C',
-      img: '/na',
+      img:'/files/weapons/',
       assignment: 'secondary',
       firemodes: ['semi-automatic'],
       type: 'Handgun',
@@ -688,7 +688,7 @@ module.exports = {
     },
     {
       name: 'SPSMG9',
-      img: '/na',
+      img:'/files/weapons/',
       assignment: 'secondary',
       firemodes: ['2-round Burst'],
       type: 'Machine Pistol',
@@ -700,7 +700,7 @@ module.exports = {
     },
     {
       name: 'AR33',
-      img: '/na',
+      img:'/files/weapons/',
       assignment: 'primary',
       firemodes: ['automatic', 'semi-automatic','2-round burst'],
       type: 'Assult Rifle',
@@ -712,7 +712,7 @@ module.exports = {
     },
     {
       name: '556xi',
-      img: '/na',
+      img:'/files/weapons/',
       assignment: 'primary',
       firemodes: ['automatic', 'semi-automatic'],
       type: 'Assult Rifle',
@@ -724,7 +724,7 @@ module.exports = {
     },
     {
       name: 'G36C',
-      img: '/na',
+      img:'/files/weapons/',
       assignment: 'primary',
       firemodes: ['automatic', 'semi-automatic'],
       type: 'Assult Rifle',
@@ -736,7 +736,7 @@ module.exports = {
     },
     {
       name: 'R4-C',
-      img: '/na',
+      img:'/files/weapons/',
       assignment: 'primary',
       firemodes: ['automatic', 'semi-automatic'],
       type: 'Assult Rifle',
@@ -748,7 +748,7 @@ module.exports = {
     },
     {
       name: '417',
-      img: '/na',
+      img:'/files/weapons/',
       assignment: 'primary',
       firemodes: ['semi-automatic'],
       type: 'Marksmen Rifle',
@@ -760,7 +760,7 @@ module.exports = {
     },
     {
       name: 'F2',
-      img: '/na',
+      img:'/files/weapons/',
       assignment: 'primary',
       firemodes: ['automatic', 'semi-automatic','3-round burst'],
       type: 'Assult Rifle',
@@ -772,7 +772,7 @@ module.exports = {
     },
     {
       name: 'Extendable Shield',
-      img: '/na',
+      img:'/files/weapons/',
       assignment: 'primary',
       firemodes: [],
       type: 'Balistic Shield',
@@ -784,7 +784,7 @@ module.exports = {
     },
     {
       name: 'OTs-03',
-      img: '/na',
+      img:'/files/weapons/',
       assignment: 'primary',
       firemodes: ['semi-automatic'],
       type: 'Marksmen Rifle',
@@ -796,7 +796,7 @@ module.exports = {
     },
     {
       name: 'Balistic Shield',
-      img: '/na',
+      img:'/files/weapons/',
       assignment: 'primary',
       firemodes: [],
       type: 'Balistic Shield',
@@ -808,7 +808,7 @@ module.exports = {
     },
     {
       name: '6P41',
-      img: '/na',
+      img:'/files/weapons/',
       assignment: 'primary',
       firemodes: ['automatic'],
       type: 'Light Machine Gun',
@@ -820,7 +820,7 @@ module.exports = {
     },
     {
       name: 'AK-12',
-      img: '/na',
+      img:'/files/weapons/',
       assignment: 'primary',
       firemodes: ['automatic', 'semi-automatic','3-round Burst'],
       type: 'Assult Rifle',
@@ -832,7 +832,7 @@ module.exports = {
     },
     {
       name: 'Flash Shield',
-      img: '/na',
+      img:'/files/weapons/',
       assignment: 'primary',
       firemodes: [],
       type: 'Balistic Shield',
@@ -844,7 +844,7 @@ module.exports = {
     },
     {
       name: 'AUG A2',
-      img: '/na',
+      img:'/files/weapons/',
       assignment: 'primary',
       firemodes: ['automatic'],
       type: 'Assult Rifle',
@@ -856,7 +856,7 @@ module.exports = {
     },
     {
       name: '552 Commando',
-      img: '/na',
+      img:'/files/weapons/',
       assignment: 'primary',
       firemodes: ['automatic', 'semi-automatic','3-round Burst'],
       type: 'Assult Rifle',
@@ -868,7 +868,7 @@ module.exports = {
     },
     {
       name: 'C8-SFW',
-      img: '/na',
+      img:'/files/weapons/',
       assignment: 'primary',
       firemodes: ['automatic', 'semi-automatic','2-round burst'],
       type: 'Assult Rifle',
@@ -880,7 +880,7 @@ module.exports = {
     },
     {
       name: 'CAMRS',
-      img: '/na',
+      img:'/files/weapons/',
       assignment: 'primary',
       firemodes: ['semi-automatic'],
       type: 'Marksmen Rifle',
@@ -892,7 +892,7 @@ module.exports = {
     },
     {
       name: 'MK17 CQB',
-      img: '/na',
+      img:'/files/weapons/',
       assignment: 'primary',
       firemodes: ['automatic', 'semi-automatic'],
       type: 'Assult Rifle',
@@ -904,7 +904,7 @@ module.exports = {
     },
     {
       name: 'SR-25',
-      img: '/na',
+      img:'/files/weapons/',
       assignment: 'primary',
       firemodes: ['semi-automatic'],
       type: 'Marksmen Rifle',
@@ -916,7 +916,7 @@ module.exports = {
     },
     {
       name: 'PRB92',
-      img: '/na',
+      img:'/files/weapons/',
       assignment: 'secondary',
       firemodes: ['semi-automatic'],
       type: 'Handgun',
@@ -928,7 +928,7 @@ module.exports = {
     },
     {
       name: 'PARA-308',
-      img: '/na',
+      img:'/files/weapons/',
       assignment: 'primary',
       firemodes: ['automatic', 'semi-automatic'],
       type: 'Assult Rifle',
@@ -940,7 +940,7 @@ module.exports = {
     },
     {
       name: 'M249',
-      img: '/na',
+      img:'/files/weapons/',
       assignment: 'primary',
       firemodes: ['automatic'],
       type: 'Light Machine Gun',
@@ -952,7 +952,7 @@ module.exports = {
     },
     {
       name: 'Type-89',
-      img: '/na',
+      img:'/files/weapons/',
       assignment: 'primary',
       firemodes: ['automatic', 'semi-automatic', '3-round burst'],
       type: 'Assult Rifle',
@@ -964,7 +964,7 @@ module.exports = {
     },
     {
       name: 'C7E',
-      img: '/na',
+      img:'/files/weapons/',
       assignment: 'primary',
       firemodes: ['automatic', 'semi-automatic', '3-round burst'],
       type: 'Assult Rifle',
@@ -976,7 +976,7 @@ module.exports = {
     },
     {
       name: 'PDW9',
-      img: '/na',
+      img:'/files/weapons/',
       assignment: 'primary',
       firemodes: ['automatic', 'semi-automatic','3-round burst'],
       type: 'Submachine Gun',
@@ -988,7 +988,7 @@ module.exports = {
     },
     {
       name: 'SIX12',
-      img: '/na',
+      img:'/files/weapons/',
       assignment: 'primary',
       firemodes: ['double-action'],
       type: 'Shotgun',
@@ -1000,7 +1000,7 @@ module.exports = {
     },
     {
       name: 'T-95 LSW',
-      img: '/na',
+      img:'/files/weapons/',
       assignment: 'primary',
       firemodes: ['automatic', 'semi-automatic','3-round burst'],
       type: 'Light Machine Gun',
@@ -1012,7 +1012,7 @@ module.exports = {
     },
     {
       name: 'LMG-E',
-      img: '/na',
+      img:'/files/weapons/',
       assignment: 'primary',
       firemodes: ['automatic'],
       type: 'Light Machine Gun',
@@ -1024,7 +1024,7 @@ module.exports = {
     },
     {
       name: 'M762',
-      img: '/na',
+      img:'/files/weapons/',
       assignment: 'primary',
       firemodes: ['automatic', 'semi-automatic', '3-round burst'],
       type: 'Assult Rifle',
@@ -1036,7 +1036,7 @@ module.exports = {
     },
     {
       name: 'MK 14 EBR',
-      img: '/na',
+      img:'/files/weapons/',
       assignment: 'primary',
       firemodes: ['semi-automatic'],
       type: 'Marksmen Rifle',
@@ -1048,7 +1048,7 @@ module.exports = {
     },
     {
       name: 'V308',
-      img: '/na',
+      img:'/files/weapons/',
       assignment: 'primary',
       firemodes: ['automatic'],
       type: 'Assult Rifle',
@@ -1060,7 +1060,7 @@ module.exports = {
     },
     {
       name: 'Spear .308',
-      img: '/na',
+      img:'/files/weapons/',
       assignment: 'primary',
       firemodes: ['automatic'],
       type: 'Assult Rifle',
@@ -1072,7 +1072,7 @@ module.exports = {
     },
     {
       name: 'M4',
-      img: '/na',
+      img:'/files/weapons/',
       assignment: 'primary',
       firemodes: ['automatic', 'semi-automatic', '3-round burst'],
       type: 'Assult Rifle',
@@ -1084,7 +1084,7 @@ module.exports = {
     },
     {
       name: 'AR-15.50',
-      img: '/na',
+      img:'/files/weapons/',
       assignment: 'primary',
       firemodes: ['semi-automatic'],
       type: 'Assult Rifle',
@@ -1096,7 +1096,7 @@ module.exports = {
     },
     {
       name: '1911 TACOPS',
-      img: '/na',
+      img:'/files/weapons/',
       assignment: 'secondary',
       firemodes: ['semi-automatic'],
       type: 'Handgun',
