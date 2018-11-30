@@ -2,23 +2,23 @@ module.exports = {
   SmapList: [
     {
     name : 'House',
-    coverimg: '/images/house.jpg',
+    coverimg: '/files/maps/house/house.jpg',
     floors : [
       {
         name: 'Basement',
-        img: '/images/housebasement/',
+        img: '/files/maps/house/housebasement/',
       },
       {
         name: '1st',
-        img: '/images/housefirstfloor/',
+        img: '/files/maps/house/housefirstfloor/',
       },
       {
         name: '2nd',
-        img: '/images/housesecondfloor/',
+        img: '/files/maps/house/housesecondfloor/',
       },
       {
         name: 'Roof',
-        img: '/images/houseroof/',
+        img: '/files/maps/house/houseroof/',
       },
       {
         name: 'NA',
