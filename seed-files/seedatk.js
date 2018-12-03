@@ -1,6 +1,6 @@
 module.exports = {
   atkopsList: [
-    {
+{
       name: 'Sledge',
       badge:'/files/operators/atk/badges/sledgebadge.png',
       img:'/files/operators/atk/profile/sledge.png',
@@ -407,7 +407,7 @@ module.exports = {
       name: 'Buck',
       badge:'/files/operators/atk/badges/buckbadge.png',
       img:'/files/operators/atk/profile/buck.png',
-      bio: `A Montreal native, Côté always wanted to lead an unconventional life. He enrolled in the Canadian Armed Force via the Regular Officer Training Plan, which allowed him to attend University and obtain a degree in criminology. After graduation, he became an MP in the Canadian Army. When his time in the Army was completed he joined the Royal Canadian Mounted Police and eventually became a part of the Emergency Response Team. After excelling in his ERT role he was invited by the Canadian military to re-up and become a member of JTF2.`,
+      bio: "A Montreal native, Côté always wanted to lead an unconventional life. He enrolled in the Canadian Armed Force via the Regular Officer Training Plan, which allowed him to attend University and obtain a degree in criminology. After graduation, he became an MP in the Canadian Army. When his time in the Army was completed he joined the Royal Canadian Mounted Police and eventually became a part of the Emergency Response Team. After excelling in his ERT role he was invited by the Canadian military to re-up and become a member of JTF2.",
       ability: {
         _id: "SKELETONKEY0",
         ref: "Ability"
@@ -446,7 +446,7 @@ module.exports = {
       name: 'Blackbeard',
       badge:'/files/operators/atk/badges/blackbeardbadge.png',
       img:'/files/operators/atk/profile/blackbeard.png',
-      bio: `Jenson grew up in a comfortable upper middle-class family with no military history. He decided that he wanted to be a Navy SEAL at a young age and devoted his life to achieving this goal. With the help of his father, a kinesiology professor at the University of Washington, he started training at twelve and enlisted at eighteen.`,
+      bio:"Jenson grew up in a comfortable upper middle-class family with no military history. He decided that he wanted to be a Navy SEAL at a young age and devoted his life to achieving this goal. With the help of his father, a kinesiology professor at the University of Washington, he started training at twelve and enlisted at eighteen.",
       ability: {
         _id: "RIFLESHIELD0",
         ref: "Ability"
@@ -485,7 +485,7 @@ module.exports = {
       name: 'Capitão',
       badge:'/files/operators/atk/badges/capitaobadge.png',
       img:'/files/operators/atk/profile/capitao.png',
-      bio: `Vincente Souza grew up in Nova Iguaçu outside of Rio de Janeiro, the youngest of three children. Tenacious and dedicated, Souza joined the Policia Civil after high school. He was quickly recruited by Cooredenadoria de Recursos Especiais (CORE). Soon after BOPE made him an offer, seeing in him their unit's spirit, 'victory over death'. Souza could not turn them down; it meant working in the favela where his gear would lessen casualties.`,
+      bio: "Vincente Souza grew up in Nova Iguaçu outside of Rio de Janeiro, the youngest of three children. Tenacious and dedicated, Souza joined the Policia Civil after high school. He was quickly recruited by Cooredenadoria de Recursos Especiais (CORE). Soon after BOPE made him an offer, seeing in him their unit's spirit, 'victory over death'. Souza could not turn them down; it meant working in the favela where his gear would lessen casualties.",
       ability: {
         _id: "TACTICALCROS",
         ref: "Ability"
@@ -524,7 +524,7 @@ module.exports = {
       name: 'Hibana',
       badge:'/files/operators/atk/badges/hibanabadge.png',
       img:'/files/operators/atk/profile/hibana.png',
-      bio: `A Nagoya native, Imagawa traveled the world to perfect her skills and technique. She is specialized in paramilitary techniques gained by training with the SAS, FBI SWAT, and GIGN, to name a few. From her diverse training, she acquired a rare tactical versatility, which includes a proficiency in tubular (bus, train, and airplane) assaults.`,
+      bio: "A Nagoya native, Imagawa traveled the world to perfect her skills and technique. She is specialized in paramilitary techniques gained by training with the SAS, FBI SWAT, and GIGN, to name a few. From her diverse training, she acquired a rare tactical versatility, which includes a proficiency in tubular (bus, train, and airplane) assaults.",
       ability: {
         _id: "XKAIROS00000",
         ref: "Ability"
@@ -567,11 +567,7 @@ module.exports = {
       name: 'Jackal',
       badge:'/files/operators/atk/badges/jackalbadge.png',
       img:'/files/operators/atk/profile/jackal.png',
-      bio: `Pushed from one family to the next, Ryad emerged from the foster care system when his older brother, Faisal Ramírez, turned 18 and became his legal guardian.
-
-      Blaming his shortcomings for the loss of his older brother, Ramírez decided to join the Policía Nacional. He passed the mandatory ESO (Secondary studies) and became a CNP (Cuerpo Nacional de Policía) at 19 years old. He is still investigating his brother's case and to this day, but was unable to find any solid evidence against his brother's murderer.
-      
-      With strong resolve and broad resourcefulness in difficult terrains, Ramírez joined the Grupo Especial de Operaciones (GEO) to track down HVTs and intercept narcotics shipments.`,
+      bio: "Pushed from one family to the next, Ryad emerged from the foster care system when his older brother, Faisal Ramírez, turned 18 and became his legal guardian. Blaming his shortcomings for the loss of his older brother, Ramírez decided to join the Policía Nacional. He passed the mandatory ESO (Secondary studies) and became a CNP (Cuerpo Nacional de Policía) at 19 years old. He is still investigating his brother's case and to this day, but was unable to find any solid evidence against his brother's murderer. With strong resolve and broad resourcefulness in difficult terrains, Ramírez joined the Grupo Especial de Operaciones (GEO) to track down HVTs and intercept narcotics shipments.",
       ability: {
         _id: "EYENOXMODEL3",
         ref: "Ability"
@@ -618,10 +614,7 @@ module.exports = {
       name: 'Ying',
       badge:'/files/operators/atk/badges/yingbadge.png',
       img:'/files/operators/atk/profile/ying.png',
-      bio: `Born in the comfortable Central district of Hong Kong, Siu Mei Lin was a close protection operative before joining the Special Duties Unit (SDU). With her acute reflexes and cunning CQB methods, she took the lead on several VIP and witness protection operations.
-
-      As a Flying Tiger (SDU), she uses her experience in close protection to ensure minimum casualties while leading high-risk operations amidst Hong Kong's dense urban population.
-      `,
+      bio: "Born in the comfortable Central district of Hong Kong, Siu Mei Lin was a close protection operative before joining the Special Duties Unit (SDU). With her acute reflexes and cunning CQB methods, she took the lead on several VIP and witness protection operations. As a Flying Tiger (SDU), she uses her experience in close protection to ensure minimum casualties while leading high-risk operations amidst Hong Kong's dense urban population.",
       ability: {
         _id: "CANDELA00000",
         ref: "Ability"
@@ -660,8 +653,7 @@ module.exports = {
       name: 'Zofia',
       badge:'/files/operators/atk/badges/zofiabadge.png',
       img:'/files/operators/atk/profile/zofia.png',
-      bio: `Born in Wroclaw, Zofia Bosak is the oldest daughter of Jan Bosak, former commander of the Polish Special Forces Unit GROM. While attending her father's military high school, she was pressured to perform on every level – a burden her younger sister (Ela) was not able to cope with. After many years of training and succesful missions Zofia was offered a seat among the Rainbow Six team. 
-      `,
+      bio: "Born in Wroclaw, Zofia Bosak is the oldest daughter of Jan Bosak, former commander of the Polish Special Forces Unit GROM. While attending her father's military high school, she was pressured to perform on every level – a burden her younger sister (Ela) was not able to cope with. After many years of training and succesful missions Zofia was offered a seat among the Rainbow Six team.",
       ability: {
         _id: "KS79LIFELINE",
         ref: "Ability"
@@ -700,11 +692,7 @@ module.exports = {
       name: 'Dokkaebi',
       badge:'/files/operators/atk/badges/dokkaebibadge.png',
       img:'/files/operators/atk/profile/dokkaebi.png',
-      bio: `
-      Grace, named for the incomparable actress Grace Kelly, always broke expectations, even when it meant she stuck out somehow. She scavenged or bought spare components to build her own computers. She played soccer with the neighborhood boys and got into fights with them, but it was her sharp tongue that landed her in trouble with her teachers. She looked and acted like a troublemaker, so they tried to force her to conform to expectations. To survive, Grace learned to soften her image, to better play with and manipulate preconceptions; she bought fake glasses and adopted the geek girl persona.
-
-      Grace's skills earned a National Scholarship at KAIST (Korean Advanced Institute of Science and Technology), but after graduating decided to join the Army. Her athleticism and daring paid off, and she was assigned to the ROK Army Special Warfare Command before earning a spot in the 9th Special Forces Brigade known as the Ghosts. Despite her unorthodox behavior within the highly disciplined ROK army, she gained notice for her exemplary tech skills and for being highly adaptable to situations. After Grace participated in joint training with Detachment K Green Berets, the American instructors encouraged her to try out with the 707th Special Mission Battalion: White Tigers.
-      `,
+      bio: "Grace, named for the incomparable actress Grace Kelly, always broke expectations, even when it meant she stuck out somehow. She scavenged or bought spare components to build her own computers. She played soccer with the neighborhood boys and got into fights with them, but it was her sharp tongue that landed her in trouble with her teachers. She looked and acted like a troublemaker, so they tried to force her to conform to expectations. To survive, Grace learned to soften her image, to better play with and manipulate preconceptions; she bought fake glasses and adopted the geek girl persona. Grace's skills earned a National Scholarship at KAIST (Korean Advanced Institute of Science and Technology), but after graduating decided to join the Army. Her athleticism and daring paid off, and she was assigned to the ROK Army Special Warfare Command before earning a spot in the 9th Special Forces Brigade known as the Ghosts. Despite her unorthodox behavior within the highly disciplined ROK army, she gained notice for her exemplary tech skills and for being highly adaptable to situations. After Grace participated in joint training with Detachment K Green Berets, the American instructors encouraged her to try out with the 707th Special Mission Battalion: White Tigers.",
       ability: {
         _id: "LOGICBOMB000",
         ref: "Ability"
@@ -747,10 +735,7 @@ module.exports = {
       name: 'Lion',
       badge:'/files/operators/atk/badges/lionbadge.png',
       img:'/files/operators/atk/profile/lion.png',
-      bio: `In 2015, the army asked Lion to lead the 2nd Dragoons to West Africa to assist medical personnel fighting the Ebola epidemic. Tragedy ensued, and the decisions Olivier made for safety reasons put him at odds with Doc, who blamed him for the death of several medical personnel on-site including Doc's colleague. The tension between the two continues to this day in Team Rainbow.
-
-      After studying his jacket, Finka recommended Olivier for Rainbow as a CBRN specialist, and Six agreed. Olivier immediately proved his value when Finka and he uncovered the source of the mysterious mist that came ashore in Sussex and poisoned people, though he claims he shares that success with Twitch, who provided him with the new aerial drone to locate the mist plume.
-      `,
+      bio: "In 2015, the army asked Lion to lead the 2nd Dragoons to West Africa to assist medical personnel fighting the Ebola epidemic. Tragedy ensued, and the decisions Olivier made for safety reasons put him at odds with Doc, who blamed him for the death of several medical personnel on-site including Doc's colleague. The tension between the two continues to this day in Team Rainbow. After studying his jacket, Finka recommended Olivier for Rainbow as a CBRN specialist, and Six agreed. Olivier immediately proved his value when Finka and he uncovered the source of the mysterious mist that came ashore in Sussex and poisoned people, though he claims he shares that success with Twitch, who provided him with the new aerial drone to locate the mist plume.",
       ability: {
         _id: "EEONED000000",
         ref: "Ability"
@@ -797,8 +782,7 @@ module.exports = {
       name: 'Finka',
       badge:'/files/operators/atk/badges/finkabadge.png',
       img:'/files/operators/atk/profile/finka.png',
-      bio: `
-      `,
+      bio: "",
       ability: {
         _id: "ADRENALSURGE",
         ref: "Ability"
@@ -845,8 +829,7 @@ module.exports = {
       name: 'Maverick',
       badge:'/files/operators/atk/badges/maverickbadge.png',
       img:'/files/operators/atk/profile/maverick.png',
-      bio: `
-      `,
+      bio: "",
       ability: {
         _id: "BREACHINGTOR",
         ref: "Ability"
