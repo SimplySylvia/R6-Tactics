@@ -1,5 +1,7 @@
 # Welcome to the R6 API
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/DaltonHart/R6-Tactics.svg)](https://greenkeeper.io/)
+
 ![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)
 
 [Visit the live version!](https://boiling-fjord-73796.herokuapp.com/)
