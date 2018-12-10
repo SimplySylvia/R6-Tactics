@@ -4,7 +4,7 @@ module.exports = {
   weaponList: [
     {
       name: 'L85A2',
-      img:'/files/weapons/',
+      img:'/files/weapons/L85A2.jpg',
       assignment: 'primary',
       firemodes: ['automatic', 'semi-automatic'],
       type: 'Assult Rifle',
@@ -16,7 +16,7 @@ module.exports = {
     },
     {
       name: 'FMG-9',
-      img:'/files/weapons/',
+      img:'/files/weapons/FMG9.jpg',
       assignment: 'primary',
       firemodes: ['automatic', 'semi-automatic'],
       type: 'Submachine Gun',
@@ -28,7 +28,7 @@ module.exports = {
     },
     {
       name: 'M590A1',
-      img:'/files/weapons/',
+      img:'/files/weapons/M590A1B.jpg',
       assignment: 'primary',
       firemodes: ['Pump-Action'],
       type: 'Shotgun',
@@ -40,7 +40,7 @@ module.exports = {
     },
     {
       name: 'P226 Mk 25',
-      img:'/files/weapons/',
+      img:'/files/weapons/P226.jpg',
       assignment: 'secondary',
       firemodes: ['semi-automatic'],
       type: 'Handgun',
@@ -52,7 +52,7 @@ module.exports = {
     },
     {
       name: 'SMG-11',
-      img:'/files/weapons/',
+      img:'/files/weapons/SMG11.jpg',
       assignment: 'secondary',
       firemodes: ['automatic'],
       type: 'Machine Pistol',
@@ -64,7 +64,7 @@ module.exports = {
     },
     {
       name: 'MP5K',
-      img:'/files/weapons/',
+      img:'/files/weapons/MP5K.jpg',
       assignment: 'primary',
       firemodes: ['automatic', '3-round burst', 'Semi-automatic'],
       type: 'Submachine Gun',
@@ -76,7 +76,7 @@ module.exports = {
     },
     {
       name: 'UMP45',
-      img:'/files/weapons/',
+      img:'/files/weapons/UPM45.jpg',
       assignment: 'primary',
       firemodes: ['automatic', 'semi-automatic', '3-round Burst'],
       type: 'Submachine Gun',
@@ -88,7 +88,7 @@ module.exports = {
     },
     {
       name: 'M1014',
-      img:'/files/weapons/',
+      img:'/files/weapons/M1014.jpg',
       assignment: 'primary',
       firemodes: ['Semi-automatic'],
       type: 'Shotgun',
@@ -100,7 +100,7 @@ module.exports = {
     },
     {
       name: '5.7 USG',
-      img:'/files/weapons/',
+      img:'/files/weapons/57USG.jpg',
       assignment: 'secondary',
       firemodes: ['semi-automatic'],
       type: 'Handgun',
@@ -112,7 +112,7 @@ module.exports = {
     },
     {
       name: 'M45 MEUSOC',
-      img:'/files/weapons/',
+      img:'/files/weapons/M45MEUSOC.jpg',
       assignment: 'secondary',
       firemodes: ['semi-automatic'],
       type: 'Handgun',
@@ -124,7 +124,7 @@ module.exports = {
     },
     {
       name: 'SG-CQB',
-      img:'/files/weapons/',
+      img:'/files/weapons/SGCQB.jpg',
       assignment: 'primary',
       firemodes: ['Pump-action'],
       type: 'Shotgun',
@@ -136,7 +136,7 @@ module.exports = {
     },
     {
       name: 'MP5',
-      img:'/files/weapons/',
+      img:'/files/weapons/MP5.jpg',
       assignment: 'primary',
       firemodes: ['automatic', 'semi-automatic', '3-round Burst'],
       type: 'Submachine Gun',
@@ -148,7 +148,7 @@ module.exports = {
     },
     {
       name: 'P90',
-      img:'/files/weapons/',
+      img:'/files/weapons/P90.jpg',
       assignment: 'primary',
       firemodes: ['automatic', 'semi-automatic'],
       type: 'Submachine Gun',
@@ -160,7 +160,7 @@ module.exports = {
     },
     {
       name: 'P9',
-      img:'/files/weapons/',
+      img:'/files/weapons/P9.jpg',
       assignment: 'secondary',
       firemodes: ['semi-automatic'],
       type: 'Handgun',
