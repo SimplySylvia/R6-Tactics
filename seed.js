@@ -1,11 +1,11 @@
 const
   db = require('./models'),
-  def = require('./seed-files/seeddef'),
-  atk = require('./seed-files/seedatk'),
-  gad = require('./seed-files/seedgadgets'),
-  abil = require('./seed-files/seedabilities'),
-  weap = require('./seed-files/seedweapons'),
-  map = require('./seed-files/seedmap'),
+  def = require('./seed_files/seeddef'),
+  atk = require('./seed_files/seedatk'),
+  gad = require('./seed_files/seedgadgets'),
+  abil = require('./seed_files/seedabilities'),
+  weap = require('./seed_files/seedweapons'),
+  map = require('./seed_files/seedmap'),
   colors = require('colors')
 
 
