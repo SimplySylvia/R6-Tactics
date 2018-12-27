@@ -172,7 +172,7 @@ module.exports = {
     },
     {
       name: 'LFP586',
-      img:'/files/weapons/',
+      img:'/files/weapons/LFP586.jpg',
       assignment: 'secondary',
       firemodes: ['Double-action'],
       type: 'Handgun',
@@ -184,7 +184,7 @@ module.exports = {
     },
     {
       name: '9×19VSN',
-      img:'/files/weapons/',
+      img:'/files/weapons/9×19VSN.jpg',
       assignment: 'primary',
       firemodes: ['automatic', 'semi-automatic'],
       type: 'Submachine Gun',
@@ -196,7 +196,7 @@ module.exports = {
     },
     {
       name: 'SASG-12',
-      img:'/files/weapons/',
+      img:'/files/weapons/SASG-12.jpg',
       assignment: 'primary',
       firemodes: ['Semi-Automatic'],
       type: 'Shotgun',
@@ -208,7 +208,7 @@ module.exports = {
     },
     {
       name: 'PMM',
-      img:'/files/weapons/',
+      img:'/files/weapons/PMM.jpg',
       assignment: 'secondary',
       firemodes: ['semi-automatic'],
       type: 'Handgun',
@@ -220,7 +220,7 @@ module.exports = {
     },
     {
       name: 'Gsh-18',
-      img:'/files/weapons/',
+      img:'/files/weapons/Gsh-18.jpg',
       assignment: 'secondary',
       firemodes: ['semi-automatic'],
       type: 'Handgun',
@@ -232,7 +232,7 @@ module.exports = {
     },
     {
       name: 'M870',
-      img:'/files/weapons/',
+      img:'/files/weapons/M870.jpg',
       assignment: 'primary',
       firemodes: ['Pump-action'],
       type: 'Shotgun',
