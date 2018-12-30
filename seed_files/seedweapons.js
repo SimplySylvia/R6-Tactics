@@ -400,7 +400,7 @@ module.exports = {
     },
     {
       name: 'ACS12',
-      img:'/files/weapons/',
+      img:'/files/weapons/ACS12.jpg',
       assignment: 'primary',
       firemodes: ['automatic'],
       type: 'Shotgun',
@@ -412,7 +412,7 @@ module.exports = {
     },
     {
       name: '"Bailiff 410"',
-      img:'/files/weapons/',
+      img:'/files/weapons/Bailiff.jpg',
       assignment: 'secondary',
       firemodes: ['Double-action'],
       type: 'Handgun',
@@ -424,7 +424,7 @@ module.exports = {
     },
     {
       name: '"Keratos .357"',
-      img:'/files/weapons/',
+      img:'/files/weapons/Keratos.jpg',
       assignment: 'secondary',
       firemodes: ['Double-action'],
       type: 'Handgun',
@@ -436,7 +436,7 @@ module.exports = {
     },
     {
       name: 'Mx4 Storm',
-      img:'/files/weapons/',
+      img:'/files/weapons/Mx4Storm.jpg',
       assignment: 'primary',
       firemodes: ['automatic'],
       type: 'Submachine Gun',
@@ -448,7 +448,7 @@ module.exports = {
     },
     {
       name: 'SMG-12',
-      img:'/files/weapons/',
+      img:'/files/weapons/SMG-12.jpg',
       assignment: 'secondary',
       firemodes: ['automatic'],
       type: 'Machine Pistol',
@@ -460,7 +460,7 @@ module.exports = {
     },
     {
       name: 'K1A',
-      img:'/files/weapons/',
+      img:'/files/weapons/K1A.jpg',
       assignment: 'primary',
       firemodes: ['automatic', 'semi-automatic', '3-round burst'],
       type: 'Submachine Gun',
@@ -472,7 +472,7 @@ module.exports = {
     },
     {
       name: 'BOSG.12.2',
-      img:'/files/weapons/',
+      img:'/files/weapons/BOSG-12-2.jpg',
       assignment: 'primary',
       firemodes: ['break-action'],
       type: 'Shotgun',
@@ -484,7 +484,7 @@ module.exports = {
     },
     {
       name: 'C75 Auto',
-      img:'/files/weapons/',
+      img:'/files/weapons/C75Auto.jpg',
       assignment: 'secondary',
       firemodes: ['automatic', 'semi-automatic'],
       type: 'Machine Pistol',
@@ -496,7 +496,7 @@ module.exports = {
     },
     {
       name: 'Scorpion EVO 3 A1',
-      img:'/files/weapons/',
+      img:'/files/weapons/ScorpionEVO3A1.jpg',
       assignment: 'primary',
       firemodes: ['automatic', 'semi-automatic'],
       type: 'Submachine Gun',
