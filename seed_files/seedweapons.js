@@ -244,7 +244,7 @@ module.exports = {
     },
     {
       name: '416-C Carbine',
-      img:'/files/weapons/',
+      img:'/files/weapons/416-C.jpg',
       assignment: 'primary',
       firemodes: ['automatic', 'semi-automatic'],
       type: 'Assult Rifle',
@@ -256,7 +256,7 @@ module.exports = {
     },
     {
       name: 'P12',
-      img:'/files/weapons/',
+      img:'/files/weapons/P12.jpg',
       assignment: 'secondary',
       firemodes: ['semi-automatic'],
       type: 'Handgun',
@@ -268,7 +268,7 @@ module.exports = {
     },
     {
       name: 'MP7',
-      img:'/files/weapons/',
+      img:'/files/weapons/MP7.jpg',
       assignment: 'primary',
       firemodes: ['automatic', 'semi-automatic'],
       type: 'Submachine Gun',
@@ -280,7 +280,7 @@ module.exports = {
     },
     {
       name: 'Super 90',
-      img:'/files/weapons/',
+      img:'/files/weapons/Super90.jpg',
       assignment: 'primary',
       firemodes: ['Semi-Automatic'],
       type: 'Shotgun',
@@ -292,7 +292,7 @@ module.exports = {
     },
     {
       name: '9mm C1',
-      img:'/files/weapons/',
+      img:'/files/weapons/9mmC1.jpg',
       assignment: 'primary',
       firemodes: ['automatic'],
       type: 'Submachine Gun',
@@ -304,7 +304,7 @@ module.exports = {
     },
     {
       name: 'Mk1 9mm',
-      img:'/files/weapons/',
+      img:'/files/weapons/Mk19mm.jpg',
       assignment: 'secondary',
       firemodes: ['semi-automatic'],
       type: 'Handgun',
@@ -316,7 +316,7 @@ module.exports = {
     },
     {
       name: 'MPX',
-      img:'/files/weapons/',
+      img:'/files/weapons/MPX.jpg',
       assignment: 'primary',
       firemodes: ['automatic', 'semi-automatic'],
       type: 'Submachine Gun',
@@ -328,7 +328,7 @@ module.exports = {
     },
     {
       name: 'SPAS-12',
-      img:'/files/weapons/',
+      img:'/files/weapons/SPAS-12.jpg',
       assignment: 'primary',
       firemodes: ['Semi-Automatic'],
       type: 'Shotgun',
@@ -340,7 +340,7 @@ module.exports = {
     },
     {
       name: 'D-50',
-      img:'/files/weapons/',
+      img:'/files/weapons/D-50.jpg',
       assignment: 'secondary',
       firemodes: ['semi-automatic'],
       type: 'Handgun',
@@ -352,7 +352,7 @@ module.exports = {
     },
     {
       name: 'M12',
-      img:'/files/weapons/',
+      img:'/files/weapons/M12.jpg',
       assignment: 'primary',
       firemodes: ['automatic', 'semi-automatic'],
       type: 'Submachine Gun',
@@ -364,7 +364,7 @@ module.exports = {
     },
     {
       name: 'SPAS-15',
-      img:'/files/weapons/',
+      img:'/files/weapons/SPAS-15.jpg',
       assignment: 'primary',
       firemodes: ['Semi-Automatic'],
       type: 'Shotgun',
@@ -376,7 +376,7 @@ module.exports = {
     },
     {
       name: '"Luison"',
-      img:'/files/weapons/',
+      img:'/files/weapons/luison.jpg',
       assignment: 'secondary',
       firemodes: ['semi-automatic'],
       type: 'Handgun',
@@ -388,7 +388,7 @@ module.exports = {
     },
     {
       name: 'ALDA 5.56',
-      img:'/files/weapons/',
+      img:'/files/weapons/ALDA556.jpg',
       assignment: 'primary',
       firemodes: ['automatic'],
       type: 'Light Machine Gun',
