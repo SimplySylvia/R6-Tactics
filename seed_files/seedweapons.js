@@ -664,7 +664,7 @@ module.exports = {
     },
     {
       name: 'CCE Shield',
-      img:'/files/weapons/',
+      img:'/files/weapons/CCEShield.jpg',
       assignment: 'primary',
       firemodes: [],
       type: 'Balistic Shield',
@@ -676,7 +676,7 @@ module.exports = {
     },
     {
       name: 'P-10C',
-      img:'/files/weapons/',
+      img:'/files/weapons/P-10C.jpg',
       assignment: 'secondary',
       firemodes: ['semi-automatic'],
       type: 'Handgun',
@@ -688,7 +688,7 @@ module.exports = {
     },
     {
       name: 'SPSMG9',
-      img:'/files/weapons/',
+      img:'/files/weapons/SPSMG9.jpg',
       assignment: 'secondary',
       firemodes: ['2-round Burst'],
       type: 'Machine Pistol',
@@ -700,7 +700,7 @@ module.exports = {
     },
     {
       name: 'AR33',
-      img:'/files/weapons/',
+      img:'/files/weapons/AR33.jpg',
       assignment: 'primary',
       firemodes: ['automatic', 'semi-automatic','2-round burst'],
       type: 'Assult Rifle',
@@ -712,7 +712,7 @@ module.exports = {
     },
     {
       name: '556xi',
-      img:'/files/weapons/',
+      img:'/files/weapons/556xi.jpg',
       assignment: 'primary',
       firemodes: ['automatic', 'semi-automatic'],
       type: 'Assult Rifle',
@@ -724,7 +724,7 @@ module.exports = {
     },
     {
       name: 'G36C',
-      img:'/files/weapons/',
+      img:'/files/weapons/G36C.jpg',
       assignment: 'primary',
       firemodes: ['automatic', 'semi-automatic'],
       type: 'Assult Rifle',
@@ -736,7 +736,7 @@ module.exports = {
     },
     {
       name: 'R4-C',
-      img:'/files/weapons/',
+      img:'/files/weapons/R4-C.jpg',
       assignment: 'primary',
       firemodes: ['automatic', 'semi-automatic'],
       type: 'Assult Rifle',
@@ -748,7 +748,7 @@ module.exports = {
     },
     {
       name: '417',
-      img:'/files/weapons/',
+      img:'/files/weapons/417.jpg',
       assignment: 'primary',
       firemodes: ['semi-automatic'],
       type: 'Marksmen Rifle',
@@ -760,7 +760,7 @@ module.exports = {
     },
     {
       name: 'F2',
-      img:'/files/weapons/',
+      img:'/files/weapons/F2.jpg',
       assignment: 'primary',
       firemodes: ['automatic', 'semi-automatic','3-round burst'],
       type: 'Assult Rifle',
@@ -772,7 +772,7 @@ module.exports = {
     },
     {
       name: 'Extendable Shield',
-      img:'/files/weapons/',
+      img:'/files/weapons/ExtendableShield.jpg',
       assignment: 'primary',
       firemodes: [],
       type: 'Balistic Shield',
@@ -784,7 +784,7 @@ module.exports = {
     },
     {
       name: 'OTs-03',
-      img:'/files/weapons/',
+      img:'/files/weapons/OTs-03.jpg',
       assignment: 'primary',
       firemodes: ['semi-automatic'],
       type: 'Marksmen Rifle',
@@ -796,7 +796,7 @@ module.exports = {
     },
     {
       name: 'Balistic Shield',
-      img:'/files/weapons/',
+      img:'/files/weapons/BalisticShield.jpg',
       assignment: 'primary',
       firemodes: [],
       type: 'Balistic Shield',
@@ -808,7 +808,7 @@ module.exports = {
     },
     {
       name: '6P41',
-      img:'/files/weapons/',
+      img:'/files/weapons/6P41.jpg',
       assignment: 'primary',
       firemodes: ['automatic'],
       type: 'Light Machine Gun',
@@ -820,7 +820,7 @@ module.exports = {
     },
     {
       name: 'AK-12',
-      img:'/files/weapons/',
+      img:'/files/weapons/AK-12.jpg',
       assignment: 'primary',
       firemodes: ['automatic', 'semi-automatic','3-round Burst'],
       type: 'Assult Rifle',
@@ -832,7 +832,7 @@ module.exports = {
     },
     {
       name: 'Flash Shield',
-      img:'/files/weapons/',
+      img:'/files/weapons/FlashShield.jpg',
       assignment: 'primary',
       firemodes: [],
       type: 'Balistic Shield',
@@ -844,7 +844,7 @@ module.exports = {
     },
     {
       name: 'AUG A2',
-      img:'/files/weapons/',
+      img:'/files/weapons/AUGA2.jpg',
       assignment: 'primary',
       firemodes: ['automatic'],
       type: 'Assult Rifle',
@@ -856,7 +856,7 @@ module.exports = {
     },
     {
       name: '552 Commando',
-      img:'/files/weapons/',
+      img:'/files/weapons/552Commando.jpg',
       assignment: 'primary',
       firemodes: ['automatic', 'semi-automatic','3-round Burst'],
       type: 'Assult Rifle',
@@ -868,7 +868,7 @@ module.exports = {
     },
     {
       name: 'C8-SFW',
-      img:'/files/weapons/',
+      img:'/files/weapons/C8-SFW.jpg',
       assignment: 'primary',
       firemodes: ['automatic', 'semi-automatic','2-round burst'],
       type: 'Assult Rifle',
@@ -880,7 +880,7 @@ module.exports = {
     },
     {
       name: 'CAMRS',
-      img:'/files/weapons/',
+      img:'/files/weapons/CAMRS.jpg',
       assignment: 'primary',
       firemodes: ['semi-automatic'],
       type: 'Marksmen Rifle',
@@ -892,7 +892,7 @@ module.exports = {
     },
     {
       name: 'MK17 CQB',
-      img:'/files/weapons/',
+      img:'/files/weapons/MK17CQB.jpg',
       assignment: 'primary',
       firemodes: ['automatic', 'semi-automatic'],
       type: 'Assult Rifle',
@@ -904,7 +904,7 @@ module.exports = {
     },
     {
       name: 'SR-25',
-      img:'/files/weapons/',
+      img:'/files/weapons/SR-25.jpg',
       assignment: 'primary',
       firemodes: ['semi-automatic'],
       type: 'Marksmen Rifle',
@@ -916,7 +916,7 @@ module.exports = {
     },
     {
       name: 'PRB92',
-      img:'/files/weapons/',
+      img:'/files/weapons/PRB92.jpg',
       assignment: 'secondary',
       firemodes: ['semi-automatic'],
       type: 'Handgun',
