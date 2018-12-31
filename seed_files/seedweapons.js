@@ -508,7 +508,7 @@ module.exports = {
     },
     {
       name: 'FO-12',
-      img:'/files/weapons/',
+      img:'/files/weapons/FO-12.jpg',
       assignment: 'primary',
       firemodes: ['break-action'],
       type: 'Shotgun',
@@ -520,7 +520,7 @@ module.exports = {
     },
     {
       name: '"RG15"',
-      img:'/files/weapons/',
+      img:'/files/weapons/RG15.jpg',
       assignment: 'secondary',
       firemodes: ['semi-automatic'],
       type: 'Handgun',
@@ -532,7 +532,7 @@ module.exports = {
     },
     {
       name: 'SIX12 SD',
-      img:'/files/weapons/',
+      img:'/files/weapons/SIX12SD.jpg',
       assignment: 'primary',
       firemodes: ['double-action'],
       type: 'Shotgun',
@@ -544,7 +544,7 @@ module.exports = {
     },
     {
       name: 'T-5 SMG',
-      img:'/files/weapons/',
+      img:'/files/weapons/T5SMG.jpg',
       assignment: 'primary',
       firemodes: ['automatic', 'semi-automatic'],
       type: 'Submachine Gun',
@@ -556,7 +556,7 @@ module.exports = {
     },
     {
       name: '"Q-929"',
-      img:'/files/weapons/',
+      img:'/files/weapons/Q-929.jpg',
       assignment: 'secondary',
       firemodes: ['semi-automatic'],
       type: 'Handgun',
@@ -568,7 +568,7 @@ module.exports = {
     },
     {
       name: 'Vector .45 ACP',
-      img:'/files/weapons/',
+      img:'/files/weapons/Vector45ACP.jpg',
       assignment: 'primary',
       firemodes: ['automatic', 'semi-automatic', '2-round burst'],
       type: 'Submachine Gun',
@@ -580,7 +580,7 @@ module.exports = {
     },
     {
       name: 'ITA12L',
-      img:'/files/weapons/',
+      img:'/files/weapons/ITA12L.jpg',
       assignment: 'primary',
       firemodes: ['Pump-Action'],
       type: 'Shotgun',
@@ -592,7 +592,7 @@ module.exports = {
     },
     {
       name: 'ITA12S',
-      img:'/files/weapons/',
+      img:'/files/weapons/ITA12S.jpg',
       assignment: 'secondary',
       firemodes: ['Pump-Action'],
       type: 'Shotgun',
@@ -603,8 +603,8 @@ module.exports = {
       _id: mongoose.Types.ObjectId('ITA12S000000'),
     },
     {
-      name: '"USP40"',
-      img:'/files/weapons/',
+      name: 'USP40',
+      img:'/files/weapons/USP40.jpg',
       assignment: 'secondary',
       firemodes: ['semi-automatic'],
       type: 'Handgun',
@@ -616,7 +616,7 @@ module.exports = {
     },
     {
       name: 'SuperNova',
-      img:'/files/weapons/',
+      img:'/files/weapons/SuperNova.jpg',
       assignment: 'primary',
       firemodes: ['Pump-Action'],
       type: 'Shotgun',
@@ -628,7 +628,7 @@ module.exports = {
     },
     {
       name: 'MP5SD',
-      img:'/files/weapons/',
+      img:'/files/weapons/MP5SD.jpg',
       assignment: 'primary',
       firemodes: ['automatic', 'semi-automatic'],
       type: 'Submachine Gun',
@@ -640,7 +640,7 @@ module.exports = {
     },
     {
       name: 'P229',
-      img:'/files/weapons/',
+      img:'/files/weapons/P229.jpg',
       assignment: 'secondary',
       firemodes: ['semi-automatic'],
       type: 'Handgun',
@@ -652,7 +652,7 @@ module.exports = {
     },
     {
       name: 'Bearing 9',
-      img:'/files/weapons/',
+      img:'/files/weapons/Bearing9.jpg',
       assignment: 'secondary',
       firemodes: ['automatic'],
       type: 'Machine Pistol',
@@ -988,7 +988,7 @@ module.exports = {
     },
     {
       name: 'SIX12',
-      img:'/files/weapons/',
+      img:'/files/weapons/SIX12.jpg',
       assignment: 'primary',
       firemodes: ['double-action'],
       type: 'Shotgun',
