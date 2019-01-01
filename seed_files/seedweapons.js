@@ -928,7 +928,7 @@ module.exports = {
     },
     {
       name: 'PARA-308',
-      img:'/files/weapons/',
+      img:'/files/weapons/PARA-308.jpg',
       assignment: 'primary',
       firemodes: ['automatic', 'semi-automatic'],
       type: 'Assult Rifle',
@@ -940,7 +940,7 @@ module.exports = {
     },
     {
       name: 'M249',
-      img:'/files/weapons/',
+      img:'/files/weapons/M249.jpg',
       assignment: 'primary',
       firemodes: ['automatic'],
       type: 'Light Machine Gun',
@@ -952,7 +952,7 @@ module.exports = {
     },
     {
       name: 'Type-89',
-      img:'/files/weapons/',
+      img:'/files/weapons/Type-89.jpg',
       assignment: 'primary',
       firemodes: ['automatic', 'semi-automatic', '3-round burst'],
       type: 'Assult Rifle',
@@ -964,7 +964,7 @@ module.exports = {
     },
     {
       name: 'C7E',
-      img:'/files/weapons/',
+      img:'/files/weapons/C7E.png',
       assignment: 'primary',
       firemodes: ['automatic', 'semi-automatic', '3-round burst'],
       type: 'Assult Rifle',
@@ -976,7 +976,7 @@ module.exports = {
     },
     {
       name: 'PDW9',
-      img:'/files/weapons/',
+      img:'/files/weapons/PDW9.jpg',
       assignment: 'primary',
       firemodes: ['automatic', 'semi-automatic','3-round burst'],
       type: 'Submachine Gun',
@@ -1000,7 +1000,7 @@ module.exports = {
     },
     {
       name: 'T-95 LSW',
-      img:'/files/weapons/',
+      img:'/files/weapons/T-95LSW.jpg',
       assignment: 'primary',
       firemodes: ['automatic', 'semi-automatic','3-round burst'],
       type: 'Light Machine Gun',
@@ -1012,7 +1012,7 @@ module.exports = {
     },
     {
       name: 'LMG-E',
-      img:'/files/weapons/',
+      img:'/files/weapons/LMG-E.jpg',
       assignment: 'primary',
       firemodes: ['automatic'],
       type: 'Light Machine Gun',
@@ -1024,7 +1024,7 @@ module.exports = {
     },
     {
       name: 'M762',
-      img:'/files/weapons/',
+      img:'/files/weapons/M762.jpg',
       assignment: 'primary',
       firemodes: ['automatic', 'semi-automatic', '3-round burst'],
       type: 'Assult Rifle',
@@ -1036,7 +1036,7 @@ module.exports = {
     },
     {
       name: 'MK 14 EBR',
-      img:'/files/weapons/',
+      img:'/files/weapons/MK14EBR.jpg',
       assignment: 'primary',
       firemodes: ['semi-automatic'],
       type: 'Marksmen Rifle',
@@ -1048,7 +1048,7 @@ module.exports = {
     },
     {
       name: 'V308',
-      img:'/files/weapons/',
+      img:'/files/weapons/V308.jpg',
       assignment: 'primary',
       firemodes: ['automatic'],
       type: 'Assult Rifle',
@@ -1060,7 +1060,7 @@ module.exports = {
     },
     {
       name: 'Spear .308',
-      img:'/files/weapons/',
+      img:'/files/weapons/Spear308.jpg',
       assignment: 'primary',
       firemodes: ['automatic'],
       type: 'Assult Rifle',
@@ -1072,7 +1072,7 @@ module.exports = {
     },
     {
       name: 'M4',
-      img:'/files/weapons/',
+      img:'/files/weapons/M4.jpg',
       assignment: 'primary',
       firemodes: ['automatic', 'semi-automatic', '3-round burst'],
       type: 'Assult Rifle',
@@ -1084,7 +1084,7 @@ module.exports = {
     },
     {
       name: 'AR-15.50',
-      img:'/files/weapons/',
+      img:'/files/weapons/AR-1550.jpg',
       assignment: 'primary',
       firemodes: ['semi-automatic'],
       type: 'Assult Rifle',
@@ -1096,7 +1096,7 @@ module.exports = {
     },
     {
       name: '1911 TACOPS',
-      img:'/files/weapons/',
+      img:'/files/weapons/1911TACOPS.jpg',
       assignment: 'secondary',
       firemodes: ['semi-automatic'],
       type: 'Handgun',
