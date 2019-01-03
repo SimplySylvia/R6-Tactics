@@ -43,7 +43,7 @@ module.exports = {
             "ERROR": "Database Error"
           });
         }
-        res.json(atkop);
+        res.json({data : atkop});
       })
   },
 };
