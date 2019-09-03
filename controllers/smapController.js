@@ -2,30 +2,34 @@ const db = require(`../models`);
 
 module.exports = {
   index: (req, res) => {
-    db.Smap.find()
-    .exec((err, smap) => {
-      total = smap.length
+    db.Smap.find().exec((err, smap) => {
+      total = smap.length;
       if (err) {
-        return console.log("index error: " + err); }
-        res.json({
-          amount: total,
-          data:smap
-        });
+        return console.log("index error: " + err);
+      }
+      res.json({
+        amount: total,
+        data: smap
       });
-    },
-    create: (req, res) => {
-      let newSmap = req.body
-      console.log(req.body);
-      db.Smap.create(newSmap, (err, newSmap) => {
-        if(err){res.status(500).json({"ERROR":"Database Error"});}
-        res.json(newSmap);
-      });
-    },
-    show: (req, res) => {
-      let smapId = req.params.id;
-      db.Smap.findById(smapId, (err, smap) => {
-        if(err){res.status(500).json({"ERROR":"Database Error"});}
-        res.json({data:smap});
-      });
-    },
+    });
+  },
+  create: (req, res) => {
+    let newSmap = req.body;
+    console.log(req.body);
+    db.Smap.create(newSmap, (err, newSmap) => {
+      if (err) {
+        res.status(500).json({ ERROR: "Database Error" });
+      }
+      res.json(newSmap);
+    });
+  },
+  show: (req, res) => {
+    let smapId = req.params.id;
+    db.Smap.findById(smapId, (err, smap) => {
+      if (err) {
+        res.status(500).json({ ERROR: "Database Error" });
+      }
+      res.json({ data: smap });
+    });
+  }
 };

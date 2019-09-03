@@ -1,113 +1,118 @@
-const
-  db = require('./models'),
-  def = require('./seed_files/seeddef'),
-  atk = require('./seed_files/seedatk'),
-  gad = require('./seed_files/seedgadgets'),
-  abil = require('./seed_files/seedabilities'),
-  weap = require('./seed_files/seedweapons'),
-  map = require('./seed_files/seedmap'),
-  colors = require('colors')
-
+const db = require("./models"),
+  def = require("./seed_files/seeddef"),
+  atk = require("./seed_files/seedatk"),
+  gad = require("./seed_files/seedgadgets"),
+  abil = require("./seed_files/seedabilities"),
+  weap = require("./seed_files/seedweapons"),
+  map = require("./seed_files/seedmap"),
+  colors = require("colors");
 
 const run = async () => {
-  try{
-      await makeGadgets(),
+  try {
+    await makeGadgets(),
       await makeAbilities(),
       await makeWeapons(),
       await makeSmaps(),
       await makeDefops(),
-      await makeAtkops()
+      await makeAtkops();
+  } catch (error) {
+    console.log(error);
   }
-  catch (error){
-    console.log(error)
-  }
-}
+};
 
 const makeGadgets = () => {
   return new Promise(resolve => {
     db.Gadget.remove({}, (err, gadgets) => {
       db.Gadget.create(gad.gadgetList, (err, gadgets) => {
-          if (err) {
-              return console.log('ERROR', err);
-          }
-          console.log(`Created ${gadgets.length} Gadgets`.yellow);
+        if (err) {
+          return console.log("ERROR", err);
+        }
+        console.log(`Created ${gadgets.length} Gadgets`.yellow);
       });
-  })
-      resolve()
-  })
-}
+    });
+    resolve();
+  });
+};
 
 const makeDefops = () => {
   return new Promise(resolve => {
     db.Defop.remove({}, (err, defops) => {
       db.Defop.create(def.defopsList, (err, defops) => {
-          if (err) {
-              return console.log('ERROR', err);
-          }
-          console.log(`Created ${defops.length} Defops`.yellow);
+        if (err) {
+          return console.log("ERROR", err);
+        }
+        console.log(`Created ${defops.length} Defops`.yellow);
       });
-  })
-      resolve()
-  })
-}
+    });
+    resolve();
+  });
+};
 
 const makeAbilities = () => {
   return new Promise(resolve => {
-    db.Ability.remove({},(err, ability) =>{
-      db.Ability.create(abil.abilityList, (err, abilities) =>{
-        if (err) { return console.log('ERROR', err); }
+    db.Ability.remove({}, (err, ability) => {
+      db.Ability.create(abil.abilityList, (err, abilities) => {
+        if (err) {
+          return console.log("ERROR", err);
+        }
         console.log(`Created ${abilities.length} Abilities`.yellow);
       });
     });
-      resolve()
-  })
-}
+    resolve();
+  });
+};
 
 const makeWeapons = () => {
   return new Promise(resolve => {
-    db.Weapon.remove({},(err, weapon) =>{
-      db.Weapon.create(weap.weaponList, (err, weapons) =>{
-        if (err) { return console.log('ERROR', err); }
+    db.Weapon.remove({}, (err, weapon) => {
+      db.Weapon.create(weap.weaponList, (err, weapons) => {
+        if (err) {
+          return console.log("ERROR", err);
+        }
         console.log(`Created ${weapons.length} Weapons`.yellow);
       });
     });
-      resolve()
-  })
-}
+    resolve();
+  });
+};
 
 const makeSmaps = () => {
   return new Promise(resolve => {
-    db.Smap.remove({}, (err, smaps) =>{
-      db.Smap.create(map.SmapList, (err, smaps) =>{
-        if (err) { return console.log('ERROR', err); }
+    db.Smap.remove({}, (err, smaps) => {
+      db.Smap.create(map.SmapList, (err, smaps) => {
+        if (err) {
+          return console.log("ERROR", err);
+        }
         console.log(`Created ${smaps.length} Maps`.yellow);
       });
     });
-    resolve()
-  })
-}
+    resolve();
+  });
+};
 
 const makeAtkops = () => {
   return new Promise(resolve => {
-    db.Atkop.remove({},(err, atkops) =>{
-      db.Atkop.create(atk.atkopsList, (err, atkops) =>{
-        if (err) { return console.log('ERROR', err); }
-        console.log(`Created ${atkops.length} Atkops`.yellow)
-      })
-    })
-    resolve()
+    db.Atkop.remove({}, (err, atkops) => {
+      db.Atkop.create(atk.atkopsList, (err, atkops) => {
+        if (err) {
+          return console.log("ERROR", err);
+        }
+        console.log(`Created ${atkops.length} Atkops`.yellow);
+      });
+    });
+    resolve();
+  });
+};
+
+run().then(
+  (log = async () => {
+    try {
+      return new Promise(resolve => {
+        console.log(colors.bgGreen("All Made!"));
+        resolve();
+      });
+    } catch (error) {
+      console.log(error);
+    }
   })
-}
-
-
-run().then(log = async ()=> {
-  try{
-    return new Promise (resolve => {
-      console.log(colors.bgGreen("All Made!"))
-      resolve()
-    })
-  }
-  catch (error){
-    console.log(error)
-  }
-})
+);
