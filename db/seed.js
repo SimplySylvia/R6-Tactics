@@ -9,110 +9,42 @@ const db = require('../models'),
 
 const run = async () => {
   try {
-    await makeGadgets(),
-      await makeAbilities(),
-      await makeWeapons(),
-      await makeSmaps(),
-      await makeDefops(),
-      await makeAtkops();
+    // gadgets seed
+    const removedGadgets = await db.Gadget.remove({});
+    console.log(`removed ${removedGadgets.deletedCount} gadgets`.red);
+    const createdGadgets = await db.Gadget.create(gad);
+    console.log(`Created ${createdGadgets.length} gadgets`.green);
+    // ability seed
+    const removedAbilities = await db.Ability.remove({});
+    console.log(`removed ${removedAbilities.deletedCount} abilities`.red);
+    const createdAbilities = await db.Ability.create(abil);
+    console.log(`Created ${createdAbilities.length} abilities`.green);
+    // weapon seed
+    const removedWeapons = await db.Weapon.remove({});
+    console.log(`removed ${removedWeapons.deletedCount} weapons`.red);
+    const createdWeapons = await db.Weapon.create(weap);
+    console.log(`Created ${createdWeapons.length} weapons`.green);
+    // map seed
+    const removedMaps = await db.Smap.remove({});
+    console.log(`removed ${removedMaps.deletedCount} maps`.red);
+    const createdMaps = await db.Smap.create(map);
+    console.log(`Created ${createdMaps.length} maps`.green);
+    // operator seed
+    const removedOps = await db.Operator.remove({});
+    console.log(`removed ${removedOps.deletedCount} ops`.red);
+    const createdDefenseOps = await db.Operator.create(def);
+    console.log(`Created ${createdDefenseOps.length} defense operators`.green);
+    const createdAttackOps = await db.Operator.create(atk);
+    console.log(`Created ${createdAttackOps.length} attack operators`.green);
   } catch (error) {
     console.log(error);
   }
 };
 
-const makeGadgets = () => {
-  return new Promise(resolve => {
-    db.Gadget.remove({}, (err, gadgets) => {
-      db.Gadget.create(gad.gadgetList, (err, gadgets) => {
-        if (err) {
-          return console.log('ERROR', err);
-        }
-        console.log(`Created ${gadgets.length} Gadgets`.yellow);
-      });
-    });
-    resolve();
-  });
-};
-
-const makeDefops = () => {
-  return new Promise(resolve => {
-    db.Defop.remove({}, (err, defops) => {
-      db.Defop.create(def.defopsList, (err, defops) => {
-        if (err) {
-          return console.log('ERROR', err);
-        }
-        console.log(`Created ${defops.length} Defops`.yellow);
-      });
-    });
-    resolve();
-  });
-};
-
-const makeAbilities = () => {
-  return new Promise(resolve => {
-    db.Ability.remove({}, (err, ability) => {
-      db.Ability.create(abil.abilityList, (err, abilities) => {
-        if (err) {
-          return console.log('ERROR', err);
-        }
-        console.log(`Created ${abilities.length} Abilities`.yellow);
-      });
-    });
-    resolve();
-  });
-};
-
-const makeWeapons = () => {
-  return new Promise(resolve => {
-    db.Weapon.remove({}, (err, weapon) => {
-      db.Weapon.create(weap.weaponList, (err, weapons) => {
-        if (err) {
-          return console.log('ERROR', err);
-        }
-        console.log(`Created ${weapons.length} Weapons`.yellow);
-      });
-    });
-    resolve();
-  });
-};
-
-const makeSmaps = () => {
-  return new Promise(resolve => {
-    db.Smap.remove({}, (err, smaps) => {
-      db.Smap.create(map.SmapList, (err, smaps) => {
-        if (err) {
-          return console.log('ERROR', err);
-        }
-        console.log(`Created ${smaps.length} Maps`.yellow);
-      });
-    });
-    resolve();
-  });
-};
-
-const makeAtkops = () => {
-  return new Promise(resolve => {
-    db.Atkop.remove({}, (err, atkops) => {
-      db.Atkop.create(atk.atkopsList, (err, atkops) => {
-        if (err) {
-          return console.log('ERROR', err);
-        }
-        console.log(`Created ${atkops.length} Atkops`.yellow);
-      });
-    });
-    resolve();
-  });
-};
-
-run().then(
-  (log = async () => {
-    try {
-      return new Promise(resolve => {
-        console.log(colors.bgGreen('All Made!'));
-        resolve();
-      });
-    } catch (error) {
-      console.log(error);
-    }
-  })
-);
+run().then(() => {
+  try {
+    console.log(colors.bgGreen('All Made!'));
+  } catch (error) {
+    console.log(error);
+  }
+});

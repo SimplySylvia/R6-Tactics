@@ -9,7 +9,7 @@ const routes = require('./routes');
 const app = express();
 
 //--------------------------------MIDDLEWARE
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
 app.use(compactRes);
 app.use(cors());
 app.use(express.static(__dirname + '/public'));
@@ -29,8 +29,10 @@ app.get('/documentation', (req, res) => {
 });
 
 app.use('/api/v1', routes.api);
-app.use('/api/v1/atkops', routes.atkop);
-app.use('/api/v1/defops', routes.defop);
+app.use('/api/v1/operators', routes.operators);
+
+// app.use('/api/v1/atkops', routes.atkop);
+// app.use('/api/v1/defops', routes.defop);
 app.use('/api/v1/smaps', routes.smap);
 app.use('/api/v1/gadgets', routes.gadget);
 app.use('/api/v1/abilities', routes.ability);

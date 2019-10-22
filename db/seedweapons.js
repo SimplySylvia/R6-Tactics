@@ -1,7 +1,6 @@
 const mongoose = require('mongoose');
 
-module.exports = {
-  weaponList: [
+module.exports = [
     {
       name: 'L85A2',
       img:'/files/weapons/L85A2.jpg',
@@ -1107,4 +1106,3 @@ module.exports = {
       _id: mongoose.Types.ObjectId('1911TACOPS00'),
     },
   ]
-}

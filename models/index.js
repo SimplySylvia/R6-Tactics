@@ -14,7 +14,7 @@ mongoose
 
 module.exports = {
   Atkop: require('./atkop'),
-  Defop: require('./defop'),
+  Operator: require('./Operator'),
   Smap: require('./smap'),
   Gadget: require('./gadget'),
   Ability: require('./ability'),
