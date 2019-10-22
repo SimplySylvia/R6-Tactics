@@ -1,49 +1,33 @@
 const db = require(`../models`);
 
 module.exports = {
-  index: (req, res) => {
-    db.Atkop.find()
-      .populate("gadgets")
-      .populate("ability")
-      .populate("primaries")
-      .populate("secondaries")
-      .exec((err, atkop) => {
-        let total = atkop.length;
-        if (err) {
-          return console.log("index error: " + err);
-        }
-        res.json({
-          amount: total,
-          data: atkop
-        });
-      });
+  index: async (req, res) => {
+    try {
+      const allOperators = await db.Atkop.find({}).populate(
+        'gadgets abilty primaries secondaries'
+      );
+      res.success(200, allOperators);
+    } catch (error) {
+      res.error(error.message);
+    }
   },
-  create: (req, res) => {
-    let newAtkop = req.body;
-    console.log(req.body);
-    db.Atkop.create(newAtkop, (err, newAtkop) => {
-      if (err) {
-        res.status(500).json({
-          ERROR: "Database Error"
-        });
-      }
-      res.json(newAtkop);
-    });
+  show: async (req, res) => {
+    try {
+      const foundOp = await db.Atkop.findById(req.params.id).populate(
+        'gadgets abilty primaries secondaries'
+      );
+      res.success(200, foundOp);
+    } catch (error) {
+      console.log(error);
+      res.error(error.message);
+    }
   },
-  show: (req, res) => {
-    let atkopId = req.params.id;
-    db.Atkop.findById(atkopId)
-      .populate("gadgets")
-      .populate("ability")
-      .populate("primaries")
-      .populate("secondaries")
-      .exec((err, atkop) => {
-        if (err) {
-          res.status(500).json({
-            ERROR: "Database Error"
-          });
-        }
-        res.json({ data: atkop });
-      });
+  create: async (req, res) => {
+    try {
+      const newOp = await db.Atkop.create(req.body);
+      res.success(201, newOp);
+    } catch (error) {
+      res.error(error.message);
+    }
   }
 };

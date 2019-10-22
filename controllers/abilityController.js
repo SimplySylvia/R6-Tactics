@@ -23,6 +23,7 @@ module.exports = {
       res.json(newAbility);
     });
   },
+// This is the show route for abilities
   show: (req, res) => {
     let AbilityId = req.params.id;
     db.Ability.findById(AbilityId, (err, ability) => {
@@ -33,3 +34,4 @@ module.exports = {
     });
   }
 };
+
