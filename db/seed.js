@@ -1,11 +1,11 @@
-const db = require("./models"),
-  def = require("./seed_files/seeddef"),
-  atk = require("./seed_files/seedatk"),
-  gad = require("./seed_files/seedgadgets"),
-  abil = require("./seed_files/seedabilities"),
-  weap = require("./seed_files/seedweapons"),
-  map = require("./seed_files/seedmap"),
-  colors = require("colors");
+const db = require('../models'),
+  def = require('./seeddef'),
+  atk = require('./seedatk'),
+  gad = require('./seedgadgets'),
+  abil = require('./seedabilities'),
+  weap = require('./seedweapons'),
+  map = require('./seedmap'),
+  colors = require('colors');
 
 const run = async () => {
   try {
@@ -25,7 +25,7 @@ const makeGadgets = () => {
     db.Gadget.remove({}, (err, gadgets) => {
       db.Gadget.create(gad.gadgetList, (err, gadgets) => {
         if (err) {
-          return console.log("ERROR", err);
+          return console.log('ERROR', err);
         }
         console.log(`Created ${gadgets.length} Gadgets`.yellow);
       });
@@ -39,7 +39,7 @@ const makeDefops = () => {
     db.Defop.remove({}, (err, defops) => {
       db.Defop.create(def.defopsList, (err, defops) => {
         if (err) {
-          return console.log("ERROR", err);
+          return console.log('ERROR', err);
         }
         console.log(`Created ${defops.length} Defops`.yellow);
       });
@@ -53,7 +53,7 @@ const makeAbilities = () => {
     db.Ability.remove({}, (err, ability) => {
       db.Ability.create(abil.abilityList, (err, abilities) => {
         if (err) {
-          return console.log("ERROR", err);
+          return console.log('ERROR', err);
         }
         console.log(`Created ${abilities.length} Abilities`.yellow);
       });
@@ -67,7 +67,7 @@ const makeWeapons = () => {
     db.Weapon.remove({}, (err, weapon) => {
       db.Weapon.create(weap.weaponList, (err, weapons) => {
         if (err) {
-          return console.log("ERROR", err);
+          return console.log('ERROR', err);
         }
         console.log(`Created ${weapons.length} Weapons`.yellow);
       });
@@ -81,7 +81,7 @@ const makeSmaps = () => {
     db.Smap.remove({}, (err, smaps) => {
       db.Smap.create(map.SmapList, (err, smaps) => {
         if (err) {
-          return console.log("ERROR", err);
+          return console.log('ERROR', err);
         }
         console.log(`Created ${smaps.length} Maps`.yellow);
       });
@@ -95,7 +95,7 @@ const makeAtkops = () => {
     db.Atkop.remove({}, (err, atkops) => {
       db.Atkop.create(atk.atkopsList, (err, atkops) => {
         if (err) {
-          return console.log("ERROR", err);
+          return console.log('ERROR', err);
         }
         console.log(`Created ${atkops.length} Atkops`.yellow);
       });
@@ -108,7 +108,7 @@ run().then(
   (log = async () => {
     try {
       return new Promise(resolve => {
-        console.log(colors.bgGreen("All Made!"));
+        console.log(colors.bgGreen('All Made!'));
         resolve();
       });
     } catch (error) {
