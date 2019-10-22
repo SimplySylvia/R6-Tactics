@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 // internal modules
 const compactRes = require('./middleware/response');
-const routes = require('./config');
+const routes = require('./routes');
 // instanced module
 const app = express();
 

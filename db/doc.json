@@ -5,67 +5,67 @@
   "endpoints": [
     {
       "method": "GET",
-      "path": "/api",
+      "path": "/api/v1",
       "description": "Describes available endpoints"
     },
     {
       "method": "GET",
-      "path": "/api/atkops",
+      "path": "/api/v1/atkops",
       "description": "Will respond with a Json of all attack operators."
     },
     {
       "method": "GET",
-      "path": "/api/atkops/:id",
+      "path": "/api/v1/atkops/:id",
       "description": "Will respond with a Json of a specific attack operator with the given id."
     },
     {
       "method": "GET",
-      "path": "/api/defops",
+      "path": "/api/v1/defops",
       "description": "Will respond with a Json of all defense operators."
     },
     {
       "method": "GET",
-      "path": "/api/defops/:id",
+      "path": "/api/v1/defops/:id",
       "description": "Will respond with a Json of a specific defense operator with the given id."
     },
     {
       "method": "GET",
-      "path": "/api/smaps",
+      "path": "/api/v1/smaps",
       "description": "Will respond with a Json of all game maps."
     },
     {
       "method": "GET",
-      "path": "/api/smaps/:id",
+      "path": "/api/v1/smaps/:id",
       "description": "Will respond with a Json of a specific game map with the given id."
     },
     {
       "method": "GET",
-      "path": "/api/gadgets",
+      "path": "/api/v1/gadgets",
       "description": "Will respond with a Json of all game basic gadgets."
     },
     {
       "method": "GET",
-      "path": "/api/gadgets/:id",
+      "path": "/api/v1/gadgets/:id",
       "description": "Will respond with a Json of a specific gadget with the given id."
     },
     {
       "method": "GET",
-      "path": "/api/abilities",
+      "path": "/api/v1/abilities",
       "description": "Will respond with a Json of all game operator abilities."
     },
     {
       "method": "GET",
-      "path": "/api/abilities/:id",
+      "path": "/api/v1/abilities/:id",
       "description": "Will respond with a Json of a specific operator ability with the given id."
     },
     {
       "method": "GET",
-      "path": "/api/weapons",
+      "path": "/api/v1/weapons",
       "description": "Will respond with a Json of all game operator weapons."
     },
     {
       "method": "GET",
-      "path": "/api/weapons/:id",
+      "path": "/api/v1/weapons/:id",
       "description": "Will respond with a Json of a specific operator weapon with the given id."
     }
   ]
