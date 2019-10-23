@@ -1,37 +1,28 @@
 const db = require(`../models`);
 
 module.exports = {
-  index: (req, res) => {
-    db.Ability.find().exec((err, ability) => {
-      let total = ability.length;
-      if (err) {
-        return console.log("index error: " + err);
-      }
-      res.json({
-        amount: total,
-        data: ability
-      });
-    });
+  index: async (req, res) => {
+    try {
+      const allAbilities = await db.Ability.find({});
+      res.success(200, allAbilities);
+    } catch (error) {
+      res.error(error.message);
+    }
   },
-  create: (req, res) => {
-    let newAbility = req.body;
-    console.log(req.body);
-    db.Ability.create(newAbility, (err, newAbility) => {
-      if (err) {
-        res.status(500).json({ ERROR: "Database Error" });
-      }
-      res.json(newAbility);
-    });
+  show: async (req, res) => {
+    try {
+      const foundAbility = await db.Ability.findById(req.params.id);
+      res.success(200, foundAbility);
+    } catch (error) {
+      res.error(error.message);
+    }
   },
-// This is the show route for abilities
-  show: (req, res) => {
-    let AbilityId = req.params.id;
-    db.Ability.findById(AbilityId, (err, ability) => {
-      if (err) {
-        res.status(500).json({ ERROR: "Database Error" });
-      }
-      res.json({ data: ability });
-    });
+  create: async (req, res) => {
+    try {
+      const newAbility = await db.Ability.create(req.body);
+      res.success(201, newAbility);
+    } catch (error) {
+      res.error(error.message);
+    }
   }
 };
-

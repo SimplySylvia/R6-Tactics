@@ -10,8 +10,6 @@ module.exports = (req, res, next) => {
       delete resObj.data;
       delete resObj.count;
       resObj.message = 'No Documents Found';
-    } else if (typeof data === 'object') {
-      delete resObj.count;
     } else if (data.constructor === Array) {
       if (data.length > 0) {
         resObj.count = data.length;
@@ -20,6 +18,8 @@ module.exports = (req, res, next) => {
         delete resObj.count;
         resObj.message = 'No Documents Found';
       }
+    } else if (typeof data === 'object') {
+      delete resObj.count;
     }
     this.status(status).json(resObj);
   };
