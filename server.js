@@ -20,14 +20,7 @@ const PORT = process.env.PORT || 8000;
 // ------------------------------ROUTES
 app.use('/files', express.static('files'));
 
-app.get('/', (req, res) => {
-  res.sendFile('views/index.html', { root: __dirname });
-});
-
-app.get('/documentation', (req, res) => {
-  res.sendFile('views/documentation.html', { root: __dirname });
-});
-
+app.use('/', routes.views);
 app.use('/api/v1', routes.api);
 
 // ------------------------------Start Server
