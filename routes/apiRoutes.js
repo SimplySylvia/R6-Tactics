@@ -1,7 +1,5 @@
-const 
-  express = require('express'),
+const express = require('express'),
   router = express.Router(),
-  controllers = require('../controllers')
+  controllers = require('../controllers');
 
-module.exports = router
-  .get('/', controllers.api.index);
+module.exports = router.get('/', controllers.documentation.index);

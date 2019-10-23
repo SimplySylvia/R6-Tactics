@@ -3,5 +3,5 @@ const express = require('express'),
   controllers = require('../controllers');
 
 module.exports = router
-  .get('/', controllers.smap.index)
-  .get('/:id', controllers.smap.show);
+  .get('/', controllers.location.index)
+  .get('/:id', controllers.location.show);

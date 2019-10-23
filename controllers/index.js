@@ -1,8 +1,8 @@
 module.exports = {
-  api: require('./apiController'),
+  documentation: require('./documentation'),
   operator: require('./operator'),
-  smap: require('./smapController'),
-  gadget: require('./gadgetController'),
-  ability: require('./abilityController'),
-  weapon: require('./weaponController')
+  location: require('./location'),
+  gadget: require('./gadget'),
+  ability: require('./ability'),
+  weapon: require('./weapon')
 };
