@@ -6,5 +6,5 @@ module.exports = router
   .get('/', controllers.operator.index)
   .get('/attack', controllers.operator.filterAttack)
   .get('/defense', controllers.operator.filterDefense)
-  .post('/', controllers.operator.create)
-  .get('/:id', controllers.operator.show);
+  .get('/:id', controllers.operator.show)
+  .post('/', controllers.operator.create);
