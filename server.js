@@ -29,14 +29,6 @@ app.get('/documentation', (req, res) => {
 });
 
 app.use('/api/v1', routes.api);
-app.use('/api/v1/operators', routes.operators);
-
-// app.use('/api/v1/atkops', routes.atkop);
-// app.use('/api/v1/defops', routes.defop);
-app.use('/api/v1/locations', routes.locations);
-app.use('/api/v1/gadgets', routes.gadget);
-app.use('/api/v1/abilities', routes.ability);
-app.use('/api/v1/weapons', routes.weapon);
 
 // ------------------------------Start Server
 app.listen(process.env.PORT || PORT, () => {

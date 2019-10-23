@@ -1,6 +1,6 @@
 const express = require('express'),
   router = express.Router(),
-  controllers = require('../controllers');
+  controllers = require('../../controllers');
 
 module.exports = router
   .get('/', controllers.location.index)
