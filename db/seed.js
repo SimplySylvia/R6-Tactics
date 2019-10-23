@@ -1,10 +1,10 @@
 const db = require('../models'),
-  def = require('./seeddef'),
-  atk = require('./seedatk'),
-  gad = require('./seedgadgets'),
-  abil = require('./seedabilities'),
-  weap = require('./seedweapons'),
-  map = require('./seedmap'),
+  def = require('./defOperators'),
+  atk = require('./atkOperators'),
+  gad = require('./gadgets'),
+  abil = require('./abilities'),
+  weap = require('./weapons'),
+  map = require('./locations'),
   colors = require('colors');
 
 const run = async () => {
@@ -25,10 +25,10 @@ const run = async () => {
     const createdWeapons = await db.Weapon.create(weap);
     console.log(`Created ${createdWeapons.length} weapons`.green);
     // map seed
-    const removedMaps = await db.Smap.remove({});
-    console.log(`removed ${removedMaps.deletedCount} maps`.red);
-    const createdMaps = await db.Smap.create(map);
-    console.log(`Created ${createdMaps.length} maps`.green);
+    const removedLocations = await db.Location.remove({});
+    console.log(`removed ${removedLocations.deletedCount} maps`.red);
+    const createdLocations = await db.Location.create(map);
+    console.log(`Created ${createdLocations.length} maps`.green);
     // operator seed
     const removedOps = await db.Operator.remove({});
     console.log(`removed ${removedOps.deletedCount} ops`.red);
@@ -44,6 +44,7 @@ const run = async () => {
 run().then(() => {
   try {
     console.log(colors.bgGreen('All Made!'));
+    process.exit();
   } catch (error) {
     console.log(error);
   }

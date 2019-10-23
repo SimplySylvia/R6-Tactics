@@ -14,8 +14,8 @@ mongoose
 
 module.exports = {
   Operator: require('./Operator'),
-  Smap: require('./smap'),
-  Gadget: require('./gadget'),
-  Ability: require('./ability'),
-  Weapon: require('./weapon')
+  Location: require('./Location'),
+  Gadget: require('./Gadget'),
+  Ability: require('./Ability'),
+  Weapon: require('./Weapon')
 };
