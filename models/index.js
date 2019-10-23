@@ -13,7 +13,6 @@ mongoose
   .catch(err => console.log(err));
 
 module.exports = {
-  Atkop: require('./atkop'),
   Operator: require('./Operator'),
   Smap: require('./smap'),
   Gadget: require('./gadget'),
