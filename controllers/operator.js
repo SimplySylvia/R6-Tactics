@@ -28,5 +28,25 @@ module.exports = {
     } catch (error) {
       res.error(error.message);
     }
+  },
+  filterAttack: async (req, res) => {
+    try {
+      const allMatchOperators = await db.Operator.find({
+        type: 'Attack'
+      }).populate('gadgets abilty primaries secondaries');
+      res.success(200, allMatchOperators);
+    } catch (error) {
+      res.error(error.message);
+    }
+  },
+  filterDefense: async (req, res) => {
+    try {
+      const allMatchOperators = await db.Operator.find({
+        type: 'Defense'
+      }).populate('gadgets abilty primaries secondaries');
+      res.success(200, allMatchOperators);
+    } catch (error) {
+      res.error(error.message);
+    }
   }
 };
