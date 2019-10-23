@@ -1,7 +1,7 @@
-const endpoints = require('../db/doc.json');
+const doc = require('../db/doc.json');
 
 module.exports = {
   index: (req, res) => {
-    res.success(200, endpoints);
+    res.success(200, doc);
   }
 };

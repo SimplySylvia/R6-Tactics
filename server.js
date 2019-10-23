@@ -3,16 +3,15 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 // internal modules
-const compactRes = require('./middleware/response');
+const resFormatter = require('./middleware/response');
 const routes = require('./routes');
 // instanced module
 const app = express();
 
 //--------------------------------MIDDLEWARE
 app.use(bodyParser.json());
-app.use(compactRes);
+app.use(resFormatter);
 app.use(cors());
-app.use(express.static(__dirname + '/public'));
 
 //-------------------------------CONFIGURATION VARIABLES
 const PORT = process.env.PORT || 8000;
