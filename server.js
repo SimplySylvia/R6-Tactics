@@ -7,6 +7,7 @@ const resFormatter = require('./middleware/response');
 const routes = require('./routes');
 // instanced module
 const app = express();
+require('dotenv').config();
 
 //--------------------------------MIDDLEWARE
 app.use(bodyParser.json());
@@ -14,7 +15,7 @@ app.use(resFormatter);
 app.use(cors());
 
 //-------------------------------CONFIGURATION VARIABLES
-const PORT = process.env.PORT || 8000;
+const PORT = process.env.PORT;
 
 // ------------------------------ROUTES
 app.use('/files', express.static('files'));

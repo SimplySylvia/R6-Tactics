@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
-const DB_URL =
-  process.env.MONGODB_URI || 'mongodb://localhost:27017/R6-Tactics';
+require('dotenv').config();
+const DB_URL = process.env.MONGODB_URI;
 
 mongoose
   .connect(DB_URL, {
