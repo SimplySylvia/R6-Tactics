@@ -2,6 +2,8 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
+const helmet = require('helmet');
+const morgan = require('morgan');
 // internal modules
 const resFormatter = require('./middleware/response');
 const routes = require('./routes');
@@ -9,13 +11,25 @@ const routes = require('./routes');
 const app = express();
 require('dotenv').config();
 
+//-------------------------------CONFIGURATION VARIABLES
+const PORT = process.env.PORT;
+
 //--------------------------------MIDDLEWARE
 app.use(bodyParser.json());
 app.use(resFormatter);
-app.use(cors());
 
-//-------------------------------CONFIGURATION VARIABLES
-const PORT = process.env.PORT;
+// adds security headers to api
+app.use(helmet());
+
+const options = {
+  origin: `http://localhost:${PORT}`,
+  optionsSuccessStatus: 200
+};
+
+app.use(cors(options));
+
+// adding morgan to log HTTP requests
+app.use(morgan('tiny'));
 
 // ------------------------------ROUTES
 app.use('/files', express.static('files'));
