@@ -1,32 +1,28 @@
 const db = require(`../models`);
 
 module.exports = {
-  index: (req, res) => {
-    db.Location.find().exec((err, smap) => {
-      total = smap.length;
-      if (err) {
-        return console.log('index error: ' + err);
-      }
-      res.json({
-        amount: total,
-        data: smap
-      });
-    });
+  index: async (req, res) => {
+    try {
+      const locations = await db.Location.find({});
+      res.success(200, locations);
+    } catch (error) {
+      res.error(error.message);
+    }
   },
-  create: (req, res) => {
-    db.Location.create(req.body, (err, newSmap) => {
-      if (err) {
-        res.status(500).json({ ERROR: 'Database Error' });
-      }
-      res.json(newSmap);
-    });
+  create: async (req, res) => {
+    try {
+      const newLocation = db.Location.create(req.body);
+      res.success(201, newLocation);
+    } catch (error) {
+      res.error(error.message);
+    }
   },
   show: (req, res) => {
-    db.Location.findById(req.params.id, (err, smap) => {
-      if (err) {
-        res.status(500).json({ ERROR: 'Database Error' });
-      }
-      res.json({ data: smap });
-    });
+    try {
+      const foundLocation = db.Locaton.findById(req.params.id);
+      res.success(200, foundLocation);
+    } catch (error) {
+      res.error(error.message);
+    }
   }
 };

@@ -1,35 +1,28 @@
 const db = require(`../models`);
 
 module.exports = {
-  index: (req, res) => {
-    db.Gadget.find().exec((err, gadget) => {
-      total = gadget.length;
-      if (err) {
-        return console.log("index error: " + err);
-      }
-      res.json({
-        amount: total,
-        data: gadget
-      });
-    });
+  index: async (req, res) => {
+    try {
+      const gadgets = await db.Gadget.find({});
+      res.success(200, gadgets);
+    } catch (error) {
+      res.error(error.message);
+    }
   },
-  create: (req, res) => {
-    let newGadget = req.body;
-    console.log(req.body);
-    db.Gadget.create(newGadget, (err, newGadget) => {
-      if (err) {
-        res.status(500).json({ ERROR: "Database Error" });
-      }
-      res.json(newGadget);
-    });
+  create: async (req, res) => {
+    try {
+      const newGadget = db.Gadget.create(req.body);
+      res.success(201, newGadget);
+    } catch (error) {
+      res.error(error.message);
+    }
   },
   show: (req, res) => {
-    let gadgetId = req.params.id;
-    db.Gadget.findById(gadgetId, (err, gadget) => {
-      if (err) {
-        res.status(500).json({ ERROR: "Database Error" });
-      }
-      res.json({ data: gadget });
-    });
+    try {
+      const foundGadget = db.Gadget.findById(req.params.id);
+      res.success(200, foundGadget);
+    } catch (error) {
+      res.error(error.message);
+    }
   }
 };

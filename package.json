@@ -16,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/DaltonHart/R6-Tactics/issues"
   },
-  "homepage": "https://github.com/DaltonHart/R6-Tactics#readme",
+  "homepage": "https://github.com/DaltonHart/R6-Tactics#README",
   "dependencies": {
     "body-parser": "^1.19.0",
     "colors": "^1.4.0",
