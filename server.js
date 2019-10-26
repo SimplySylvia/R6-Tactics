@@ -38,6 +38,6 @@ app.use('/', routes.views);
 app.use('/api/v1', routes.api);
 
 // ------------------------------Start Server
-app.listen(process.env.PORT || PORT, () => {
+app.listen(PORT, () => {
   console.log(`Listening to port ${PORT}..`);
 });
