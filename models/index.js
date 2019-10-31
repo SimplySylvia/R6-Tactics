@@ -17,5 +17,6 @@ module.exports = {
   Location: require('./Location'),
   Gadget: require('./Gadget'),
   Ability: require('./Ability'),
-  Weapon: require('./Weapon')
+  Weapon: require('./Weapon'),
+  User: require('./User')
 };
