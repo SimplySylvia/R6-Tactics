@@ -38,7 +38,7 @@ module.exports = (req, res, next) => {
   res.unauthorized = function() {
     this.status(403).json({
       status: 403,
-      message: 'API KEY NOT PROVIDED.',
+      message: 'API KEY NOT PROVIDED OR INVALID.',
       //NOTE error here for development purposes only.
       // error: error,
       requestedAt: new Date().toLocaleString()
