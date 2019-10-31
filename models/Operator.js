@@ -5,7 +5,7 @@ module.exports = mongoose.model(
   new mongoose.Schema({
     name: String,
     badge: String,
-    img: String,
+    image: String,
     bio: String,
     ability: {
       type: mongoose.Schema.Types.ObjectId,
@@ -29,9 +29,9 @@ module.exports = mongoose.model(
         ref: 'Gadget'
       }
     ],
-    ArmorRating: Number,
-    SpeedRating: Number,
-    Organization: String,
+    armor_rating: Number,
+    speed_rating: Number,
+    organization: String,
     type: String
   })
 );

@@ -39,10 +39,10 @@ module.exports = [
         ref: 'Gadget'
       }
     ],
-    ArmorRating: 3,
-    SpeedRating: 1,
-    type: 'Defense',
-    Organization: 'G.I.S'
+    armor_rating: 3,
+    speed_rating: 1,
+    type: 'defense',
+    organization: 'G.I.S'
   },
   {
     name: 'Alibi',
@@ -84,10 +84,10 @@ module.exports = [
         ref: 'Gadget'
       }
     ],
-    ArmorRating: 1,
-    SpeedRating: 3,
-    type: 'Defense',
-    Organization: 'G.I.S'
+    armor_rating: 1,
+    speed_rating: 3,
+    type: 'defense',
+    organization: 'G.I.S'
   },
   {
     name: 'Vigil',
@@ -129,10 +129,10 @@ module.exports = [
         ref: 'Gadget'
       }
     ],
-    ArmorRating: 1,
-    SpeedRating: 3,
-    type: 'Defense',
-    Organization: 'S.M.B.'
+    armor_rating: 1,
+    speed_rating: 3,
+    type: 'defense',
+    organization: 'S.M.B.'
   },
   {
     name: 'Ela',
@@ -170,10 +170,10 @@ module.exports = [
         ref: 'Gadget'
       }
     ],
-    ArmorRating: 1,
-    SpeedRating: 3,
-    type: 'Defense',
-    Organization: 'GROM'
+    armor_rating: 1,
+    speed_rating: 3,
+    type: 'defense',
+    organization: 'GROM'
   },
   {
     name: 'Lesion',
@@ -211,10 +211,10 @@ module.exports = [
         ref: 'Gadget'
       }
     ],
-    ArmorRating: 2,
-    SpeedRating: 2,
-    type: 'Defense',
-    Organization: 'SDU'
+    armor_rating: 2,
+    speed_rating: 2,
+    type: 'defense',
+    organization: 'SDU'
   },
   {
     name: 'Mira',
@@ -256,10 +256,10 @@ module.exports = [
         ref: 'Gadget'
       }
     ],
-    ArmorRating: 3,
-    SpeedRating: 1,
-    type: 'Defense',
-    Organization: 'GEO'
+    armor_rating: 3,
+    speed_rating: 1,
+    type: 'defense',
+    organization: 'GEO'
   },
   {
     name: 'Echo',
@@ -301,10 +301,10 @@ module.exports = [
         ref: 'Gadget'
       }
     ],
-    ArmorRating: 3,
-    SpeedRating: 1,
-    type: 'Defense',
-    Organization: 'SAT'
+    armor_rating: 3,
+    speed_rating: 1,
+    type: 'defense',
+    organization: 'SAT'
   },
   {
     name: 'Caveira',
@@ -342,10 +342,10 @@ module.exports = [
         ref: 'Gadget'
       }
     ],
-    ArmorRating: 1,
-    SpeedRating: 3,
-    type: 'Defense',
-    Organization: 'BOPE'
+    armor_rating: 1,
+    speed_rating: 3,
+    type: 'defense',
+    organization: 'BOPE'
   },
   {
     name: 'Valkyrie',
@@ -383,10 +383,10 @@ module.exports = [
         ref: 'Gadget'
       }
     ],
-    ArmorRating: 1,
-    SpeedRating: 3,
-    type: 'Defense',
-    Organization: 'SEALS'
+    armor_rating: 1,
+    speed_rating: 3,
+    type: 'defense',
+    organization: 'SEALS'
   },
   {
     name: 'Frost',
@@ -424,10 +424,10 @@ module.exports = [
         ref: 'Gadget'
       }
     ],
-    ArmorRating: 2,
-    SpeedRating: 2,
-    type: 'Defense',
-    Organization: 'JTF2'
+    armor_rating: 2,
+    speed_rating: 2,
+    type: 'defense',
+    organization: 'JTF2'
   },
   {
     name: 'Mute',
@@ -465,10 +465,10 @@ module.exports = [
         ref: 'Gadget'
       }
     ],
-    ArmorRating: 2,
-    SpeedRating: 2,
-    type: 'Defense',
-    Organization: 'SAS'
+    armor_rating: 2,
+    speed_rating: 2,
+    type: 'defense',
+    organization: 'SAS'
   },
   {
     name: 'Smoke',
@@ -510,10 +510,10 @@ module.exports = [
         ref: 'Gadget'
       }
     ],
-    ArmorRating: 2,
-    SpeedRating: 2,
-    type: 'Defense',
-    Organization: 'SAS'
+    armor_rating: 2,
+    speed_rating: 2,
+    type: 'defense',
+    organization: 'SAS'
   },
   {
     name: 'Castle',
@@ -555,10 +555,10 @@ module.exports = [
         ref: 'Gadget'
       }
     ],
-    ArmorRating: 2,
-    SpeedRating: 2,
-    type: 'Defense',
-    Organization: 'FBI SWAT'
+    armor_rating: 2,
+    speed_rating: 2,
+    type: 'defense',
+    organization: 'FBI SWAT'
   },
   {
     name: 'Pulse',
@@ -600,17 +600,17 @@ module.exports = [
         ref: 'Gadget'
       }
     ],
-    ArmorRating: 1,
-    SpeedRating: 3,
-    type: 'Defense',
-    Organization: 'FBI SWAT'
+    armor_rating: 1,
+    speed_rating: 3,
+    type: 'defense',
+    organization: 'FBI SWAT'
   },
   {
     name: 'Doc',
     badge: '/files/operators/def/badges/docbadge.png',
     img: '/files/operators/def/profile/doc.png',
     bio:
-      'Kateb grew up in an affluent family, in Paris’ 16th arrondissement. At twenty, he abandoned a potentially prominent private medical practice in favor of a career with the French Defense Health Service. Gustave Kateb is cut from a rare cloth: a genuine altruist, a true believer in making the world a safer place for his fellow man.',
+      'Kateb grew up in an affluent family, in Paris’ 16th arrondissement. At twenty, he abandoned a potentially prominent private medical practice in favor of a career with the French defense Health Service. Gustave Kateb is cut from a rare cloth: a genuine altruist, a true believer in making the world a safer place for his fellow man.',
     ability: {
       _id: 'stimpistol00',
       ref: 'Ability'
@@ -649,10 +649,10 @@ module.exports = [
         ref: 'Gadget'
       }
     ],
-    ArmorRating: 3,
-    SpeedRating: 1,
-    type: 'Defense',
-    Organization: 'GIGN'
+    armor_rating: 3,
+    speed_rating: 1,
+    type: 'defense',
+    organization: 'GIGN'
   },
   {
     name: 'Rook',
@@ -698,10 +698,10 @@ module.exports = [
         ref: 'Gadget'
       }
     ],
-    ArmorRating: 3,
-    SpeedRating: 1,
-    type: 'Defense',
-    Organization: 'GIGN'
+    armor_rating: 3,
+    speed_rating: 1,
+    type: 'defense',
+    organization: 'GIGN'
   },
   {
     name: 'Kapkan',
@@ -743,10 +743,10 @@ module.exports = [
         ref: 'Gadget'
       }
     ],
-    ArmorRating: 2,
-    SpeedRating: 2,
-    type: 'Defense',
-    Organization: 'SPETSNAZ'
+    armor_rating: 2,
+    speed_rating: 2,
+    type: 'defense',
+    organization: 'SPETSNAZ'
   },
   {
     name: 'Tachanka',
@@ -788,10 +788,10 @@ module.exports = [
         ref: 'Gadget'
       }
     ],
-    ArmorRating: 3,
-    SpeedRating: 1,
-    type: 'Defense',
-    Organization: 'SPETSNAZ'
+    armor_rating: 3,
+    speed_rating: 1,
+    type: 'defense',
+    organization: 'SPETSNAZ'
   },
   {
     name: 'Jager',
@@ -829,10 +829,10 @@ module.exports = [
         ref: 'Gadget'
       }
     ],
-    ArmorRating: 1,
-    SpeedRating: 3,
-    type: 'Defense',
-    Organization: 'GSG9'
+    armor_rating: 1,
+    speed_rating: 3,
+    type: 'defense',
+    organization: 'GSG9'
   },
   {
     name: 'Bandit',
@@ -870,10 +870,10 @@ module.exports = [
         ref: 'Gadget'
       }
     ],
-    ArmorRating: 1,
-    SpeedRating: 3,
-    type: 'Defense',
-    Organization: 'GSG9'
+    armor_rating: 1,
+    speed_rating: 3,
+    type: 'defense',
+    organization: 'GSG9'
   },
   {
     name: 'Clash',
@@ -911,9 +911,9 @@ module.exports = [
         ref: 'Gadget'
       }
     ],
-    ArmorRating: 3,
-    SpeedRating: 1,
-    type: 'Defense',
-    Organization: 'GSUTR'
+    armor_rating: 3,
+    speed_rating: 1,
+    type: 'defense',
+    organization: 'GSUTR'
   }
 ];

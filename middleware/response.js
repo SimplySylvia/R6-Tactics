@@ -11,7 +11,10 @@ module.exports = (req, res, next) => {
       delete resObj.count;
       resObj.message = 'No Documents Found';
     } else if (data.constructor === Array) {
-      if (data.length > 0) {
+      if (data.length === 1) {
+        resObj.data = resObj.data[0];
+        delete resObj.count;
+      } else if (data.length > 0) {
         resObj.count = data.length;
       } else {
         delete resObj.data;
@@ -27,7 +30,8 @@ module.exports = (req, res, next) => {
     this.json({
       status: 400,
       message: 'Something went wrong. Please try again.',
-      error: error,
+      //NOTE error here for development purposes only.
+      // error: error,
       requestedAt: new Date().toLocaleString()
     });
   };

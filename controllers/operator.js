@@ -1,9 +1,10 @@
 const db = require(`../models`);
 
 module.exports = {
+  // can recieve query arguments for filtered response
   index: async (req, res) => {
     try {
-      const allOperators = await db.Operator.find({}).populate(
+      const allOperators = await db.Operator.find(req.query).populate(
         'gadgets abilty primaries secondaries'
       );
       res.success(200, allOperators);
@@ -25,26 +26,6 @@ module.exports = {
     try {
       const newOp = await db.Operator.create(req.body);
       res.success(201, newOp);
-    } catch (error) {
-      res.error(error.message);
-    }
-  },
-  filterAttack: async (req, res) => {
-    try {
-      const allMatchOperators = await db.Operator.find({
-        type: 'Attack'
-      }).populate('gadgets abilty primaries secondaries');
-      res.success(200, allMatchOperators);
-    } catch (error) {
-      res.error(error.message);
-    }
-  },
-  filterDefense: async (req, res) => {
-    try {
-      const allMatchOperators = await db.Operator.find({
-        type: 'Defense'
-      }).populate('gadgets abilty primaries secondaries');
-      res.success(200, allMatchOperators);
     } catch (error) {
       res.error(error.message);
     }
