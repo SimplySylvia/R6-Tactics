@@ -27,9 +27,18 @@ module.exports = (req, res, next) => {
     this.status(status).json(resObj);
   };
   res.error = function(error) {
-    this.json({
+    this.status(400).json({
       status: 400,
       message: 'Something went wrong. Please try again.',
+      //NOTE error here for development purposes only.
+      // error: error,
+      requestedAt: new Date().toLocaleString()
+    });
+  };
+  res.unauthorized = function() {
+    this.status(403).json({
+      status: 403,
+      message: 'API KEY NOT PROVIDED.',
       //NOTE error here for development purposes only.
       // error: error,
       requestedAt: new Date().toLocaleString()

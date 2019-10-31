@@ -11,6 +11,7 @@ const morgan = require('morgan');
 
 //SECTION -------------------------------INTERNAL MODULES
 const resFormatter = require('./middleware/response');
+const validator = require('./middleware/key_validate');
 const routes = require('./routes');
 
 //SECTION -------------------------------INSTANCED MODULES
@@ -27,14 +28,16 @@ const limit = rateLimit({
 
 //SECTION --------------------------------MIDDLEWARE
 app.use(bodyParser.json({ limit: '10kb' }));
-// adds limit to requests
+// limit requests
 app.use(limit);
-// adds custom response formatter
+// custom response formatter
 app.use(resFormatter);
-// adds security headers to api
+// security headers
 app.use(helmet());
-// adds protection for No-sql injections
+// rotection for No-sql injections
 app.use(mongoSanitize());
+// api_key validation
+app.use(validator);
 
 //SECTION -------------------------------CONFIGURATION VARIABLES
 const options = {
