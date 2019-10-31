@@ -3,7 +3,7 @@ const db = require(`../models`);
 module.exports = {
   index: async (req, res) => {
     try {
-      const weapons = await db.Weapon.find({});
+      const weapons = await db.Weapon.find(req.query);
       res.success(200, weapons);
     } catch (error) {
       res.error(error.message);
