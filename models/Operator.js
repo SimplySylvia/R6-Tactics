@@ -3,10 +3,10 @@ const mongoose = require('mongoose');
 module.exports = mongoose.model(
   'Operator',
   new mongoose.Schema({
-    name: String,
-    badge: String,
-    image: String,
-    bio: String,
+    name: { type: String, required: true },
+    badge: { type: String },
+    image: { type: String },
+    bio: { type: String },
     ability: {
       type: mongoose.Schema.Types.ObjectId,
       ref: 'Ability'
@@ -29,9 +29,9 @@ module.exports = mongoose.model(
         ref: 'Gadget'
       }
     ],
-    armor_rating: Number,
-    speed_rating: Number,
-    organization: String,
-    type: String
+    armor_rating: { type: Number, min: 1, max: 3 },
+    speed_rating: { type: Number, min: 1, max: 3 },
+    organization: { type: String },
+    type: { type: String, lowercase: true, enum: ['defense', 'attack'] }
   })
 );
