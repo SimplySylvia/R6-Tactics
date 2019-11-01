@@ -23,7 +23,7 @@ const PORT = process.env.PORT;
 const limit = rateLimit({
   max: 100, // max requests
   windowMs: 60 * 60 * 1000, // 1 Hour
-  message: 'Too many requests' // message to send
+  message: 'Too many requests'
 });
 
 //SECTION --------------------------------MIDDLEWARE
