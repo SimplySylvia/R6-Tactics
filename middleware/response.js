@@ -31,7 +31,7 @@ module.exports = (req, res, next) => {
       status: 400,
       message: 'Something went wrong. Please try again.',
       //NOTE error here for development purposes only.
-      // error: error,
+      error: error,
       requestedAt: new Date().toLocaleString()
     });
   };

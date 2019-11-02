@@ -1,6 +1,7 @@
 //SECTION -------------------------------EXTERNAL MODULES
 const express = require('express');
 const bodyParser = require('body-parser');
+const session = require('express-session');
 // protection
 const rateLimit = require('express-rate-limit');
 const cors = require('cors');
@@ -36,8 +37,14 @@ app.use(resFormatter);
 app.use(helmet());
 // rotection for No-sql injections
 app.use(mongoSanitize());
-// api_key validation
-app.use(validator);
+// session config
+app.use(
+  session({
+    secret: process.env.SESSION,
+    resave: false,
+    saveUninitialized: false
+  })
+);
 
 //SECTION -------------------------------CONFIGURATION VARIABLES
 const options = {
@@ -52,7 +59,8 @@ app.use(morgan('tiny'));
 app.use('/files', express.static('files'));
 
 app.use('/', routes.views);
-app.use('/api/v1', routes.api);
+app.use('/api/v1/auth', routes.auth);
+app.use('/api/v1', validator, routes.api);
 
 //SECTION ------------------------------Start Server
 app.listen(PORT, () => {
