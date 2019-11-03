@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+const Log = require('./Log');
 
 const userSchema = mongoose.Schema({
   email: {
@@ -18,7 +19,8 @@ const userSchema = mongoose.Schema({
   api_key: {
     type: String,
     unique: true
-  }
+  },
+  logs: [Log.schema]
 });
 
 userSchema.set('toJSON', {
