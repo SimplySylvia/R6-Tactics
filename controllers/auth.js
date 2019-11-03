@@ -47,7 +47,6 @@ const login = async (req, res) => {
     const match = await bcrypt.compare(req.body.password, foundUser.password);
     if (!match) return res.error();
     // create session
-    req.session.loggedIn = true;
     req.session.currentUser = { id: foundUser._id };
     return res.success(200, foundUser);
   } catch (error) {
@@ -55,7 +54,17 @@ const login = async (req, res) => {
   }
 };
 
+const show = async (req, res) => {
+  try {
+    const foundUser = await db.User.findById(req.session.currentUser.id);
+    res.success(200, foundUser);
+  } catch (error) {
+    res.error(error.message);
+  }
+};
+
 module.exports = {
   register,
-  login
+  login,
+  show
 };
