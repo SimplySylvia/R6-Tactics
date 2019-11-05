@@ -8,10 +8,11 @@ module.exports = async (req, res, next) => {
     if (foundCredential) {
       const log = {
         requestUrl: req.url,
-        requestMethod: req.method
+        requestMethod: req.method,
+        api_key: key
       };
       foundCredential.logs.push(log);
-      const savedUser = await foundCredential.save();
+      await foundCredential.save();
       next();
     } else {
       res.unauthorized();

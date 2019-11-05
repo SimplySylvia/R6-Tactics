@@ -13,7 +13,7 @@ const register = async (req, res) => {
   try {
     // validate body data
     const errors = validateBody(req.body);
-    if (errors.length) return res.json({ errors: errors });
+    if (errors.length) return res.status(400).json({ errors: errors });
     // validate user does not exist
     const foundUser = await db.User.findOne({ email: req.body.email });
     if (foundUser) return res.error();
@@ -63,8 +63,21 @@ const show = async (req, res) => {
   }
 };
 
+const requestNewKey = async (req,res) => {
+  try{
+    const foundUser = await db.User.findById(req.session.currentUser.id);
+    foundUser.archive_keys.push(foundUser.api_key);
+    foundUser.api_key = uuidv4();
+    foundUser.save();
+    res.success(201, foundUser);
+  } catch (error) {
+    res.error(error.message);
+  }
+}
+
 module.exports = {
   register,
   login,
-  show
+  show,
+  requestNewKey
 };

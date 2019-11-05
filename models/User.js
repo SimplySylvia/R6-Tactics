@@ -20,7 +20,8 @@ const userSchema = mongoose.Schema({
     type: String,
     unique: true
   },
-  logs: [Log.schema]
+  logs: [Log.schema],
+  archive_keys: [{type:String}]
 });
 
 userSchema.set('toJSON', {
