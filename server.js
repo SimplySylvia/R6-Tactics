@@ -11,7 +11,7 @@ const mongoSanitize = require('express-mongo-sanitize');
 const morgan = require('morgan');
 
 //SECTION -------------------------------INTERNAL MODULES
-const resFormatter = require('./middleware/response');
+const RESFORMATTER = require('./middleware/response');
 const validator = require('./middleware/key_validate');
 const routes = require('./routes');
 
@@ -21,7 +21,7 @@ require('dotenv').config();
 
 //SECTION -------------------------------CONFIGURATION VARIABLES
 const PORT = process.env.PORT;
-const limit = rateLimit({
+const LIMIT = rateLimit({
   max: 100, // max requests
   windowMs: 60 * 60 * 1000, // 1 Hour
   message: 'Too many requests'
@@ -30,9 +30,9 @@ const limit = rateLimit({
 //SECTION --------------------------------MIDDLEWARE
 app.use(bodyParser.json({ limit: '10kb' }));
 // limit requests
-app.use(limit);
+app.use(LIMIT);
 // custom response formatter
-app.use(resFormatter);
+app.use(RESFORMATTER);
 // security headers
 app.use(helmet());
 // rotection for No-sql injections
