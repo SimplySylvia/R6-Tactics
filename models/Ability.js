@@ -6,7 +6,7 @@ module.exports = mongoose.model(
     name: String,
     uses: Number,
     image: String,
-    desc: String,
+    description: String,
     _id: String
   })
 );

@@ -6,57 +6,251 @@
     {
       "method": "GET",
       "path": "/api/v1",
-      "description": "Describes available endpoints"
+      "description": "Describes Available Endpoints."
     },
     {
       "method": "GET",
-      "path": "/api/v1/atkops",
-      "description": "Will respond with a Json of all attack operators."
+      "path": "/api/v1/operators",
+      "description": "Will respond with a Json of all attack operators.",
+      "attributes": [
+        {
+          "name": "_id",
+          "description": "The id of the operator."
+        },
+        {
+          "name": "name",
+          "description": "The name of the operator."
+        },
+        {
+          "name": "badge",
+          "description": "Url endpoint for the operator badge image."
+        },
+        {
+          "name": "image",
+          "description": "Url endpoint for the operator image."
+        },
+        {
+          "name": "bio",
+          "description": "Background story of the operator."
+        },
+        {
+          "name": "ability",
+          "description": "Operator unique ability referrenced from the Abilities Endpoint. See Abilities for more info."
+        },
+        {
+          "name": "primaries",
+          "description": "Array of operator primary weapons referenced from the Weapons endpoint. See Weapons for more info."
+        },
+        {
+          "name": "secondaries",
+          "description": "Array of operator secondary weapons referenced from the Weapons endpoint. See Weapons for more info."
+        },
+        {
+          "name": "gadgets",
+          "description": "Array of operator gadgets referenced from the Gadget endpoint. See Gadgets for more info."
+        },
+        {
+          "name": "armor_rating",
+          "description": "Numeric value for operator's armor rating. Ranges 1-3."
+        },
+        {
+          "name": "speed_rating",
+          "description": "Numeric value for operator's speed rating. Ranges 1-3."
+        },
+        {
+          "name": "organization",
+          "description": "Military Organization the operator is involved with."
+        },
+        {
+          "name": "type",
+          "description": "Defines if the operator is an attack or defense operator."
+        }
+      ]
     },
     {
       "method": "GET",
-      "path": "/api/v1/atkops/:id",
-      "description": "Will respond with a Json of a specific attack operator with the given id."
+      "path": "/api/v1/operators/<id>",
+      "description": "Will respond with a Json of a specific operator with the given id.",
+      "attributes": [
+        {
+          "name": "_id",
+          "description": "The id of the operator."
+        },
+        {
+          "name": "name",
+          "description": "The name of the operator."
+        },
+        {
+          "name": "badge",
+          "description": "Url endpoint for the operator badge image."
+        },
+        {
+          "name": "image",
+          "description": "Url endpoint for the operator image."
+        },
+        {
+          "name": "bio",
+          "description": "Background story of the operator."
+        },
+        {
+          "name": "ability",
+          "description": "Operator unique ability referrenced from the Abilities Endpoint. See Abilities for more info."
+        },
+        {
+          "name": "primaries",
+          "description": "Array of operator primary weapons referenced from the Weapons endpoint. See Weapons for more info."
+        },
+        {
+          "name": "secondaries",
+          "description": "Array of operator secondary weapons referenced from the Weapons endpoint. See Weapons for more info."
+        },
+        {
+          "name": "gadgets",
+          "description": "Array of operator gadgets referenced from the Gadget endpoint. See Gadgets for more info."
+        },
+        {
+          "name": "armor_rating",
+          "description": "Numeric value for operator's armor rating. Ranges 1-3."
+        },
+        {
+          "name": "speed_rating",
+          "description": "Numeric value for operator's speed rating. Ranges 1-3."
+        },
+        {
+          "name": "organization",
+          "description": "Military Organization the operator is involved with."
+        },
+        {
+          "name": "type",
+          "description": "Defines if the operator is an attack or defense operator."
+        }
+      ]
     },
     {
       "method": "GET",
-      "path": "/api/v1/defops",
-      "description": "Will respond with a Json of all defense operators."
-    },
-    {
-      "method": "GET",
-      "path": "/api/v1/defops/:id",
-      "description": "Will respond with a Json of a specific defense operator with the given id."
-    },
-    {
-      "method": "GET",
-      "path": "/api/v1/smaps",
+      "path": "/api/v1/locations",
       "description": "Will respond with a Json of all game maps."
     },
     {
       "method": "GET",
-      "path": "/api/v1/smaps/:id",
+      "path": "/api/v1/locations/<id>",
       "description": "Will respond with a Json of a specific game map with the given id."
     },
     {
       "method": "GET",
       "path": "/api/v1/gadgets",
-      "description": "Will respond with a Json of all game basic gadgets."
+      "description": "Will respond with a Json of all game basic gadgets.",
+      "attributes": [
+        {
+          "name": "_id",
+          "description": "The id of the gadget."
+        },
+        {
+          "name": "name",
+          "description": "The name of the gadget."
+        },
+        {
+          "name": "description",
+          "description": "The description and background of the gadget."
+        },
+        {
+          "name": "assignment",
+          "description": "Defines if the gadget is assigned to attack or defense operators."
+        },
+        {
+          "name": "uses",
+          "description": "Numerical value for the amount of uses a gadget can be used."
+        },
+        {
+          "name": "image",
+          "description": "Url endpoint for the gadget image."
+        }
+      ]
     },
     {
       "method": "GET",
-      "path": "/api/v1/gadgets/:id",
-      "description": "Will respond with a Json of a specific gadget with the given id."
+      "path": "/api/v1/gadgets/<id>",
+      "description": "Will respond with a Json of a specific gadget with the given id.",
+      "attributes": [
+        {
+          "name": "_id",
+          "description": "The id of the gadget."
+        },
+        {
+          "name": "name",
+          "description": "The name of the gadget."
+        },
+        {
+          "name": "description",
+          "description": "The description and background of the gadget."
+        },
+        {
+          "name": "assignment",
+          "description": "Defines if the gadget is assigned to attack or defense operators."
+        },
+        {
+          "name": "uses",
+          "description": "Numerical value for the amount of uses a gadget can be used."
+        },
+        {
+          "name": "image",
+          "description": "Url endpoint for the gadget image."
+        }
+      ]
     },
     {
       "method": "GET",
       "path": "/api/v1/abilities",
-      "description": "Will respond with a Json of all game operator abilities."
+      "description": "Will respond with a Json of all game operator abilities.",
+      "attributes": [
+        {
+          "name": "_id",
+          "description": "The id of the ability."
+        },
+        {
+          "name": "name",
+          "description": "The name of the ability."
+        },
+        {
+          "name": "description",
+          "description": "The description and background of the ability."
+        },
+        {
+          "name": "uses",
+          "description": "Numerical value for the amount of uses an ability can be used."
+        },
+        {
+          "name": "image",
+          "description": "Url endpoint for the ability image."
+        }
+      ]
     },
     {
       "method": "GET",
-      "path": "/api/v1/abilities/:id",
-      "description": "Will respond with a Json of a specific operator ability with the given id."
+      "path": "/api/v1/abilities/<id>",
+      "description": "Will respond with a Json of a specific operator ability with the given id.",
+      "attributes": [
+        {
+          "name": "_id",
+          "description": "The id of the ability."
+        },
+        {
+          "name": "name",
+          "description": "The name of the ability."
+        },
+        {
+          "name": "description",
+          "description": "The description and background of the ability."
+        },
+        {
+          "name": "uses",
+          "description": "Numerical value for the amount of uses an ability can be used."
+        },
+        {
+          "name": "image",
+          "description": "Url endpoint for the ability image."
+        }
+      ]
     },
     {
       "method": "GET",
@@ -65,7 +259,7 @@
     },
     {
       "method": "GET",
-      "path": "/api/v1/weapons/:id",
+      "path": "/api/v1/weapons/<id>",
       "description": "Will respond with a Json of a specific operator weapon with the given id."
     }
   ]

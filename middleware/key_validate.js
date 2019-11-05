@@ -14,6 +14,8 @@ module.exports = async (req, res, next) => {
       foundCredential.logs.push(log);
       await foundCredential.save();
       next();
+    } else if (key === process.env.CLIENT_FACING_API) {
+      next();
     } else {
       res.unauthorized();
     }
