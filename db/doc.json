@@ -255,12 +255,96 @@
     {
       "method": "GET",
       "path": "/api/v1/weapons",
-      "description": "Will respond with a Json of all game operator weapons."
+      "description": "Will respond with a Json of all game operator weapons.",
+      "attributes": [
+        {
+          "name": "_id",
+          "description": "The id of the weapon."
+        },
+        {
+          "name": "name",
+          "description": "The name of the weapon."
+        },
+        {
+          "name": "image",
+          "description": "The image of the weapon."
+        },
+        {
+          "name": "assignment",
+          "description": "The assignment of the weapon for its primary role."
+        },
+        {
+          "name": "firemodes",
+          "description": "An array of firemodes available for the weapon."
+        },
+        {
+          "name": "type",
+          "description": "The type of the weapon."
+        },
+        {
+          "name": "sights",
+          "description": "An array of the sights available for the weapon."
+        },
+        {
+          "name": "barrels",
+          "description": "An array of the barrel attachments available to the weapon."
+        },
+        {
+          "name": "grips",
+          "description": "An array of the grip attachments avalable to the weapon."
+        },
+        {
+          "name": "underbarrel",
+          "description": "An array of the under barrel attachments available to the weapon."
+        }
+      ]
     },
     {
       "method": "GET",
       "path": "/api/v1/weapons/<id>",
-      "description": "Will respond with a Json of a specific operator weapon with the given id."
+      "description": "Will respond with a Json of a specific operator weapon with the given id.",
+      "attributes": [
+        {
+          "name": "_id",
+          "description": "The id of the weapon."
+        },
+        {
+          "name": "name",
+          "description": "The name of the weapon."
+        },
+        {
+          "name": "image",
+          "description": "The image of the weapon."
+        },
+        {
+          "name": "assignment",
+          "description": "The assignment of the weapon for its primary role."
+        },
+        {
+          "name": "firemodes",
+          "description": "An array of firemodes available for the weapon."
+        },
+        {
+          "name": "type",
+          "description": "The type of the weapon."
+        },
+        {
+          "name": "sights",
+          "description": "An array of the sights available for the weapon."
+        },
+        {
+          "name": "barrels",
+          "description": "An array of the barrel attachments available to the weapon."
+        },
+        {
+          "name": "grips",
+          "description": "An array of the grip attachments avalable to the weapon."
+        },
+        {
+          "name": "underbarrel",
+          "description": "An array of the under barrel attachments available to the weapon."
+        }
+      ]
     }
   ]
 }
