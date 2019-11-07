@@ -4,11 +4,13 @@
   "base_url": "localhost:3000",
   "endpoints": [
     {
+      "name": "Documentation",
       "method": "GET",
       "path": "/api/v1",
       "description": "Describes Available Endpoints."
     },
     {
+      "name": "Operators",
       "method": "GET",
       "path": "/api/v1/operators",
       "description": "Will respond with a Json of all attack operators.",
@@ -69,7 +71,7 @@
     },
     {
       "method": "GET",
-      "path": "/api/v1/operators/<id>",
+      "path": "/api/v1/operators/:id",
       "description": "Will respond with a Json of a specific operator with the given id.",
       "attributes": [
         {
@@ -127,16 +129,18 @@
       ]
     },
     {
+      "name": "Locations",
       "method": "GET",
       "path": "/api/v1/locations",
       "description": "Will respond with a Json of all game maps."
     },
     {
       "method": "GET",
-      "path": "/api/v1/locations/<id>",
+      "path": "/api/v1/locations/:id",
       "description": "Will respond with a Json of a specific game map with the given id."
     },
     {
+      "name": "Gadgets",
       "method": "GET",
       "path": "/api/v1/gadgets",
       "description": "Will respond with a Json of all game basic gadgets.",
@@ -169,7 +173,7 @@
     },
     {
       "method": "GET",
-      "path": "/api/v1/gadgets/<id>",
+      "path": "/api/v1/gadgets/:id",
       "description": "Will respond with a Json of a specific gadget with the given id.",
       "attributes": [
         {
@@ -199,6 +203,7 @@
       ]
     },
     {
+      "name": "Abilites",
       "method": "GET",
       "path": "/api/v1/abilities",
       "description": "Will respond with a Json of all game operator abilities.",
@@ -227,7 +232,7 @@
     },
     {
       "method": "GET",
-      "path": "/api/v1/abilities/<id>",
+      "path": "/api/v1/abilities/:id",
       "description": "Will respond with a Json of a specific operator ability with the given id.",
       "attributes": [
         {
@@ -253,6 +258,7 @@
       ]
     },
     {
+      "name": "Weapons",
       "method": "GET",
       "path": "/api/v1/weapons",
       "description": "Will respond with a Json of all game operator weapons.",
@@ -301,7 +307,7 @@
     },
     {
       "method": "GET",
-      "path": "/api/v1/weapons/<id>",
+      "path": "/api/v1/weapons/:id",
       "description": "Will respond with a Json of a specific operator weapon with the given id.",
       "attributes": [
         {

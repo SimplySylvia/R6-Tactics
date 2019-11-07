@@ -22,8 +22,8 @@ require('dotenv').config();
 //SECTION -------------------------------CONFIGURATION VARIABLES
 const PORT = process.env.PORT;
 const LIMIT = rateLimit({
-  max: 100, // max requests
-  windowMs: 60 * 60 * 1000, // 1 Hour
+  max: 10000, // max requests
+  windowMs: 24 * 60 * 60 * 1000, // 1 day
   message: 'Too many requests'
 });
 

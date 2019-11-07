@@ -1,203 +1,204 @@
 @import url('https://fonts.googleapis.com/css?family=Encode+Sans+Condensed');
 
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
-html{
-    height: 100vh;
+html {
+  height: 100vh;
 }
 
-body{
-    background: #282B30;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 90vh;
-    font-family: 'Encode Sans Condensed', sans-serif;
+body {
+  background: #282b30;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 90vh;
+  font-family: 'Encode Sans Condensed', sans-serif;
 }
-main{
-    margin-top: 7vh;
-    height: 88vh;
+main {
+  margin-top: 7vh;
+  height: 88vh;
 }
 header {
-    height: 7vh;
+  height: 7vh;
 }
 
-header a, h2, h1{
-    color: white;
-    text-align: center;
-    font-family: 'Encode Sans Condensed', sans-serif;
+header a,
+h2,
+h1 {
+  color: white;
+  text-align: center;
+  font-family: 'Encode Sans Condensed', sans-serif;
 }
-h1{
-    text-align: left;
-    margin-top: 1em;
+h1 {
+  text-align: left;
+  margin-top: 1em;
 }
 
 a img {
-    filter: invert(100%);
+  filter: invert(100%);
 }
 
-#apiOutput{
-    
-    background-color: #f6f7f8;
-    padding: 5px;
-    height: 55vh;
-    width: 85vw;
-    margin: 1em auto;
-    overflow: scroll;
-    color: black;
-    border: 1px solid #1B1C1D;
-    border-radius: 4px;
+#apiOutput {
+  background-color: #f6f7f8;
+  padding: 5px;
+  height: 55vh;
+  width: 85vw;
+  margin: 1em auto;
+  overflow: scroll;
+  color: black;
+  border: 1px solid #1b1c1d;
+  border-radius: 4px;
 }
 
 pre {
-    background-color: #f6f7f8;
-    padding: 5px;
-    margin: 0;
-    word-wrap: break-word;
-    width: 100%;
+  background-color: #f6f7f8;
+  padding: 5px;
+  margin: 0;
+  word-wrap: break-word;
+  width: 100%;
 }
 
-pre span{
-    max-width: 100%;
-    
+pre span {
+  max-width: 100%;
 }
-.string { 
-    color: black; 
-    word-wrap: break-word;
-    width: 50vw;
+.string {
+  color: black;
+  word-wrap: break-word;
+  width: 50vw;
 }
-.number { 
-    color: rgb(219, 29, 172); 
+.number {
+  color: rgb(219, 29, 172);
 }
 .boolean {
-     color: rgb(54, 54, 243); 
-    }
+  color: rgb(54, 54, 243);
+}
 .null {
-     color: red; 
-    }
-.key { color: rgb(3, 155, 3); }
+  color: red;
+}
+.key {
+  color: rgb(3, 155, 3);
+}
 
 footer {
-    display: grid;
-    background-color: #1B1C1D;
-    height: 5vh;
-    color: white;
-    font-family: 'Encode Sans Condensed', sans-serif;
+  display: grid;
+  background-color: #1b1c1d;
+  height: 5vh;
+  color: white;
+  font-family: 'Encode Sans Condensed', sans-serif;
 }
 
-.social{
-    grid-column: 2/3;
-    display: flex;
-    flex-direction: row-reverse;
+.social {
+  grid-column: 2/3;
+  display: flex;
+  flex-direction: row-reverse;
 }
-.copy{
-    grid-column: 1/2;
-    display: inline;
+.copy {
+  grid-column: 1/2;
+  display: inline;
 }
-.social p, .copy p{
-    font-size: 1.5em;
-    margin: 0;
-    margin-right: .5em;
-    display: inline;
+.social p,
+.copy p {
+  font-size: 1.5em;
+  margin: 0;
+  margin-right: 0.5em;
+  display: inline;
 }
 
-.requestBar{
-    margin: .5em auto;
-    width: 30vw;
+.requestBar {
+  margin: 0.5em auto;
+  width: 30vw;
 }
-.labeled{
-    width: 100%;
+.labeled {
+  width: 100%;
 }
-.labeled input{
-    border-top-right-radius: 0 !important;
-    border-bottom-right-radius: 0 !important;
-    border-left-color: transparent;
+.labeled input {
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+  border-left-color: transparent;
 }
 .labeled .button {
-    border-top-left-radius: 0 !important;
-    border-bottom-left-radius: 0 !important;
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
 }
 
-.docContent{
-    display: grid;
-    height: 88vh;
-    width: 100vw;
+.docContent {
+  display: grid;
+  height: 88vh;
+  width: 100vw;
 }
 
-.sidebarNav{
-    grid-column: 1/2;
-    padding: 1em;
-    width: 30vw;
-    overflow: scroll;
+.sidebarNav {
+  grid-column: 1/2;
+  padding: 1em;
+  width: 30vw;
 }
-.sidebarNav  .segment{
-    display: block;
-    color: white;
-    background-color: rgb(74, 77, 82);
-    font-family: 'Encode Sans Condensed', sans-serif;
+.sidebarNav .segment {
+  display: block;
+  color: white;
+  background-color: rgb(74, 77, 82);
+  font-family: 'Encode Sans Condensed', sans-serif;
 }
-.sidebarNav .segment:hover{
-    background-color: rgb(111, 115, 122);
-    
+.sidebarNav .segment:hover {
+  background-color: rgb(111, 115, 122);
 }
 .sidebarNav a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
-.content{
-    grid-column: 2/5;
-    color: white;
-    overflow: scroll;
-    width: 70vw;
-    padding: 1em;
+.content {
+  grid-column: 2/5;
+  color: white;
+  overflow: scroll;
+  width: 70vw;
+  padding: 1em;
 }
-.navTitle{
-    text-align: left;
-    margin: 0 0  0 1em;
-    font-size: 1.5em;
+.navTitle {
+  text-align: left;
+  margin: 0 0 0 1em;
+  font-size: 1.5em;
 }
 
-.doccode{
-    background-color: #f6f7f8;
-    padding: 1em;
-    color: #1B1C1D;
-    border: 1px solid #cccccc;
-    border-radius: 4px;
-    margin-bottom: .5em;
+.doccode {
+  background-color: #f6f7f8;
+  padding: 1em;
+  color: #1b1c1d;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  margin-bottom: 0.5em;
 }
 .doccode pre {
-    display: block;
-    margin: 0 0 10px;
-    font-size: 13px;
-    line-height: 1.42857143;
-    word-break: break-all;
-    word-wrap: break-word;
-    color: #3a3f44;
-    background-color: #f5f5f5;
-    border: 1px solid #cccccc;
-    border-radius: 4px;
+  display: block;
+  margin: 0 0 10px;
+  font-size: 13px;
+  line-height: 1.42857143;
+  word-break: break-all;
+  word-wrap: break-word;
+  color: #3a3f44;
+  background-color: #f5f5f5;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
 }
-.doccode pre code{
-    padding: 0;
-    font-size: inherit;
-    color: inherit;
-    white-space: pre-wrap;
-    background-color: transparent;
-    border-radius: 0;
-    width: 100%;
+.doccode pre code {
+  padding: 0;
+  font-size: inherit;
+  color: inherit;
+  white-space: pre-wrap;
+  background-color: transparent;
+  border-radius: 0;
+  width: 100%;
 }
 
-li .doccode{
-    color: rgb(173, 127, 26);
-    width: 20vw;
+li .doccode {
+  color: rgb(173, 127, 26);
+  width: 20vw;
 }
 li {
-    margin-bottom: .5em;
+  margin-bottom: 0.5em;
 }
 
-.attr b{
-    color: #3a3f44;
-    background-color: white;
-    padding: .3em;
-    border-radius: 2px;
+.attr b {
+  color: #3a3f44;
+  background-color: white;
+  padding: 0.3em;
+  border-radius: 2px;
 }
