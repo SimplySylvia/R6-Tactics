@@ -6,33 +6,56 @@ const buildAttr = attributes => {
   return attributes
     .map(
       attr =>
-        `<li>
-      <b>${attr.name}</b> - ${attr.description}.
-    </li>`
+        `
+        <tr>
+          <td class='ui center'>${attr.name}</td>
+          <td>${attr.description}</td>
+        </tr>`
+    )
+    .join('');
+};
+
+const buildSubpaths = subpaths => {
+  return subpaths
+    .map(
+      sub =>
+        `<section class="doccode">
+        <code> ${sub.method} ${sub.path}</code>
+      </section>
+      <p>${sub.description}</p>`
     )
     .join('');
 };
 
 const buildDoc = ({ endpoints }) => {
   endpoints.forEach(endpoint => {
-    if (endpoint.name) {
+    const { name, method, path, description, attributes, subpaths } = endpoint;
+    if (name) {
       $('#resources-nav').append(
-        `<a class="ui segment" href="#${endpoint.name}">${endpoint.name}</a>`
+        `<a class="ui segment" href="#${name}">${name}</a>`
       );
     }
 
     const template = `
-      ${endpoint.name ? `<h3 id=${endpoint.name}>${endpoint.name}</h3>` : ''}
+      ${name ? `<h3 id=${name}>${name}</h3>` : ''}
       <section class="doccode">
-        <code> ${endpoint.method} ${endpoint.path}</code>
-        </section>
-        <p>${endpoint.description}</p>
+        <code> ${method} ${path}</code>
+      </section>
+      <p>${description}</p>
+        ${subpaths ? buildSubpaths(subpaths) : ''}
       ${
-        endpoint.attributes
-          ? `<h5>Attributes</h5>
-        <ul class="attr">
-        ${buildAttr(endpoint.attributes)}
-        </ul>`
+        attributes
+          ? `<h3>Attributes</h3>
+        <table class="ui celled table">
+        <thead>
+        <tr>
+        <th>Name</th>
+        <th>Description</th>
+        </tr>
+        </thead>
+        ${buildAttr(attributes)}
+        </table>
+        `
           : ''
       }  
     `;

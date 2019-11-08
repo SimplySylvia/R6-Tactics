@@ -1,78 +1,85 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>R6 API</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" media="screen" href="styles/semantic.min.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="styles/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="styles/semantic.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="styles/style.css"
+    />
     <link rel="shortcut icon" type="image/x-icon" href="images/logo.png" />
-    
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
     <script src="scripts/helper.js"></script>
     <script src="scripts/main.js"></script>
-</head>
-<body>
-    <header class='ui fixed inverted menu'>
-        <section class='ui container'>
-            <a href='/' class='header item'>
-                <img src='images/logo.png' class='logo'>
-                Rainbow Six Siege Api
-            </a>
-            <a href='/documentation' class='item'>
-                Documentation
-            </a>       
-        </section>
-        
-    </header>
-    <main>
-        <h2 class="title">Welcome to the R6 API</h2>
-        <h2 class="title">All the information you need about Rainbow Six Siege.</h2>
-        <h2 class="title">Operators, Abilities, Gadgets, Weapons, and Maps</h2>
-        <form class='requestBar'>
-            <div class="ui labeled input">
-                <div class="ui label">
-                    api/
-                </div>
-                <input class='searchinput' type="text" placeholder="defops">
-                <button class="ui button">GET</button>
-            </div>
-        </form>
-        
+  </head>
 
-        <div id='apiOutput'>
+  <body>
+    <header class="ui fixed inverted menu">
+      <a href="/" class="header item">
+        <img src="images/logo.png" class="logo" />
+        Rainbow Six Siege Api
+      </a>
+      <a href="/documentation" class="item">
+        Documentation
+      </a>
+    </header>
+    <main class="home-main">
+      <h2 class="title">Welcome to the R6 API</h2>
+      <h2 class="title">
+        All the information you need about Rainbow Six Siege.
+      </h2>
+      <h2 class="title">
+        Operators, Abilities, Gadgets, Weapons, and Locations
+      </h2>
+      <form class="requestBar">
+        <div class="ui labeled input">
+          <div class="ui label">
+            api/v1/
+          </div>
+          <input class="searchinput" type="text" placeholder="operators" />
+          <button class="ui button">GET</button>
         </div>
+      </form>
+
+      <div id="apiOutput"></div>
     </main>
     <footer>
-        <section class='copy'>
-            <p>&copy; Dalton Hart 2018</p>
-        </section>
-        <section class='social'>
-                <a href="https://www.facebook.com/KnightStand" target="_blank">
-                    <button class="ui facebook button">
-                        <i class="fab fa-facebook-f"></i>
-                    </button>
-                </a>
-                <a href="https://twitter.com/DaltonJHart" target="_blank">
-                    <button class="ui twitter button">
-                        <i class="fab fa-twitter"></i>   
-                    </button>
-                </a>
-                <a href="https://www.linkedin.com/in/dalton-hart/" target="_blank">
-                    <button class="ui linkedin button">
-                        <i class="fab fa-linkedin-in"></i>    
-                    </button>
-                </a>
-                <a href="https://github.com/DaltonHart" target="_blank">
-                    <button class="ui button">
-                        <i class="fab fa-github"></i>
-                    </button>
-                </a>
-                <p>Let's Chat</p>
-        </section>
-        
+      <section class="copy">
+        <p>&copy; Dalton Hart 2018</p>
+      </section>
+      <section class="social">
+        <a href="https://www.linkedin.com/in/dalton-hart/" target="_blank">
+          <button class="ui linkedin button">
+            <i class="fab fa-linkedin-in"></i>
+          </button>
+        </a>
+        <a href="https://github.com/DaltonHart" target="_blank">
+          <button class="ui button">
+            <i class="fab fa-github"></i>
+          </button>
+        </a>
+      </section>
     </footer>
-</body>
+  </body>
 </html>
