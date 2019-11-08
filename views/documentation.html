@@ -85,11 +85,18 @@
           <section id="base-url" class="doccode"></section>
           <h3 id="auth">Authentication</h3>
           <p>
-            This is a completely open API. No authentication is required to
-            query and get data. This also means that we've limited what you can
-            do to just GET requests. If you find a mistake in the code base feel
-            free to email the developer.
-            <a href="mailto:daltonvaren@gmail.com">Contact Here</a>
+            This api is authenticated through the use of api keys. You may
+            register for an account to recieve an api key. You will never
+            recieve an email from R6 Api and your privacy is taken seriously. If
+            you do not want to register for an account but would still like an
+            api key please reach out to me directly.
+            <a href="mailto:daltonhart.j@gmail.com">Contact Here</a>
+          </p>
+          <p>
+            When you send a request to any of the resource routes you must include your API key in the headers of the request as follows: 
+            <section class="doccode">
+              <code>headers: {'api_key': YourKey} </code>
+            </section>
           </p>
           <h3 id="rate">Rate Limiting</h3>
           <p>
@@ -119,7 +126,7 @@
           <p>
             If you would like to offer suggestions on how to improve this
             resource you can reach out to me
-            <a href="mailto:daltonvaren@gmail.com">Here</a>
+            <a href="mailto:daltonhart.j@gmail.com">Here</a>
           </p>
         </section>
       </div>
