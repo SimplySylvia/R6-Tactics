@@ -21,12 +21,13 @@ const userSchema = mongoose.Schema({
     unique: true
   },
   logs: [Log.schema],
-  archive_keys: [{type:String}]
+  archive_keys: [{ type: String }]
 });
 
 userSchema.set('toJSON', {
   transform: function(doc, ret, opt) {
-    delete ret['password','__v'];
+    delete ret['password'];
+    delete ret['__v'];
     return ret;
   }
 });

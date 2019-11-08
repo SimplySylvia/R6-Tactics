@@ -2,6 +2,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const session = require('express-session');
+const MongoStore = require('connect-mongo')(session);
 // protection
 const rateLimit = require('express-rate-limit');
 const cors = require('cors');
@@ -40,9 +41,16 @@ app.use(mongoSanitize());
 // session config
 app.use(
   session({
+    // store session info into db
+    store: new MongoStore({
+      url: process.env.MONGODB_URI
+    }),
     secret: process.env.SESSION,
     resave: false,
-    saveUninitialized: false
+    saveUninitialized: false,
+    cookie: {
+      maxAge: 1000 * 60 * 60 * 24 * 7 * 2 // two weeks
+    }
   })
 );
 
