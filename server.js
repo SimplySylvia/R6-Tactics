@@ -28,7 +28,7 @@ const LIMIT = rateLimit({
 });
 
 //SECTION --------------------------------MIDDLEWARE
-app.use(bodyParser.json({ limit: '10kb' }));
+app.use(bodyParser.json());
 // limit requests
 app.use(LIMIT);
 // custom response formatter

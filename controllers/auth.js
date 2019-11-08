@@ -27,7 +27,9 @@ const register = async (req, res) => {
     };
     // create user
     const createdUser = await db.User.create(userData);
-    res.success(201, createdUser);
+    // create session
+    req.session.currentUser = { id: createdUser._id };
+    res.success(201, createdUser._id);
   } catch (error) {
     res.error(error.message);
   }
@@ -48,7 +50,7 @@ const login = async (req, res) => {
     if (!match) return res.error();
     // create session
     req.session.currentUser = { id: foundUser._id };
-    return res.success(200, foundUser);
+    return res.success(200, foundUser._id);
   } catch (error) {
     res.error(error.message);
   }
@@ -63,8 +65,8 @@ const show = async (req, res) => {
   }
 };
 
-const requestNewKey = async (req,res) => {
-  try{
+const requestNewKey = async (req, res) => {
+  try {
     const foundUser = await db.User.findById(req.session.currentUser.id);
     foundUser.archive_keys.push(foundUser.api_key);
     foundUser.api_key = uuidv4();
@@ -73,11 +75,21 @@ const requestNewKey = async (req,res) => {
   } catch (error) {
     res.error(error.message);
   }
-}
+};
+
+const deleteSession = async (req, res) => {
+  try {
+    await req.session.destroy();
+    res.success(200, 'Success');
+  } catch (error) {
+    res.error();
+  }
+};
 
 module.exports = {
   register,
   login,
   show,
-  requestNewKey
+  requestNewKey,
+  deleteSession
 };
