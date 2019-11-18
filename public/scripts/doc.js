@@ -19,10 +19,12 @@ const buildSubpaths = subpaths => {
   return subpaths
     .map(
       sub =>
-        `<section class="doccode">
-        <code> ${sub.method} ${sub.path}</code>
-      </section>
-      <p>${sub.description}</p>`
+        `
+        <section class="doccode">
+          <code> ${sub.method} ${sub.path}</code>
+        </section>
+        <p>${sub.description}</p>
+      `
     )
     .join('');
 };
