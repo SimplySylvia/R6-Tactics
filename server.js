@@ -56,7 +56,7 @@ app.use(
 
 //SECTION -------------------------------CONFIGURATION VARIABLES
 const options = {
-  origin: `http://localhost:${PORT}`,
+  origin: `*`,
   optionsSuccessStatus: 200
 };
 app.use(cors(options));
